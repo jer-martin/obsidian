@@ -1,0 +1,1 @@
+An operating system is a way for a programmer to interact with a computer
