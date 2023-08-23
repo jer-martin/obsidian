@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/Untitled.md",
+                "file": "HIST_ASTRO/HIST_ASTRO 08-23-23 Lecture 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/Untitled.md",
+                "file": "HIST_ASTRO/HIST_ASTRO 08-23-23 Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/Untitled.md",
+                "file": "HIST_ASTRO/HIST_ASTRO 08-23-23 Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/Untitled.md"
+                "file": "HIST_ASTRO/HIST_ASTRO 08-23-23 Lecture 1.md"
               }
             }
           }
@@ -148,6 +148,12 @@
   },
   "active": "05cb67525576b8df",
   "lastOpenFiles": [
-    "OS/Untitled.md"
+    "OS/OS 8-24-23 Lecture 1.md",
+    "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
+    "DAILY/2023-08-23.md",
+    "DAILY/2023-07-09.md",
+    "HIST_ASTRO/HIST_ASTRO 08-23-23 Lecture 1.md",
+    "ASTRO_2",
+    "HIST_ASTRO"
   ]
 }
