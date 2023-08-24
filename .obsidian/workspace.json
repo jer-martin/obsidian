@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Algorithm",
+                "query": "y",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
