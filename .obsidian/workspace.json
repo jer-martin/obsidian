@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9a353ae0a111b815",
+        "id": "3616ffab2ac28829",
         "type": "tabs",
         "children": [
           {
-            "id": "05cb67525576b8df",
+            "id": "94fd80d48bd52aed",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "dbc9f13a13e8fd57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ALGO/ALGO 08-24-23 Lecture 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "y",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ALGO/ALGO 08-24-23 Lecture 1.md",
+                "file": "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ALGO/ALGO 08-24-23 Lecture 1.md",
+                "file": "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ALGO/ALGO 08-24-23 Lecture 1.md"
+                "file": "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md"
               }
             }
           }
@@ -160,12 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca951ab004313d3d",
+  "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
-    "ALGO/ALGO 08-24-23 Lecture 1.md",
-    "ALGO",
-    "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
     "HIST_ASTRO/HIST_ASTRO 08-23-23 Lecture 1.md",
+    "ALGO/ALGO 08-24-23 Lecture 1.md",
+    "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
+    "ML/ML 08-24-23 Lecture 1.md",
+    "ML",
+    "ALGO",
     "OS/OS 8-24-23 Lecture 1.md",
     "DAILY/2023-08-23.md",
     "DAILY/2023-07-09.md",
