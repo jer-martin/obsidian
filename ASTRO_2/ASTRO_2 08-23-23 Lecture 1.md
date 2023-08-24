@@ -9,3 +9,6 @@ To Be A Planet -
 
 dwarf planet/ planetoid - yes to 1 and 2, no to 3
 
+
+To Do List:
+- Read Chapter 8.1
