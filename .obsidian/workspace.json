@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
+                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
+                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
+                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md"
+                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md"
               }
             }
           }
@@ -146,18 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "94fd80d48bd52aed",
+  "active": "8e0867072911751c",
   "lastOpenFiles": [
-    "HIST_ASTRO/HIST_ASTRO 08-23-23 Lecture 1.md",
-    "ALGO/ALGO 08-24-23 Lecture 1.md",
-    "ASTRO_2/ASTRO_2 08-23-23 Lecture 1.md",
+    "NEWT/NEWT 08-23-23 Lecture 1.md",
     "ML/ML 08-24-23 Lecture 1.md",
+    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
+    "ALGO/ALGO 08-24-23 Lecture 1.md",
+    "DAILY/2023-08-24.md",
     "ML",
     "ALGO",
     "OS/OS 8-24-23 Lecture 1.md",
     "DAILY/2023-08-23.md",
     "DAILY/2023-07-09.md",
-    "ASTRO_2",
-    "HIST_ASTRO"
+    "ASTRO2",
+    "NEWT"
   ]
 }

@@ -1,4 +1,4 @@
-aPaleolithic thru Newton
+Paleolithic thru Newton
 
 Incan, Aztec, Babylon, Egypt, Greece, etc
 
