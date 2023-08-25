@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
+                "file": "OS/OS 8-24-23 Lecture 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Algorithm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
+                "file": "OS/OS 8-24-23 Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
+                "file": "OS/OS 8-24-23 Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASTRO2/ASTRO2 08-23-23 Lecture 1.md"
+                "file": "OS/OS 8-24-23 Lecture 1.md"
               }
             }
           }
@@ -146,19 +146,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e0867072911751c",
+  "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
-    "NEWT/NEWT 08-23-23 Lecture 1.md",
-    "ML/ML 08-24-23 Lecture 1.md",
-    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
+    "NTWRK/NTWRK 08-24-23 Lecture 1.md",
     "ALGO/ALGO 08-24-23 Lecture 1.md",
+    "ML/ML 08-24-23 Lecture 1.md",
+    "NEWTN/NEWTN 08-23-23 Lecture 1.md",
+    "Untitled",
+    "NTWRK",
+    "OS/OS 8-24-23 Lecture 1.md",
+    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
+    "README.md",
+    "Untitled.canvas",
+    "OS/Windows.md",
+    "OS/Operating Systems.md",
+    "algorithms.md",
+    "ALGO.md",
     "DAILY/2023-08-24.md",
     "ML",
     "ALGO",
-    "OS/OS 8-24-23 Lecture 1.md",
     "DAILY/2023-08-23.md",
     "DAILY/2023-07-09.md",
     "ASTRO2",
-    "NEWT"
+    "NEWTN"
   ]
 }

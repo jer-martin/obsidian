@@ -1,9 +1,9 @@
-### #Algorithm:
+### Algorithm:
 - A procedure that takes an input, transforms it, and then outputs the result
 	- Input/Output could be empty
 - Similar to a map between sets
 
-### #Algorithm Abstraction:
+### Algorithm Abstraction:
 - What do these scenarios have in common?
 	- Pair up students to be roommates based on how they ranked each other. There should not be a pair of students who both prefer each other over their assigned roommates.
 	- Medical students and hospitals have ranked each other. Assign students to hospitals (not necessarily one-to-one) so that there is no student-hospital pair where both members prefer someone else to their assigned.
@@ -17,11 +17,11 @@
 *Abstract algorithm can solve abstract problem*s
 
 Most course content is under these categories:
-- #Graphs
-- #Greedies
-- #DivideNConquer
-- #DP
-- #NetworkFlow
+- #Graphs Graph
+- #Greedies Greedy
+- #DivideNConquer Divide and Conquer
+- #DP Dynamic Programming
+- #NetworkFlow Network Flow
 
 ### P vs NP
 - P = polynomial time
