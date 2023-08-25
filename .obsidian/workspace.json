@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/OS 8-24-23 Lecture 1.md",
+                "file": "OS/Reptilian Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 8-24-23 Lecture 1.md",
+                "file": "OS/Reptilian Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 8-24-23 Lecture 1.md",
+                "file": "OS/Reptilian Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 8-24-23 Lecture 1.md"
+                "file": "OS/Reptilian Notes.md"
               }
             }
           }
@@ -148,13 +148,14 @@
   },
   "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
+    "OS/OS 8-24-23 Lecture 1.md",
+    "OS/Reptilian Notes.md",
     "NTWRK/NTWRK 08-24-23 Lecture 1.md",
     "ALGO/ALGO 08-24-23 Lecture 1.md",
     "ML/ML 08-24-23 Lecture 1.md",
     "NEWTN/NEWTN 08-23-23 Lecture 1.md",
     "Untitled",
     "NTWRK",
-    "OS/OS 8-24-23 Lecture 1.md",
     "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
     "README.md",
     "Untitled.canvas",
