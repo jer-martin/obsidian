@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/Reptilian Notes.md",
+                "file": "OS/Ex1 - Command Line.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/Reptilian Notes.md",
+                "file": "OS/Ex1 - Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/Reptilian Notes.md",
+                "file": "OS/Ex1 - Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/Reptilian Notes.md"
+                "file": "OS/Ex1 - Command Line.md"
               }
             }
           }
@@ -148,8 +148,18 @@
   },
   "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
-    "OS/OS 8-24-23 Lecture 1.md",
+    "Pasted image 20230826103446.png",
+    "Pasted image 20230826103420.png",
+    "Pasted image 20230826103347.png",
+    "Pasted image 20230826102853.png",
+    "Pasted image 20230826102753.png",
+    "Pasted image 20230826102554.png",
+    "Pasted image 20230826101349.png",
+    "Pasted image 20230826101338.png",
+    "Pasted image 20230826101137.png",
     "OS/Reptilian Notes.md",
+    "OS/Ex1 - Command Line.md",
+    "OS/OS 8-24-23 Lecture 1.md",
     "NTWRK/NTWRK 08-24-23 Lecture 1.md",
     "ALGO/ALGO 08-24-23 Lecture 1.md",
     "ML/ML 08-24-23 Lecture 1.md",
