@@ -1,3 +1,5 @@
 {
-  "accentColor": ""
+  "accentColor": "#88ef6b",
+  "baseFontSize": 18,
+  "translucency": true
 }
