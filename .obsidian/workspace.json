@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/Ex1 - Command Line.md",
+                "file": "ALGO/ALGO 08-30-23 Lecture 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Algorithm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/Ex1 - Command Line.md",
+                "file": "ALGO/ALGO 08-30-23 Lecture 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/Ex1 - Command Line.md",
+                "file": "ALGO/ALGO 08-30-23 Lecture 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/Ex1 - Command Line.md"
+                "file": "ALGO/ALGO 08-30-23 Lecture 3.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
+    "Pasted image 20230826101137.png",
+    "Pasted image 20230826101338.png",
+    "ALGO/ALGO 08-30-23 Lecture 3.md",
     "Pasted image 20230826103446.png",
     "Pasted image 20230826103420.png",
     "Pasted image 20230826103347.png",
@@ -155,18 +158,21 @@
     "Pasted image 20230826102753.png",
     "Pasted image 20230826102554.png",
     "Pasted image 20230826101349.png",
-    "Pasted image 20230826101338.png",
-    "Pasted image 20230826101137.png",
     "OS/Reptilian Notes.md",
     "OS/Ex1 - Command Line.md",
-    "OS/OS 8-24-23 Lecture 1.md",
-    "NTWRK/NTWRK 08-24-23 Lecture 1.md",
     "ALGO/ALGO 08-24-23 Lecture 1.md",
     "ML/ML 08-24-23 Lecture 1.md",
+    "ASTRO2/ASTRO2 08-25-23 Lecture 2.md",
+    "ASTRO2/ASTRO2 08-28-23 Lecture 3.md",
+    "NEWTN/NEWTN 08-28-23 Lecture 3.md",
+    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
+    "NEWTN/NEWTN 08-25-23 Lecture 2.md",
     "NEWTN/NEWTN 08-23-23 Lecture 1.md",
+    "Pasted image 20230828111245.png",
+    "OS/OS 08-24-23 Lecture 1.md",
+    "NTWRK/NTWRK 08-24-23 Lecture 1.md",
     "Untitled",
     "NTWRK",
-    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
     "README.md",
     "Untitled.canvas",
     "OS/Windows.md",
