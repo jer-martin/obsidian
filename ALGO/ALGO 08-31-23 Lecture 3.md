@@ -97,4 +97,3 @@ Breaking through the exponential barrier of brute force typically exposes some c
 		- If $n < m$ *always,* the multi-variable problem can be reduced to one variable
 		- **Typical usage
 			- In the worst case, breadth-first search takes $O(m + n)$ time to find a shortest path from $s$ to $t$ in a digraph with $n$ nodes and $m$ edges
-- 

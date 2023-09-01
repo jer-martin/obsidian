@@ -47,21 +47,21 @@
 
 **Protocols define the format, order of messages sent and received among network entities, and actions taken on message transmission, receipt**
 
-### Network edge:
+#### Network edge:
 - hosts: clients and servers
 - servers are often in data centers
 Access networks, physical media:
 - Wired, wireless comm links
 
-How do you connect end systems to edge router?
-- residential access nets
-- institutional access nets
-- mobile access nets
-When connected, what do we look for?
-- transmission rate (bit/s)
-- shared or dedicated access among users?
+	How do you connect end systems to edge router?
+	- residential access nets
+	- institutional access nets
+	- mobile access nets
+	When connected, what do we look for?
+	- transmission rate (bit/s)
+	- shared or dedicated access among users?
 
-*Network of cable/fiber attaches homes to ISP router*
+	*Network of cable/fiber attaches homes to ISP router*
 
 **Frequency division multiplexing (FDM):**
 - different channels transmitted in different frequency bands

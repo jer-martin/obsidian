@@ -6,7 +6,6 @@
 - How do we describe this "light" energy?
 	- Electromagnetic radiation
 	- Waves AND Particles (but mostly waves)
-	- 
 - Why is it colder further from the Sun?
 - #### Luminosity
 	- $L = \frac{E}{t} = Watts$  
