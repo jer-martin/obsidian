@@ -56,3 +56,4 @@
 	- We do not feel the Earth moving
 	- Objects thrown upward drop back to point of departure
 	- If Earth moved about the Sun, then we should observe **stellar parallax**
+[[NEWTN 09-01-23 Lecture 4|Continued...]]
