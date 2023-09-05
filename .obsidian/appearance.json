@@ -2,5 +2,7 @@
   "accentColor": "#88ef6b",
   "baseFontSize": 18,
   "translucency": true,
-  "cssTheme": "Minimal"
+  "cssTheme": "Minimal",
+  "textFontFamily": "",
+  "monospaceFontFamily": "Berkeley Mono"
 }

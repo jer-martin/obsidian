@@ -7,6 +7,6 @@
 	3. Get boot device via NVRAM (no standard)
 	4. Load "boot sector" into volatile RAM
 	5. Execute Boot Block program from the boot sector (one block)
-	6. 
+
 
 

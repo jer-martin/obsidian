@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ALGO/ALGO 09-05-23 Lecture 4.md",
+                "file": "OS/OS 09-05-23 Lecture 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3afcbafc664a87b1",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ALGO/ALGO 09-05-23 Lecture 4.md",
+                "file": "OS/OS 09-05-23 Lecture 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ALGO/ALGO 09-05-23 Lecture 4.md",
+                "file": "OS/OS 09-05-23 Lecture 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ALGO/ALGO 09-05-23 Lecture 4.md"
+                "file": "OS/OS 09-05-23 Lecture 3.md"
               }
             }
           }
@@ -148,8 +149,18 @@
   },
   "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
-    "NEWTN/NEWTN 09-01-23 Lecture 4.md",
+    "OS/OS 08-31-23 Lecture 2.md",
+    "OS/OS 09-05-23 Lecture 3.md",
+    "ML/ML 09-05-23 Lecture 3.md",
     "ML/ML 08-31-23 Lecture 2.md",
+    "ML/ML 08-24-23 Lecture 1.md",
+    "NTWRK/NTWRK 09-05-23 Lecture 3.md",
+    "NTWRK/NTWRK 08-31-23 Lecture 2.md",
+    "NEWTN/NEWTN 09-01-23 Lecture 4.md",
+    "NEWTN/NEWTN 08-28-23 Lecture 3.md",
+    "NEWTN/NEWTN 08-25-23 Lecture 2.md",
+    "NEWTN/NEWTN 08-23-23 Lecture 1.md",
+    "NTWRK/NTWRK 08-24-23 Lecture 1.md",
     "ALGO/ALGO 09-05-23 Lecture 4.md",
     "ALGO/ALGO 08-31-23 Lecture 3.md",
     "ASTRO2/ASTRO2 09-01-23 Lecture 4.md",
@@ -158,13 +169,6 @@
     "ASTRO2/ASTRO2 08-28-23 Lecture 3.md",
     "ASTRO2/Chapter 8.3 Notes.md",
     "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
-    "NEWTN/NEWTN 08-28-23 Lecture 3.md",
-    "NEWTN/NEWTN 08-25-23 Lecture 2.md",
-    "NEWTN/NEWTN 08-23-23 Lecture 1.md",
-    "ML/ML 08-24-23 Lecture 1.md",
-    "OS/OS 08-31-23 Lecture 2.md",
-    "NTWRK/NTWRK 08-24-23 Lecture 1.md",
-    "NTWRK/NTWRK 08-31-23 Lecture 2.md",
     "NTWRK 08-24-23 Lecture 1].md",
     "OS/Ex1 - Command Line.md",
     "Pasted image 20230826101137.png",
@@ -184,9 +188,6 @@
     "NTWRK",
     "README.md",
     "Untitled.canvas",
-    "OS/Windows.md",
-    "OS/Operating Systems.md",
-    "algorithms.md",
     "ML",
     "ALGO",
     "ASTRO2",
