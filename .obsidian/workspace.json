@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEWTN/NEWTN 09-01-23 Lecture 4.md",
+                "file": "ALGO/ALGO 09-05-23 Lecture 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NEWTN/NEWTN 09-01-23 Lecture 4.md",
+                "file": "ALGO/ALGO 09-05-23 Lecture 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NEWTN/NEWTN 09-01-23 Lecture 4.md",
+                "file": "ALGO/ALGO 09-05-23 Lecture 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NEWTN/NEWTN 09-01-23 Lecture 4.md"
+                "file": "ALGO/ALGO 09-05-23 Lecture 4.md"
               }
             }
           }
@@ -148,22 +148,24 @@
   },
   "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
+    "NEWTN/NEWTN 09-01-23 Lecture 4.md",
+    "ML/ML 08-31-23 Lecture 2.md",
+    "ALGO/ALGO 09-05-23 Lecture 4.md",
+    "ALGO/ALGO 08-31-23 Lecture 3.md",
+    "ASTRO2/ASTRO2 09-01-23 Lecture 4.md",
+    "ASTRO2/Chapter 8.2 Notes.md",
+    "ASTRO2/ASTRO2 08-25-23 Lecture 2.md",
+    "ASTRO2/ASTRO2 08-28-23 Lecture 3.md",
+    "ASTRO2/Chapter 8.3 Notes.md",
+    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
     "NEWTN/NEWTN 08-28-23 Lecture 3.md",
     "NEWTN/NEWTN 08-25-23 Lecture 2.md",
     "NEWTN/NEWTN 08-23-23 Lecture 1.md",
-    "NEWTN/NEWTN 09-01-23 Lecture 4.md",
     "ML/ML 08-24-23 Lecture 1.md",
-    "ASTRO2/Chapter 8.3 Notes.md",
     "OS/OS 08-31-23 Lecture 2.md",
-    "ASTRO2/Chapter 8.2 Notes.md",
-    "ALGO/ALGO 08-31-23 Lecture 3.md",
-    "ML/ML 08-31-23 Lecture 2.md",
     "NTWRK/NTWRK 08-24-23 Lecture 1.md",
     "NTWRK/NTWRK 08-31-23 Lecture 2.md",
     "NTWRK 08-24-23 Lecture 1].md",
-    "ASTRO2/ASTRO2 08-28-23 Lecture 3.md",
-    "ASTRO2/ASTRO2 08-25-23 Lecture 2.md",
-    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
     "OS/Ex1 - Command Line.md",
     "Pasted image 20230826101137.png",
     "Pasted image 20230826101338.png",
@@ -185,8 +187,6 @@
     "OS/Windows.md",
     "OS/Operating Systems.md",
     "algorithms.md",
-    "ALGO.md",
-    "DAILY/2023-08-24.md",
     "ML",
     "ALGO",
     "ASTRO2",
