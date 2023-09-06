@@ -1,1 +1,0 @@
-connect to vm: ssh reptilian@192.168.1.254
