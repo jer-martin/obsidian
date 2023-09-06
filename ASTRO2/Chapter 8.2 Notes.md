@@ -40,7 +40,7 @@ The energy that the planet *absorbs* per second is the flux $F$ times the cross 
 
 $W_{p}= (\frac{L_{⊙}}{4\pi r^2})(\pi R^{2})(1 - A)$ 
 
-Molecules travel through the medium.. their mean free path is said to be around 400 angstroms at sea level. However, there is a point (called the exobase) where the mean free path increases to the point where a gas particle moving upward faster than the escape speed is able to escape from the atmosphere before colliding with another particle.
+Molecules travel through the medium.. their mean free path is said to be around 400 angstroms at sea level. However, there is a point (called the [[ASTRO2 09-06-23 Lecture 5|exobase]]) where the mean free path increases to the point where a gas particle moving upward faster than the escape speed is able to escape from the atmosphere before colliding with another particle.
 
 The height of the exobase is given by the relation:
 
