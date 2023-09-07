@@ -89,4 +89,14 @@
     - *proof:*
         - ⇒ Follows from definition. 
         - ⇐ Path from $u$ to $v$: concatenate $u↝s$ path with $s↝v$ path. Path from $v$ to $u$: concatenate $v↝s$ path with $s↝u$ path.
-    - 
+    - Can determine if $G$ is strongly connected in $O(m + n)$ time
+    - *proof:*
+        - Pick any node $s$
+        - Run BFS from $s$ in $G$
+        - Run BFS from $s$ in $G^{reverse}$
+        - Return true if all nodes reached in both BFS executions
+        - Correctness follows from previous *lemma*
+    -
+    
+**Strong Component**
+-  maximal subset of mutually reachable nodes
