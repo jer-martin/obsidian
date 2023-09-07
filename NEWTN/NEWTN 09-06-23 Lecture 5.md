@@ -21,8 +21,8 @@ Homework:
     - #### Solar Day
         - 24 hours
 - ### Annual Motion
-    - throughout the year, the Sun travels in a path called the [[NEWTN 09-01-23 Lecture 4|ecliptic]]
-    - the ecliptic is inclined 23.5$\textdegree$ relative to the [[NEWTN 09-01-23 Lecture 4|Celestial Equator]]
+    - throughout the year, the Sun travels in a path called the [ecliptic](NEWTN%2009-01-23%20Lecture%204.md)
+    - the ecliptic is inclined 23.5$\textdegree$ relative to the [Celestial Equator](NEWTN%2009-01-23%20Lecture%204.md)
     - on the equinoxes, the ecliptic intersects the equator, so the Sun travels on the CE
     
   1.   *We can tell the Sun moves annually due to the change in rising and setting points*

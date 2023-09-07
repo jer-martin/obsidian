@@ -9,7 +9,7 @@
         -  heavier things move slower than lighter things
     - #### exobase:
         - the base of the exosphere and the point at which a particle will escape before colliding with another particle
-        - [[Chapter 8.3 Notes|height of exobase equation]]
+        - [height of the exobase](Chapter%208.3%20Notes.md)
     - #### Maxwell-Boltzmann Laws
         - $F(v)dv = 4\pi (\frac{m}{2\pi kT})^{\frac{3}{2}} v^{2}exp(\frac{-mv^{2}}{2kT})dv$ 
         - $v_{particle}=\sqrt{\frac{2kT}{m}}$ 

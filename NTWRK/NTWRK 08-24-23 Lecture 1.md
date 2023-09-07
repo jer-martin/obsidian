@@ -1,5 +1,5 @@
 ## Protocols and Algorithms
-- [[ALGO 08-24-23 Lecture 1|Algorithms]]: formal procedure to accomplish some task
+- [Algorithm](ALGO%2008-24-23%20Lecture%201.md): formal procedure to accomplish some task
 - Protocol: governs information exchange and collective behavior of distributed entities
 	- For certain tasks
 

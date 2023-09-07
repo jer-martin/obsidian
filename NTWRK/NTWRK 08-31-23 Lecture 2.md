@@ -5,21 +5,21 @@
 	- "hooks allowing sending/receiving apps to "connect" to, use Internet transport service
 	- provides service options, analogous to postal service
 
-- [[NTWRK 08-24-23 Lecture 1 |Protocols]] define the format and order of messages sent and received among network entities, and actions taken on message transmission and receipt 
+- [Protocols](NTWRK%2008-24-23%20Lecture%201.md) define the format and order of messages sent and received among network entities, and actions taken on message transmission and receipt 
 	- (see NTWRK Lecture 1: Protocols)
 
 	In a *time diagram,* time moves vertically. Horizontal spacing represents a spatial divide.
 
 # A Closer Look at Internet Structure:
-- #### [[NTWRK 08-24-23 Lecture 1|Network edge]]:
+- #### [Network edge](NTWRK%2008-24-23%20Lecture%201.md):
 	- hosts: clients and servers
 	- servers often in data centers
 
 - #### Access networks: Cable access:
 	- wired *and* wireless communication links
-	- [[NTWRK 08-24-23 Lecture 1|frequency division multiplexing (FDM)]] 
+	- [frequency division multiplexing (FDM)](NTWRK%2008-24-23%20Lecture%201.md) 
 		- (see NTWRK Lecture 1: Network Edge)
-	- [[NTWRK 08-24-23 Lecture 1|hybrid fiber coax (HFC)]]
+	- [hybrid fiber coax (HFC)](NTWRK%2008-24-23%20Lecture%201.md)
 		- asymmetric: up to 40 Mbps - 1.2 Gbps downstream, 30-100 Mbps upstream
 	- *network* of cable/fiber attaches homes to ISP router
 		- homes *share access network* to cable headend
@@ -28,7 +28,7 @@
 	- interconnected routers
 	- network of networks
 
-	[[NTWRK 08-24-23 Lecture 1|How to connect end systems to edge router?]] 
+	[How to connect end systems to edge router?](NTWRK%2008-24-23%20Lecture%201.md) 
 	- (see NTWRK Lecture 1: Network Edge)
 
 - #### Access networks: Digital subscriber line (DSL):
