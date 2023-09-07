@@ -38,3 +38,5 @@
     *In short, an S-wave is analogous to a workout rope*
 
 ![](../../zassets/Pasted%20image%2020230907130804.png)
+
+testy
