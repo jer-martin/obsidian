@@ -55,3 +55,4 @@
         - with 35 users, probability > 10 active at same time is less than .0004 *
 - #### How did we get value .0004?
 - #### What happens if > 35 users?
+[Continued...](NTWRK%2009-07-23%20Lecture%204.md)
