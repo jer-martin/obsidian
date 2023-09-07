@@ -28,14 +28,16 @@
             - regions of high and low pressure travelling through the earth
         - faster than S-wave
         - not detected between 103$\textdegree$ and 142$\textdegree$ of the epicenter
+    
     *In short, a P-wave is a sound wave*
     - ### S-Wave
         - shear wave
         - transverse
-            - individual particles move back and forth perpendicular to the direction of propagaton
+            - individual particles move back and forth perpendicular to the direction of propagation
         - slower than P-wave
         - only detected within 103$\textdegree$ of the epicenter
             - this is due to the fact that they cannot travel through the outer core
+    
     *In short, an S-wave is analogous to a workout rope*
 
 ![](../../zassets/Pasted%20image%2020230907130804.png)
