@@ -34,9 +34,10 @@
 	- so that any two hosts can send packets to each other
 	- resulting network of networks is very complex
 
-	*Question: given **millions** of ISPs, how to connect them?
+	*Question: given **millions** of ISPs, how to connect them?*
 	- connecting each ISP to each other *directly* doesn't scale
 		- $O(n^{2})$ connections
+	
 	*Option: connect each ISP to one global transit ISP?*
 	- customer and provider ISPs have economic agreement
 	- if there is one global ISP, there will be competitors... who also want to be connected
