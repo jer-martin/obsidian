@@ -32,6 +32,8 @@ $L_{⊙} = 4\pi R_{⊙}^{2} \sigma_{SB} T_{⊙}^{4}$
 
 The Sun's radiation, expressed in terms of wavelength, peaks in the visible spectrum. This is why we can see sunlight.
 
+[Equilibrium Blackbody Temp](ASTRO2%2009-01-23%20Lecture%204.md)
+
 Flux of energy received by a planet at a distance $r$ from the sun is:
 
 $F(r)=\frac{L_{⊙}}{4\pi r^2}$ 

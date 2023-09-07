@@ -5,6 +5,9 @@
 2. Emission-line spectrum (e.g. glowing hot gas)
 3. Absorption-line spectrum (e.g. cooler gas absorbing background continuum)
 
+#### Equilibrium Blackbody Temp
+$T_{eq}= 279(1-A)^{\frac{1}{4}}r_{p}^\frac{-1}{2}$ 
+
 #### Why Our Simple Model Fails
 - Planetary atmospheric/surface *absorption, emission, and reflection*
 - Compare Neptune to Jupiter

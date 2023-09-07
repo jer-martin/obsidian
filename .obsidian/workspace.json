@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8456047894bae1a8",
+        "id": "3616ffab2ac28829",
         "type": "tabs",
         "children": [
           {
-            "id": "8228da286da6a063",
+            "id": "94fd80d48bd52aed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASTRO2/ASTRO2 09-06-23 Lecture 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c4e7a725b0ce042",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md",
+                "file": "ASTRO2/Textbook/Chapter 9.1 Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md",
+                "file": "ASTRO2/Textbook/Chapter 9.1 Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md",
+                "file": "ASTRO2/Textbook/Chapter 9.1 Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md"
+                "file": "ASTRO2/Textbook/Chapter 9.1 Notes.md"
               }
             }
           }
@@ -159,37 +146,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3c4e7a725b0ce042",
+  "active": "94fd80d48bd52aed",
   "lastOpenFiles": [
+    "Pasted image 20230907130804.png",
+    "ASTRO2/ASTRO2 09-06-23 Lecture 5.md",
+    "ASTRO2/Textbook/Chapter 9.1 Notes.md",
+    "ASTRO2/Textbook/Chapter 8.2 Notes.md",
+    "ASTRO2/Textbook/Chapter 8.3 Notes.md",
+    "ASTRO2/ASTRO2 09-01-23 Lecture 4.md",
+    "ASTRO2/ASTRO2 08-28-23 Lecture 3.md",
+    "OS/Reptilian Notes/VM Connection.md",
+    "ALGO/ALGO 09-07-23 Lecture 5.md",
+    "ALGO/ALGO 08-26-23 Lecture 2.md",
+    "OS/Textbook",
+    "OS/Untitled.md",
+    "ASTRO2/Textbook",
+    "OS/Reptilian Notes.md",
+    "OS/Reptilian Notes",
+    "NEWTN/NEWTN 09-01-23 Lecture 4.md",
+    "NEWTN/NEWTN 09-06-23 Lecture 5.md",
+    "NEWTN/NEWTN 08-28-23 Lecture 3.md",
+    "NEWTN/NEWTN 08-25-23 Lecture 2.md",
+    "README.md",
+    "ALGO/ALGO 09-05-23 Lecture 4.md",
     "ML/ML 08-31-23 Lecture 2.md",
     "ML/ML 09-05-23 Lecture 3.md",
-    "ALGO/ALGO 09-07-23 Lecture 5.md",
-    "ALGO/ALGO 08-31-23 Lecture 3.md",
-    "ALGO/ALGO 09-05-23 Lecture 4.md",
-    "ML/ML 08-24-23 Lecture 1.md",
-    "ASTRO2/ASTRO2 09-06-23 Lecture 5.md",
-    "ASTRO2/Textbook/Chapter 8.3 Notes.md",
-    "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
-    "OS/OS 09-05-23 Lecture 3.md",
-    "zassets",
-    "ALGO/ALGO 08-24-23 Lecture 1.md",
     "OS/OS 08-24-23 Lecture 1.md",
-    "ALGO/ALGO 08-26-23 Lecture 2.md",
-    "ASTRO2/ASTRO2 08-25-23 Lecture 2.md",
-    "ASTRO2/ASTRO2 08-28-23 Lecture 3.md",
-    "ASTRO2/ASTRO2 09-01-23 Lecture 4.md",
-    "NEWTN/NEWTN 08-25-23 Lecture 2.md",
-    "NEWTN/NEWTN 08-23-23 Lecture 1.md",
-    "NEWTN/NEWTN 09-06-23 Lecture 5.md",
-    "NEWTN/NEWTN 09-01-23 Lecture 4.md",
-    "NEWTN/NEWTN 08-28-23 Lecture 3.md",
     "OS/OS 08-31-23 Lecture 2.md",
+    "ML/ML 08-24-23 Lecture 1.md",
+    "OS/OS 09-05-23 Lecture 3.md",
     "NTWRK/NTWRK 09-05-23 Lecture 3.md",
     "NTWRK/NTWRK 08-31-23 Lecture 2.md",
-    "NTWRK/NTWRK 08-24-23 Lecture 1.md",
-    "NTWRK 08-24-23 Lecture .md",
-    "OS/Reptilian Notes",
-    "ASTRO2/Textbook",
     "Pasted image 20230826101137.png",
     "Pasted image 20230826101338.png",
     "Pasted image 20230826103446.png",
@@ -200,6 +187,7 @@
     "Pasted image 20230826102554.png",
     "Pasted image 20230826101349.png",
     "Pasted image 20230828111245.png",
+    "Untitled",
     "NTWRK",
     "Untitled.canvas",
     "ML",
