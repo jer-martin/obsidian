@@ -63,9 +63,20 @@
 	- packet being transmitted
 	- L: packet length (bits)
 	- R: link transmission rate (bps)
-- ##### Queueing Delay $d_{queue}$
+- ##### Queueing Delay $d_{queue} = La/R$
 	- packets in buffers
 	- time waiting at output link for transmission
+	- R: link bandwidth (bps)
+	- L: packet length (bits)
+	- a: average packet arrival rate
+	- **Averages:**
+		- $\frac{La}{R}\approx0$ 
+			- avg. queueing delay small
+		-  $\frac{La}{R} → 1$ 
+			- avg. queueing delay large
+		- $\frac{La}{R} > 1$
+			- more "work" arriving than can be serviced
+			- avg. queueing delay $\infty$
 - ##### Processing Delay $d_{proc}$
 	- check bit errors
 	- determine output link
@@ -77,3 +88,11 @@
 
 - ##### Nodal Delay
 	- $d_{nodal}= d_{proc}+ d_{queue}+ d_{trans}+ d_{prop}$
+
+
+- #### Throughput
+	- rate (bits / time unit) at which bits are being sent from sender to receiver
+		- instantaneous
+			- rate given at a point in time
+		- average
+			- rate over longer period of time
