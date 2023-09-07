@@ -1,9 +1,10 @@
-## The Earth's Interior
+## The Earth's Interior & Geological Activity
 - ### Makeup
     - **Core**
         - primarily iron and nickel
         - contributes ~16% of volume
         - contributes ~31% of mass
+        - ~5000 K, but pressures keep the inner core solid
         - **Inner Core**
             - radius ~1300 km
             - solid
