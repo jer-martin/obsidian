@@ -40,7 +40,7 @@
 
 ![](../zassets/Pasted%20image%2020230907140812.png)
 
-## Packets V.S. Circuit
+## Packets V.S. Circuits
 *packet switching allows more users to use the network!*
 ### Example:
 - 1 Gb/s link
