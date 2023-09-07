@@ -30,12 +30,13 @@
 - #### Frequency Division Multiplexing (FDM)
     - optical, electromagnetic frequencies divided into (narrow) frequency bands
     - each call allocated its own band, can transmit at max rate of that band
+![[/obbygit/zassets/Pasted image 20230907140759.png]]
 - #### Time Division Multiplexing (TDM)
     - time divided into slots 
     - each call allocated periodic slots
     - can transmit at maximum rate of frequency band
         - only during time slot
-
+![[/obbygit/zassets/Pasted image 20230907140812.png]]
 
 ## Packets V.S. Circuit
 *packet switching allows more users to use the network!*
