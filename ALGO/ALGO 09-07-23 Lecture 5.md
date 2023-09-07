@@ -1,6 +1,8 @@
 ## Graphs
     continuation of last lecture
+
 - ### [Notation](ALGO%2009-05-23%20Lecture%204.md)
+
 - ### [Path](ALGO%2009-05-23%20Lecture%204.md)
 
 - ### Cycle

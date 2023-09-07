@@ -28,4 +28,27 @@
 
 
 ## Internet Structure: A "network of networks"
-- Hosts connect to Internet via accessing Internet Service Providers (ISPS)
+- Hosts connect to Internet via *access* Internet Service Providers (ISPs)
+	- residential, enterprise, (company, university, commercial) ISPs
+- Access ISPs in turn must be interconnected
+	- so that any two hosts can send packets to each other
+	- resulting network of networks is very complex
+
+	*Question: given **millions** of ISPs, how to connect them?
+	- connecting each ISP to each other *directly* doesn't scale
+		- $O(n^{2})$ connections
+	*Option: connect each ISP to one global transit ISP?*
+	- customer and provider ISPs have economic agreement
+	- if there is one global ISP, there will be competitors... who also want to be connected
+		- regional networks may arise to connect access nets to ISPs
+
+![](../zassets/Pasted%20image%2020230907143352.png)
+
+ - content provider networks (Google, Microsoft, Akamai) may run their own network to bring services and content closer to end users
+
+![](../zassets/Pasted%20image%2020230907143435.png)
+
+- At the "center" is a small number of well-connected large networks
+	- "tier 1" commercial ISPs (Sprint, AT&T), national & international coverage
+	- content provider networks (Google, Meta), private network that connects it's data centers to the Internet
+		- often bypasses regional (tier 1) ISPs
