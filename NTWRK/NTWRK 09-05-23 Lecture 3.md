@@ -31,7 +31,7 @@
     - optical, electromagnetic frequencies divided into (narrow) frequency bands
     - each call allocated its own band, can transmit at max rate of that band
 
-![](../zassets/pasted%20image%2020230907140759.png)
+
 - #### Time Division Multiplexing (TDM)
     - time divided into slots 
     - each call allocated periodic slots
