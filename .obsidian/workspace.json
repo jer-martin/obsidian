@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/OS 09-05-23 Lecture 3.md",
+                "file": "ALGO/ALGO 08-24-23 Lecture 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 09-05-23 Lecture 3.md",
+                "file": "ALGO/ALGO 08-24-23 Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 09-05-23 Lecture 3.md",
+                "file": "ALGO/ALGO 08-24-23 Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 09-05-23 Lecture 3.md"
+                "file": "ALGO/ALGO 08-24-23 Lecture 1.md"
               }
             }
           }
@@ -173,10 +173,12 @@
   },
   "active": "3c4e7a725b0ce042",
   "lastOpenFiles": [
+    "OS/OS 09-05-23 Lecture 3.md",
+    "OS/OS 08-24-23 Lecture 1.md",
+    "ALGO/ALGO 08-24-23 Lecture 1.md",
     "ALGO/ALGO 09-07-23 Lecture 5.md",
     "ALGO/ALGO 08-31-23 Lecture 3.md",
     "ALGO/ALGO 08-26-23 Lecture 2.md",
-    "ALGO/ALGO 08-24-23 Lecture 1.md",
     "ASTRO2/ASTRO2 08-23-23 Lecture 1.md",
     "ASTRO2/ASTRO2 08-25-23 Lecture 2.md",
     "ASTRO2/ASTRO2 08-28-23 Lecture 3.md",
@@ -188,8 +190,6 @@
     "NEWTN/NEWTN 09-06-23 Lecture 5.md",
     "NEWTN/NEWTN 09-01-23 Lecture 4.md",
     "NEWTN/NEWTN 08-28-23 Lecture 3.md",
-    "OS/OS 09-05-23 Lecture 3.md",
-    "OS/OS 08-24-23 Lecture 1.md",
     "OS/OS 08-31-23 Lecture 2.md",
     "NTWRK/NTWRK 09-05-23 Lecture 3.md",
     "NTWRK/NTWRK 08-31-23 Lecture 2.md",

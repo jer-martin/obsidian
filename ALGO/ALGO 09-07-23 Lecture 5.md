@@ -42,4 +42,23 @@
             - when we consider node $u,$ there are $degree(u)$ incident edges $(u,v)$
             - total time processing edges is $\Sigma_{u\in V} degree(u) = 2m$
             - each edge $(u,v)$ is counted exactly twice in sum; once in $degree(u)$ and once in $degree(v)$
-        - 
+
+- ### Connected Component
+    - Find all nodes reachable from $s$
+
+- ### Bipartite Graphs
+    - An undirected graph $G = (V, E)$ is bipartite if the nodes can be colored blue or white such that every edge has one white and one blue end
+    - *applications:*
+        - stable matching: med-school residents = blue, hospitals = white
+        - scheduling: machines = blue, jobs = white
+    - #### Many graph problems become:
+        - Easier if the underlying graph is bipartite
+        - Tractable if the underlying graph is bipartite
+
+    *Before attempting to design an algorithm, we need to understand structure of bipartite graphs.*
+    
+    - *lemma*:
+        - if a graph $G$ is bipartite, it cannot contain an odd-length cycle
+    - *proof:*
+        - not possible to 2-color the odd length cycle, let alone $G$
+    - 
