@@ -39,4 +39,3 @@
 
 ![](../../zassets/Pasted%20image%2020230907130804.png)
 
-testy
