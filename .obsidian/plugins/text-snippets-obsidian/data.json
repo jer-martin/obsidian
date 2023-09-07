@@ -1,8 +1,8 @@
 {
-  "snippets_file": "snippets : It is an obsidian plugin, that replaces your selected text.\n\ntikz : ```tikz $nl$ ```",
+  "snippets_file": "snippets : It is an obsidian plugin, that replaces your selected text.\n\ntikz : ```tikz$nl$\\begin{document}$nl$\\end{document}$nl$```",
   "snippets": [
     "snippets : It is an obsidian plugin, that replaces your selected text.",
-    "tikz : ```tikz $nl$ ```"
+    "tikz : ```tikz$nl$\\begin{document}$nl$\\end{document}$nl$```"
   ],
   "endSymbol": "$end$",
   "newlineSymbol": "$nl$",

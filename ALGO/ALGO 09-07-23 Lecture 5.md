@@ -61,4 +61,32 @@
         - if a graph $G$ is bipartite, it cannot contain an odd-length cycle
     - *proof:*
         - not possible to 2-color the odd length cycle, let alone $G$
+
+    - *lemma:*
+        - Let $G$ be a connected graph, and let $L_0$, …, $L_k$ be the layers produced by BFS starting at node $s$. Exactly one of the following holds:
+            - No edge of $G$ joins two nodes of the same layer, and $G$ is bipartite
+            - An edge of $G$ joins two nodes of the same layer, and $G$ contains an odd-length cycle (and hence is not bipartite)
+    - *proof:*
+        - Suppose no edge joins two nodes in the same layer
+        - By BFS property, each edge joins two nodes in adjacent levels. 
+        - Bipartition: 
+            - white = nodes on odd levels, blue = nodes on even levels.
+        - Suppose $(x,y)$ is an edge with $x, y$ in same level $L_j$
+        - Let $z=lca(x,y) =$ lowest common ancestor
+        - Let $L_i$ be level containing $z$
+        - Consider cycle that takes edge from $x$ to $y$, then path from $y$ to $z$, then path from $z$ to $x$. 
+        - Its length is $1 + (j – i) + (j – i)$, which is odd.
+
+- ### Directed Graphs
+    - #### Notation:
+        - $G = (V, E)$
+        - Edge $(u, v)$ leaves vertex $u$ and goes to vertex $v$
+    - #### Strong Connectivity
+        - Nodes $u$ and $v$ are mutually reachable if there is both a path from $u$ to $v$ and also a path from $v$ to $u$.
+        - Nodes $u$ and $v$ are mutually reachable if there is both a path from $u$ to $v$ and also a path from $v$ to $u$.
+    - *lemma:*
+        - Let $s$ be any node. $G$ is strongly connected if every node is reachable from $s$, and $s$ is reachable from every node.
+    - *proof:*
+        - ⇒ Follows from definition. 
+        - ⇐ Path from $u$ to $v$: concatenate $u↝s$ path with $s↝v$ path. Path from $v$ to $u$: concatenate $v↝s$ path with $s↝u$ path.
     - 

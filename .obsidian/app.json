@@ -3,5 +3,6 @@
   "spellcheck": false,
   "useTab": false,
   "useMarkdownLinks": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "zassets"
 }
