@@ -83,4 +83,6 @@
 #### Path:
 - A sequence of nodes with the property that each consecutive pair is joined by a different edge
 - A path is *simple* if all nodes are distinct
+- An undirected graph is *connected* if for every pair of nodes $u$ and $v$, there is a path between $u$ and $v$
+
 
