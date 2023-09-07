@@ -53,3 +53,27 @@
 	- "tier 1" commercial ISPs (Sprint, AT&T), national & international coverage
 	- content provider networks (Google, Meta), private network that connects it's data centers to the Internet
 		- often bypasses regional (tier 1) ISPs
+
+## How do packet loss and delay occur?
+- Packets queue in router buffers
+	- they queue, wait for turn
+	- arrival rate to link (temporarily) exceeds output capacity: packet loss
+
+- ##### Transmission Delay $d_{trans} = L/R$
+	- packet being transmitted
+	- L: packet length (bits)
+	- R: link transmission rate (bps)
+- ##### Queueing Delay $d_{queue}$
+	- packets in buffers
+	- time waiting at output link for transmission
+- ##### Processing Delay $d_{proc}$
+	- check bit errors
+	- determine output link
+	- typically < msec
+- ##### Propagation Delay $d_{prop} = d/s$
+	- d: length of physical link
+	- s: propagation speed
+
+
+- ##### Nodal Delay
+	- $d_{nodal}= d_{proc}+ d_{queue}+ d_{trans}+ d_{prop}$
