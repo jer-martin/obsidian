@@ -37,4 +37,4 @@
             - this is due to the fact that they cannot travel through the outer core
     *In short, an S-wave is analogous to a workout rope*
 
-![](Pasted%20image%2020230907130804.png)
+![](../../zassets/Pasted%20image%2020230907130804.png)
