@@ -18,7 +18,10 @@
 			- value (5)
 			- reference (mem address of 5)
 			- name (var_5)
-		- pointer to entry
+		- pointer to entry / return
+- System call
+	- A system call involves a *context switch* into *kernel mode* for execution
+	- Usually, there is a *system library entry point* (fread, fwrite)
 
 ### File Storage
 - Operating systems facilitate storage of data via ***file systems***
