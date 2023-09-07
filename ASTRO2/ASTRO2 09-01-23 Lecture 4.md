@@ -1,6 +1,7 @@
 ## Properties of Light and the Composition of Atmospheres
 
 #### Kirchoff's Laws
+*pronounced kirk-off*
 1. Continuous spectrum (e.g. blackbody)
 2. Emission-line spectrum (e.g. glowing hot gas)
 3. Absorption-line spectrum (e.g. cooler gas absorbing background continuum)
