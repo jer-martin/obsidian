@@ -1,5 +1,7 @@
 {
   "promptDelete": false,
   "spellcheck": false,
-  "useTab": false
+  "useTab": false,
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true
 }

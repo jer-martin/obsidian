@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8228da286da6a063",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ALGO/ALGO 09-07-23 Lecture 5.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2661e78ec9f75e1d",
+  "active": "8228da286da6a063",
   "lastOpenFiles": [
     "ALGO/ALGO 09-05-23 Lecture 4.md",
     "ALGO/ALGO 09-07-23 Lecture 5.md",
+    "ALGO 09-05-23 Lecture 4|Path.md",
+    "ALGO 09-05-23 Lecture 4|Notation.md",
     "ALGO/ALGO 08-26-23 Lecture 2.md",
     "OS/Reptilian Notes/VM Connection.md",
     "OS/Reptilian Notes",
@@ -174,7 +189,6 @@
     "ML/ML 08-31-23 Lecture 2.md",
     "ML/ML 08-24-23 Lecture 1.md",
     "NTWRK/NTWRK 09-05-23 Lecture 3.md",
-    "NTWRK/NTWRK 08-31-23 Lecture 2.md",
     "Pasted image 20230826101137.png",
     "Pasted image 20230826101338.png",
     "Pasted image 20230826103446.png",
