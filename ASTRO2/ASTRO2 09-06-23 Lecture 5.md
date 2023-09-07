@@ -18,6 +18,7 @@
             - $v_{rms}$ is the root mean square of velocity
         - $v_{escape}= \sqrt{\frac{2GM}{r}}$ 
             - $v_{e}$ happens when kinetic energy ($v_{kin}= \frac{1}{2}mv^{2}$) reaches the gravitational potential energy ($\frac{GMm}{r}$) 
+    
     *By comparing the particle velocities to the escape velocity, we can see which particles stay and which escape*
 
 ## Where DId The Solar System Come From?
@@ -26,6 +27,7 @@
     - mostly carbon and silicon grains
         - sometimes with a coating of water ice, ammonia, or methane
     - typically in the order of 500 nm, similar to the wavelength of visible light
+    
     *Dust absorbs light!*
     - bluer light is scattered more often than red
 
