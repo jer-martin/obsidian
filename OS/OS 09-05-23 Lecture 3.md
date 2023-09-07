@@ -19,7 +19,7 @@
 
 # Operating Systems
 
-### [Algorithm](ALGO%2008-24-23%20Lecture%201.md) 
+### [Algorithm](ALGO%2008-24-23%20Lecture%201.md)
 - A set of instructions with finite initial store and state, a starting point, and unimbiguous ordering until the endpoint
 - Flow chart/pseudocode
 ### Program

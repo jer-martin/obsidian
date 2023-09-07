@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md",
+                "file": "OS/OS 09-05-23 Lecture 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md",
+                "file": "OS/OS 09-05-23 Lecture 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md",
+                "file": "OS/OS 09-05-23 Lecture 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ALGO/ALGO 09-07-23 Lecture 5.md"
+                "file": "OS/OS 09-05-23 Lecture 3.md"
               }
             }
           }
@@ -173,6 +173,7 @@
   },
   "active": "3c4e7a725b0ce042",
   "lastOpenFiles": [
+    "ALGO/ALGO 09-07-23 Lecture 5.md",
     "ALGO/ALGO 08-31-23 Lecture 3.md",
     "ALGO/ALGO 08-26-23 Lecture 2.md",
     "ALGO/ALGO 08-24-23 Lecture 1.md",
@@ -196,7 +197,6 @@
     "NTWRK 08-24-23 Lecture .md",
     "NTWRK 08-24-23 Lecture 1|Network edge.md",
     "ALGO/ALGO 09-05-23 Lecture 4.md",
-    "ALGO/ALGO 09-07-23 Lecture 5.md",
     "ALGO 09-05-23 Lecture 4|Path.md",
     "ALGO 09-05-23 Lecture 4|Notation.md",
     "OS/Reptilian Notes",
