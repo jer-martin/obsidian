@@ -40,6 +40,7 @@
 	- Within the solar nebula, 98% of the material is hydrogen and helium gas
 		- These elements *cannot* condense anywhere
 
+
 <table border="1" cellpadding="5" cellspacing="0" style="width: 100%; border-collapse: collapse;">
     <caption>Simplified Chemical Composition of the Sun, Earth, and Jupiter with Condensation Temperatures</caption>
     <thead>
@@ -111,3 +112,56 @@
 	- Originate as far out in the solar system as they can
 	- Transported water to Earth in a process known as *heavy bombardment*
 
+- ### Hierarchical Planet Formation
+	1. Planet seeds form by collisions of microscopic dust (see: rock) and ice particles in the outer parts of the protoplanetary disk
+	2. Colliding particles stick together, making bigger particles. We call these ($\ge$ 1 km) particles *planetesimals*
+	3. Bigger planetesimals sweep up more particles
+	4. Some grow massive enough to attract other particles with gravity
+		- Gravitational focusing → coalesence
+	5. The more particles they attract, the more massive they become, the more they attract
+		- This causes a runaway effect
+
+- ### Inner vs. Outer Planets
+	- *Why are the outer planets more massive?*
+		- They grew faster because they could accumulate not just rock, but also ice particles (and H and He at ~15 $M_{⨁}$)
+
+
+- ### The Formation (and Evolution) of Terrestrial Planet Surfaces
+	- *What are the key processes that affect planets surfaces?*
+		- Cratering
+			- Planetesimal impacts
+		- Erosion
+			- Flowing fluid (water / air)
+		- Volcanism
+			- Lava floodplains
+			- Atmosphere outgassing
+		- Plate tectonics
+			- Faults
+			- Earthquakes
+
+- ### The Floating Plates
+	- The oceans cool and fracture the crust
+
+
+![center](../zassets/Pasted%20image%2020230908122049.png)
+
+<div style="text-align: center; width: 100%;">Map of plates, Discover Magazine</div>
+
+
+- ### Features of tectonics:
+	- Rifts
+	- Faults
+	- Moving hot spots
+
+- ### Long Term Drift
+	- The plates move about a few centimeters a year
+	- *How do we know?*
+
+
+![center](../zassets/Pasted%20image%2020230908122438.png)
+
+<div style="text-align: center; width: 100%;">Map of Continental Drift</div>
+
+- ### Surface Geology
+	- The Earth has very few impact craters
+		- \# craters 
