@@ -164,4 +164,4 @@
 
 - ### Surface Geology
 	- The Earth has very few impact craters
-		- \# craters 
+		- \# craters ∝ age
