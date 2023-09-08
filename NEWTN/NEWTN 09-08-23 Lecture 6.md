@@ -61,6 +61,17 @@
 
 ## Tropical and Sidereal Year
 - *sidereal year*
-	- around celestial sphere with respect to fixed stars (365.2564 days)
+	- around celestial sphere with respect to fixed stars 
+		- 365.2564 days
 - *tropical year*
-	- around celestial sphere with respect to 
+	- around celestial sphere with respect to [vernal equinox](NEWTN%2009-01-23%20Lecture%204.md)
+		- cycle of seasons 
+		- 365.2422 days
+
+- *Precession* causes coordinates to change slowly over time.
+- The next vernal equinox will be in Aquarius.
+- The symbol of the vernal equinox is Aries because that's where it was during Hipparchus' time.
+
+- Why are they different?
+	- Vernal equinox moves *westward* with respect to the stars because of Earth's precession. Sun moves eastwards, so tropical year *slightly* shorter
+

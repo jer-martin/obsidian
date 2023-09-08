@@ -92,7 +92,10 @@ To do List:
     \end{tikzpicture}
 \end{document}
 ```
-                                Blue is Ecliptic, White is Celestial Equator
+
+<div style="text-align: center; width: 100%;">Blue is Ecliptic, White is Celestial Equator</div>
+
+
 ### Equatorial Coordinates
 - ##### Right Ascension
     - Longitude
@@ -139,8 +142,9 @@ To do List:
     \end{tikzpicture}
 \end{document}
 ```
-    
-                                            Red is RA, green is Declination
+
+<div style="text-align: center; width: 100%;">Red is RA, green is Declination</div>
+
 
 - ##### Precession
     - causes changes in coordinates over time
