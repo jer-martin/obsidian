@@ -1,4 +1,3 @@
-Certainly! The statement you've put forth is a result from the classic Gale-Shapley algorithm and its properties. Let's go through the proof.
 
 **Statement**: There exists a unique stable matching of students and hospitals if and only if $M_{h}= M_{s}$
 
@@ -8,24 +7,24 @@ Certainly! The statement you've put forth is a result from the classic Gale-Shap
 
 Assume that there exists a unique stable matching $M$, but $M \ne M_{h}$​, where $M_{h}$​ is the hospital-optimal stable matching. Then there must be some student $s$ and hospital $h$ such that $s$ is matched to $h$ in $M_{h}$​ but not in $M$. Let $h$ be the hospital to which $s$ is matched in $M$.
 
-Because �ℎMh​ is hospital-optimal, �s prefers ℎ′h′ over ℎh (since ℎh would have proposed to all of its higher preferences before �s). But this means �s and ℎ′h′ form a blocking pair to �ℎMh​, which contradicts the assumption that �ℎMh​ is stable. Hence, �=�ℎM=Mh​.
+Because $M_{h}$​ is hospital-optimal, $s$ prefers $h'$ over $s$ (since $h$ would have proposed to all of its higher preferences before $s$). But this means $s$ and $h'$ form a blocking pair to $M_{h}$​, which contradicts the assumption that $M_{h}$​ is stable. Hence, $M=M_{h}$
 
-Similarly, if �≠��M=Ms​, we can derive a contradiction, so �=��M=Ms​.
+Similarly, if $M \ne M_{s}$, we can derive a contradiction, so $M = M_{s}$.
 
-Thus, �ℎ=��Mh​=Ms​.
+Thus, $M = M_{h}= M_{s}$.
 
-**Part 2**: If �ℎ=��Mh​=Ms​, then the stable matching is unique.
+**Part 2**: If $M_{h}= M_{s}$, then the stable matching is unique.
 
-Assume �ℎ=��Mh​=Ms​ but there exists another stable matching �′M′ such that �′≠�ℎM′=Mh​.
+Assume $M_{h}= M_{s}$​ but there exists another stable matching $M'$ such that $M' \ne M_{h}$
 
-For the sake of contradiction, let's consider a student �s and hospitals ℎh and ℎ′h′ such that �s is matched to ℎh in �ℎMh​ and to ℎ′h′ in �′M′.
+For the sake of contradiction, let's consider a student $s$ and hospitals $h$ and $h'$ such that $s$ is matched to $h$ in $M_{h}$ and to $h'$ in $M'$.
 
-Since �ℎMh​ is hospital-optimal, it means �s prefers ℎ′h′ over ℎh (using the same logic as before).
+Since $M_{h}$​ is hospital-optimal, it means $s$ prefers $h'$ over $h$ (using the same logic as before).
 
-However, since ��Ms​ is student-optimal and �ℎ=��Mh​=Ms​, it means that �s prefers ℎh over ℎ′h′. This is a contradiction.
+However, since $M_{s}$ is student-optimal and $M_{h}= M_{s}$​, it means that $s$ prefers $h$ over $h'$. This is a contradiction.
 
-Thus, there can be no such stable matching �′M′ different from �ℎMh​. Hence, the stable matching is unique.
+Thus, there can be no such stable matching $M$ different from $M_{h}$​. Hence, the stable matching is unique.
 
-From Part 1 and Part 2, we can conclude that there exists a unique stable matching of students and hospitals if and only if �ℎ=��Mh​=Ms​.
+From Part 1 and Part 2, we can conclude that there exists a unique stable matching of students and hospitals if and only if $M_{h}=M_{s}$
 
 The beauty of this result is in showing the dual nature of the Gale-Shapley algorithm. When one side (hospitals or students) proposes, they get their optimal match, while the other side gets their pessimal (or worst stable) match. When there's only one stable matching, it's optimal for both.
