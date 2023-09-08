@@ -29,4 +29,3 @@
 ![center](../zassets/Pasted%20image%2020230908110452.png)
 
 <div style="text-align: center; width: 100%;">Scorpio</div>
-
