@@ -28,9 +28,11 @@
 
 <div style="text-align: center; width: 100%;">Orion</div>
 
+
 ![center](../zassets/Pasted%20image%2020230908110452.png)
 
 <div style="text-align: center; width: 100%;">Scorpio</div>
+
 
 - In mythology, Orion was killed by a scorpion, and due to his hubris, Gaia put the scorpion in the sky across from Orion, so that they could always see each other but never fight.
 
@@ -45,6 +47,7 @@
 
 <div style="text-align: center; width: 100%;">The 12 Zodiac Constellations</div>
 
+
 - Sky has changed since Babylonians came up with the signs of the Zodiac (due to the precession of Earth)
 	- Ex: August 4th is not Leo anymore, but Cancer
 - The Sun spends different times in different constellations!
@@ -57,3 +60,7 @@
 
 
 ## Tropical and Sidereal Year
+- *sidereal year*
+	- around celestial sphere with respect to fixed stars (365.2564 days)
+- *tropical year*
+	- around celestial sphere with respect to 
