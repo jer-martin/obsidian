@@ -24,9 +24,9 @@
 
 ![center](../zassets/Pasted%20image%2020230908105804.png)
 
-																Orion
+<div style="text-align: center; width: 100%;">Orion</div>
 
 ![center](../zassets/Pasted%20image%2020230908110452.png)
 
-															Scorpio
+
 
