@@ -1,6 +1,7 @@
 - [[#Process Logging|Process Logging]]
 - [[#Kernel Data Structures|Kernel Data Structures]]
 - [[#Kernel Log Levels and Process Log Levels|Kernel Log Levels and Process Log Levels]]
+- [[#System Call|System Call]]
 
 
 
@@ -44,63 +45,94 @@ The system call that allows a process to "add a process log message at a defined
 <table border="1" style="width: 100%; border-collapse: collapse;">
 <thead>
 <tr>
-<th>Header 1</th>
-<th>Header 2</th>
-<th>Header 3</th>
-<th>Header 4</th>
+<th>Kernel Level Name</th>
+<th>Description</th>
+<th>#</th>
+<th>Process Level Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_EMERG</td>
+<td>Emergency / Crash Imminent (no process logging)</td>
+<td>0</td>
+<td>PROC_OVERRIDE</td>
 </tr>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_ALERT</td>
+<td>Immediate Action Required</td>
+<td>1</td>
+<td>PROC_ALERT</td>
 </tr>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_CRIT</td>
+<td>Critical / Serious Failure Occurred</td>
+<td>2</td>
+<td>PROC_CRITICAL</td>
 </tr>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_ERR</td>
+<td>Error Condition Occurred</td>
+<td>3</td>
+<td>PROC_ERROR</td>
 </tr>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_WARNING</td>
+<td>Warning; recoverable, but may indicate problems</td>
+<td>4</td>
+<td>PROC_WARNING</td>
 </tr>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_NOTICE</td>
+<td>Notable, but not serious (e.g. security events)</td>
+<td>5</td>
+<td>PROC_NOTICE</td>
 </tr>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_INFO</td>
+<td>Informational (e.g. init / shutdown)</td>
+<td>6</td>
+<td>PROC_INFO</td>
 </tr>
 <tr>
-<td>Row1Col1</td>
-<td>Row1Col2</td>
-<td>Row1Col3</td>
-<td>Row1Col4</td>
+<td>KERN_DEBUG</td>
+<td>Debug messages</td>
+<td>7</td>
+<td>PROC_DEBUG</td>
 </tr>
 <!-- Add more rows as needed -->
 </tbody>
 </table>
 </div>
 
+While exact implementation may vary, the lib functions must match the signatures laid out in these notes, and the system calls must apply the security model properly. Logged messages have format
+
+	$log_level_name [\$executable, $pid]: $message"
+
+For example:
+
+	PROC_ERR [bacon_pancakes, 21]: Life is scary & dark. That is why we must find the light.
+
+
+### System Call
+
+The system will have a single, kernel-wide process log level which should initialize on boot in the kernel and must be stored persistently (until shutdown / reboot). The rules for logging are as follows: 
+1) Any process can read (get) the process log level. 
+2) Any process may send a process log to the kernel. 
+3) Only a process running as the superuser may write (set) the process log level. 
+4) If a message’s log level is higher than the process log level, the message is ignored. 
+5) If a message’s log level is lower than or equal to the process log level, the message will be logged. 
+6) The system-wide a process log level should be initialized to zero (0) – i.e., override logging only. 
+7) Log levels can have values between 0-7 (3-bit unsigned integer). Invalid level results in call failure. 
+8) Any successfully logged message should be logged with the corresponding kernel log level. 
+9) Messages will have a maximum length of 128 characters. 
+
+ System calls are called via: 
+
+	 syscall(call_num, param1, param2)
+
+To log a message, the call should be:
+
+	syscall(PROC_LOG_CALL, msg, level)
+
+*Call parameters are limited to no more than two!*

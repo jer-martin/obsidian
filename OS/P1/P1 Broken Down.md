@@ -1,7 +1,6 @@
-
+[P1 Research](P1%20Research.md)
 ### Broken Down Into Smaller Steps:
 ### 1) Create a kernel-wide process log level attribute
-[Step 1 Research](Step%201%20Research.md)
 
 1.1) Research where in the kernel structure a global attribute would best fit.
 
