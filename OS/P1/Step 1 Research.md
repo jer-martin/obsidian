@@ -1,5 +1,7 @@
 - [[#Process Logging|Process Logging]]
 - [[#Kernel Data Structures|Kernel Data Structures]]
+- [[#Kernel Log Levels and Process Log Levels|Kernel Log Levels and Process Log Levels]]
+
 
 
 ### Process Logging
@@ -35,4 +37,70 @@ The system call that allows a process to "add a process log message at a defined
 	- this is where we put it if we want the attribute to be *dynamic*
 		-  dynamic in this context means 'settable at runtime without rebooting'
 	- /sys is preferable, as it is designed to export kernel attributes to user-space
+
+### Kernel Log Levels and Process Log Levels
+
+<div style="overflow-x: auto;">
+<table border="1" style="width: 100%; border-collapse: collapse;">
+<thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+<th>Header 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<tr>
+<td>Row1Col1</td>
+<td>Row1Col2</td>
+<td>Row1Col3</td>
+<td>Row1Col4</td>
+</tr>
+<!-- Add more rows as needed -->
+</tbody>
+</table>
+</div>
 
