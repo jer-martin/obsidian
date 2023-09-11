@@ -1,5 +1,6 @@
-
 - [[#Process Logging|Process Logging]]
+- [[#Kernel Data Structures|Kernel Data Structures]]
+
 
 ### Process Logging
 - Recording / monitoring activities associated with individual processes
@@ -25,3 +26,13 @@ The system call that allows a process to "add a process log message at a defined
 - 'task_struct'
 	- this is the data structure used by Linux to manage processes
 	- each process has an associated task_struct
+	- *if we want to associate the log level with an individual process, this is the place*
+		- however, this is not the place for a kernel-wide attribute
+- Global Kernel Variable
+	- if the log level is truly system-wide, we may want to simply declare it as a global variable within a relevant kernel source file
+		- for example, a logging related file, or one of the main files of the kernel
+- Kernel Configuration *(/proc or /sys filesystems)*
+	- this is where we put it if we want the attribute to be *dynamic*
+		-  dynamic in this context means 'settable at runtime without rebooting'
+	- /sys is preferable, as it is designed to export kernel attributes to user-space
+

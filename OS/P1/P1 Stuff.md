@@ -1,9 +1,9 @@
 
 ### Broken Down Into Smaller Steps:
 ### 1) Create a kernel-wide process log level attribute
+[Step 1 Research](Step%201%20Research.md)
 
 1.1) Research where in the kernel structure a global attribute would best fit.
-[Step 1.1 Research](Step%201.1%20Research.md)
 
 1.2) Define possible values for the log level (e.g., INFO, DEBUG, ERROR, WARN).
 
