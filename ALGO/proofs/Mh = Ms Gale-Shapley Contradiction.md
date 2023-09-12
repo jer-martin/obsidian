@@ -5,7 +5,7 @@
 
 **Part 1**: If there exists a unique stable matching, then $M_{h}= M_{s}$​.
 
-Assume that there exists a unique stable matching $M$, but $M \ne M_{h}$​, where $M_{h}$​ is the hospital-optimal stable matching. Then there must be some student $s$ and hospital $h$ such that $s$ is matched to $h$ in $M_{h}$​ but not in $M$. Let $h$ be the hospital to which $s$ is matched in $M$.
+Assume that there exists a unique stable matching $M$, but $M \ne M_{h}$​, where $M_{h}$​ is the hospital-optimal stable matching. Then there must be some student $s$ and hospital $h$ such that $s$ is matched to $h$ in $M_{h}$​ but not in $M$. Let $h'$ be the hospital to which $s$ is matched in $M$.
 
 Because $M_{h}$​ is hospital-optimal, $s$ prefers $h'$ over $s$ (since $h$ would have proposed to all of its higher preferences before $s$). But this means $s$ and $h'$ form a blocking pair to $M_{h}$​, which contradicts the assumption that $M_{h}$​ is stable. Hence, $M=M_{h}$
 
