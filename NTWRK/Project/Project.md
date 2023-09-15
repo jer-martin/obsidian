@@ -3,7 +3,7 @@
 
 *Java or C/C++*
 
-The protocol consists of a handshake followed by a never ending stream of length-prefixed messages. 
+The protocol consists of a [handshake](Peer%20Behavior.md) followed by a never ending stream of length-prefixed messages. 
 
 The handshake is a message sent between the peers when a connection is established. It consists of three parts:
 - The header
