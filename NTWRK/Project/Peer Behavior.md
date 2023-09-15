@@ -9,5 +9,3 @@
 	- If peer A receives a bitfield message from peer B and it finds out peer B has pieces that it doesn't have, peer A will send 'interested' message to peer B. Otherwise, it sends 'not interested'
 
 
-- ### Choke and Unchoke
-	- 
