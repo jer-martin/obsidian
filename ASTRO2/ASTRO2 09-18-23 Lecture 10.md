@@ -41,4 +41,83 @@
 	2. Radiometric dating
 
 #### Radiometric Dating
-- Measure the amount of an isotope that decays and spontaneously 
+- Measure the amount of an isotope that decays spontaneously and predictably over time
+- Useful for figuring out:
+	- the age of human remains and tools
+	- the age of the dinosaurs and when they went extinct
+	- the age of the solar system
+
+![center](../zassets/Pasted%20image%2020230918120636.png)
+
+- Heavy nuclei are not stable and spontaneously decay at various rates
+	- Example: ${}^{235}_{92}\text{U}$ → ${}^{231}_{90}\text{Th}$ + ${}^{4}_{2}\text{He}$
+
+<div style="overflow-x: auto;">
+    <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Planet/Moon</th>
+                <th>Radius (km)</th>
+                <th>Mass (10^24 kg)</th>
+                <th>Density (kg/m^3)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mercury</td>
+                <td>2,439.7</td>
+                <td>0.330</td>
+                <td>5,427</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>6,051.8</td>
+                <td>4.87</td>
+                <td>5,243</td>
+            </tr>
+            <tr>
+                <td>Earth</td>
+                <td>6,371</td>
+                <td>5.97</td>
+                <td>5,514</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>3,389.5</td>
+                <td>0.642</td>
+                <td>3,933</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>69,911</td>
+                <td>1898</td>
+                <td>1,326</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>58,232</td>
+                <td>568</td>
+                <td>687</td>
+            </tr>
+            <tr>
+                <td>Uranus</td>
+                <td>25,362</td>
+                <td>86.8</td>
+                <td>1,271</td>
+            </tr>
+            <tr>
+                <td>Neptune</td>
+                <td>24,622</td>
+                <td>102</td>
+                <td>1,638</td>
+            </tr>
+            <tr>
+                <td>Earth's Moon</td>
+                <td>1,737.1</td>
+                <td>0.073</td>
+                <td>3,344</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
