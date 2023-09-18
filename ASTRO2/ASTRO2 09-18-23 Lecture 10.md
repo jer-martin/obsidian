@@ -124,6 +124,12 @@
     </table>
 </div>
 
+## Solar System Structure
+- All revolve in the same direction, CCW from North
+- Planets and Sun rotate in same direction, counter-clockwise from North
+	- except Venus and Uranus (collisions)
+
+
 ## The Moon and Mercury
 ### Geology and Size
 - No atmosphere
@@ -134,4 +140,4 @@
 - Heavily cratered, 3-4 billion years old
 
 ### Craters and Scarps
-![](Pasted%20image%2020230918123233.png)
+![center](../zassets/Pasted%20image%2020230918123233.png)
