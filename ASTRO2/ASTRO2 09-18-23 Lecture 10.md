@@ -52,6 +52,9 @@
 - Heavy nuclei are not stable and spontaneously decay at various rates
 	- Example: ${}^{235}_{92}\text{U}$ → ${}^{231}_{90}\text{Th}$ + ${}^{4}_{2}\text{He}$
 
+
+- ### What are the variables that affect the planets the most?
+
 <div style="overflow-x: auto;">
     <table border="1" style="width: 100%; border-collapse: collapse;">
         <thead>
@@ -121,3 +124,14 @@
     </table>
 </div>
 
+## The Moon and Mercury
+### Geology and Size
+- No atmosphere
+- High surface temperature
+	- Low escape velocity
+	- Drastic temperature changes
+- Smallest means interiors cooled fastest
+- Heavily cratered, 3-4 billion years old
+
+### Craters and Scarps
+![](Pasted%20image%2020230918123233.png)
