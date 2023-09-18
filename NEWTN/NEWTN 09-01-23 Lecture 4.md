@@ -94,7 +94,9 @@ To do List:
 ```
 
 <div style="text-align: center; width: 100%;">Blue is Ecliptic, White is Celestial Equator</div>
-
+### Vernal Equinox
+- the moment in time when the Sun crosses the celestial equator moving from the southern to the northern hemisphere
+- also known as the Spring Equinox
 
 ### Equatorial Coordinates
 - ##### Right Ascension
