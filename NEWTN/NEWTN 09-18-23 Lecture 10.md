@@ -37,4 +37,20 @@
 	- Crosses ecliptic plane *only at the two nodes*
 	- Eclipse possible only when full/new occur near nodes
 
-- 
+#### Shadows
+- umbra → total
+- penumbra → partial
+
+### Lunar Eclipse
+- Earth moves between the Sun and the full Moon
+	- Moon moves through the Earth's shadow
+- Earth's shadow reddened; not dark
+	- refraction = bending of light into umbra
+	- reddening = scattering of blue light
+
+### Solar Eclipse
+- A solar eclipse occurs when the Moon moves between the Earth and the Sun
+
+
+![center](../zassets/Pasted%20image%2020230918112202.png)
+
