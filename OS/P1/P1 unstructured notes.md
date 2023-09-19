@@ -1,4 +1,5 @@
 int log_level;
+make && sudo make install && sudo make modules_install
 ## Where to create system call
 	/usr/rep/src/reptilian-kernel/arch/x86/entry/syscalls 
 
