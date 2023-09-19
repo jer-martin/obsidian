@@ -1,3 +1,12 @@
+## Completed:
+process log level attribute
+get and set system calls
+
+## TODO:
+system call for log message at defined log level
+static library functions
+
+
 int log_level;
 make && sudo make install && sudo make modules_install
 ## Where to create system call
