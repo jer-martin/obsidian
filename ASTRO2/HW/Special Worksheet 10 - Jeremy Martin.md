@@ -12,4 +12,4 @@
 
 **2. Read section 10.1.1 in the textbook and visit this website: https://ytliu0.github.io/Mercury-SpinOrbitResonance/mercury.html What weird effect is pointed out about the motion of the Sun as viewed from Mercury and why does this occur?**
 
-- 
+- There is a point in which the Sun (from an observer's perspective on Mercury) would move retrograde across the sky (west to east). This is caused by Mercury's large orbital eccentricity, which causes the sun to move relative to the horizon with an oscillating angular speed. At perihelion, the Sun would move 0.2 degrees per day *retrograde*.
