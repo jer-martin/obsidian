@@ -75,4 +75,28 @@
 	- 0.1 $M_{⨁}$
 	- 223 K surface temp (-58$\textdegree$ F)
 - Ice caps are made of both dry ice and water ice
-- 
+
+#### Extreme Seasonal Changes
+- Tilt: 25.2$\textdegree$, but ranges 0-60$\textdegree$ over millions of years
+	- Jupiter tidal forces
+	- No large, stabilizing moon
+
+*Seasonal Cycle*:
+1. Some $CO_{2}$ at poles melts
+2. Increased atmospheric pressure circulates it toward other pole
+3. Drives planet-wide dust storms
+
+- Eccentricity: 0.093 (Earth: 0.017)
+
+*If all the known water at the poles melted, it would make a ~10 meter deep ocean across the whole planet!*
+
+#### About 20 Successful Missions to Mars
+- Some recent ones:
+	- Sojourner (1997)
+	- Spirit (2004-2010)
+	- Opportunity (2004-2018)
+	- Phoenix (2008)
+	- Mars Reconnaissance Orbiter (2011)
+	- Curiosity
+	- Perseverance
+
