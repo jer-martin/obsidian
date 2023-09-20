@@ -73,4 +73,12 @@
 #### Phase 3
 - Arrival of Sarsen stones
 - Sarsen stones weigh up to 50 tons
-- Stones set up in a la
+- Stones set up in a large outer circle top by lintels
+- Carefully graded
+- Inside circle five trilithons were placed, making a horseshoe
+
+#### Final Phase
+- Bluestones arrive
+- 82 Bluestones, weigh 3-4 tons each
+- Stones set up in the center to form a double circle
+- The inner circle was later opened to form another horseshoe shape
