@@ -14,7 +14,7 @@
 - Showed a drawing with 56 holes, depressions on the earthwork, later excavated and rediscovered in the 1920s and named after Aubrey
 - Proposed that Stonehenge was a temple built by the Druids, priests of pagan Celts
 
-![center](Pasted%20image%2020230920110554.png)
+![center](../zassets/Pasted%20image%2020230920110554.png)
 
 #### William Stukeley
 - "Stonehenge, a temple restor'd to the British Druids" - 1740
@@ -55,6 +55,7 @@
 <div style="text-align: center; width: 100%;">Map denoting structure, with Aubrey Holes highlighted</div>
 
 ### Building Stonehenge
+#### Phase 1
 - Neolithic (agriculture, but before the Bronze Age)
 - Livestock, crops + gathering wild plants and hunting
 - Flint tools
@@ -64,5 +65,8 @@
 
 ![center](../zassets/Pasted%20image%2020230920112358.png)
 <div style="text-align: center; width: 100%;">Neolithic houses recreated at the Stonehenge site</div>
-
+#### Phase 2
+- Aubrey holes partially filled
+- Human remains
+- Timber settings in the center of the monuments (post holes found)
 
