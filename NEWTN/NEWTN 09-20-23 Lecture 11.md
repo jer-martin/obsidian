@@ -70,3 +70,7 @@
 - Human remains
 - Timber settings in the center of the monuments (post holes found)
 
+#### Phase 3
+- Arrival of Sarsen stones
+- Sarsen stones weigh up to 50 tons
+- Stones set up in a la
