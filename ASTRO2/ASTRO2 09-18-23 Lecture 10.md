@@ -50,7 +50,7 @@
 ![center](../zassets/Pasted%20image%2020230918120636.png)
 
 - Heavy nuclei are not stable and spontaneously decay at various rates
-	- Example: ${}^{235}_{92}\text{U}$ → ${}^{231}_{90}\text{Th}$ + ${}^{4}_{2}\text{He}$
+	- Example: ${}^{235}_{92} \text{U}$ → ${}^{231}_{90} \text{Th}$ + ${}^{4}_{2}\text{He}$
 
 
 - ### What are the variables that affect the planets the most?
