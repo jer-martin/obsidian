@@ -25,7 +25,7 @@
 - Also attributed Stonehenge to the Druids
 - Realized the Sun's alignment with Stonehenge
 
-![center](Pasted%20image%2020230920110613.png)
+![center](../zassets/Pasted%20image%2020230920110613.png)
 #### Gerald Hawkins
 - Professor and chair of the astronomy department at Boston University
 - First astronomer to use a digital computer to analyze Stonehenge
@@ -37,20 +37,20 @@
 - Praised by some, attacked by others
 - Hugely arrogant and extremely biased
 
-![center](Pasted%20image%2020230920110932.png)
+![center](../zassets/Pasted%20image%2020230920110932.png)
 
 ### With all that, what do we really know about Stonehenge?
 
-![center](Pasted%20image%2020230920111025.png)
+![center](../zassets/Pasted%20image%2020230920111025.png)
 <div style="text-align: center; width: 100%;">From the interior, it is clear that there are two separated structures.</div>
 
-![center](Pasted%20image%2020230920111109.png)
+![center](../zassets/Pasted%20image%2020230920111109.png)
 <div style="text-align: center; width: 100%;">This is also clear from above.</div>
 
-![center](Pasted%20image%2020230920111225.png)
+![center](../zassets/Pasted%20image%2020230920111225.png)
 <div style="text-align: center; width: 100%;">Map of the Stonehenge Avenue, the community of astronomical monoliths</div>
 
-![center](Pasted%20image%2020230920111355.png)
+![center](../zassets/Pasted%20image%2020230920111355.png)
 
 <div style="text-align: center; width: 100%;">Map denoting structure, with Aubrey Holes highlighted</div>
 
@@ -62,7 +62,7 @@
 - Transition from regionalism to integration
 - Stone age people here isolated from the rest of Europe
 
-![center](Pasted%20image%2020230920112358.png)
+![center](../zassets/Pasted%20image%2020230920112358.png)
 <div style="text-align: center; width: 100%;">Neolithic houses recreated at the Stonehenge site</div>
 
 
