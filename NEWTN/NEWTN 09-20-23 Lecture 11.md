@@ -47,3 +47,22 @@
 ![center](Pasted%20image%2020230920111109.png)
 <div style="text-align: center; width: 100%;">This is also clear from above.</div>
 
+![center](Pasted%20image%2020230920111225.png)
+<div style="text-align: center; width: 100%;">Map of the Stonehenge Avenue, the community of astronomical monoliths</div>
+
+![center](Pasted%20image%2020230920111355.png)
+
+<div style="text-align: center; width: 100%;">Map denoting structure, with Aubrey Holes highlighted</div>
+
+### Building Stonehenge
+- Neolithic (agriculture, but before the Bronze Age)
+- Livestock, crops + gathering wild plants and hunting
+- Flint tools
+- Flint mines
+- Transition from regionalism to integration
+- Stone age people here isolated from the rest of Europe
+
+![center](Pasted%20image%2020230920112358.png)
+<div style="text-align: center; width: 100%;">Neolithic houses recreated at the Stonehenge site</div>
+
+
