@@ -1,12 +1,10 @@
 ## Completed:
 process log level attribute
-
 get and set system calls
-
-## TODO:
 system call for log message at defined log level
-
 static library functions
+## TODO:
+harness functions
 
 
 
