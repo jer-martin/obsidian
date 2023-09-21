@@ -5,6 +5,7 @@ system call for log message at defined log level
 static library functions
 ## TODO:
 harness functions
+check for superuser in set_level
 
 
 
