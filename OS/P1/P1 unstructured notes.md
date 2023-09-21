@@ -40,3 +40,8 @@ This goes on the next clean line (example text):
 	sudo make -j8 && sudo make install && sudo make modules_install
 
 restart reptilian, ssh back in, then system calls are installed
+
+**MAKE SURE TO CHECK DMESG FOR PRINTK OUTPUTS**
+
+
+
