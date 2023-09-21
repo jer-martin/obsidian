@@ -27,4 +27,6 @@
 
 #### F-Score
 - There is a trade off between optimizing precision and optimizing recall
-- 
+- $F1 = \frac{\text{precision}*\text{recall}}{\text{precision}+\text{recall}}$ 
+
+
