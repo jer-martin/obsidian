@@ -44,7 +44,20 @@ restart reptilian, ssh back in, then system calls are installed
 **MAKE SURE TO CHECK DMESG FOR PRINTK OUTPUTS**
 
 # Library stuff
-seems to me like you can make your library anywhere, so i made a p1 folder in /home and began writing the lib in source.c
+make a p1 folder in home if you havent already and unzip the tar given with the assignment
 
-you also need to make a header file with function defintions, i did this under source.h in the same folder
+	mkdir process_log
+
+write the library in process_log.c and the definitions in process_log.h. compile the library with these commands
+
+	gcc -c process_log.c -o process_log.o
+	ar rcs libprocess_log.a process_log.o
+	
+do *NOT* use coderunner's implementation of 'run code', as you need to follow this compilation
+
+	gcc getlevel.c -L/home/reptilian/p1/process_log -lprocess_log -o getlevel
+
+(this is an example for the getlevel test file)
+
+
 
