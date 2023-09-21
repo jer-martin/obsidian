@@ -43,5 +43,8 @@ restart reptilian, ssh back in, then system calls are installed
 
 **MAKE SURE TO CHECK DMESG FOR PRINTK OUTPUTS**
 
+# Library stuff
+seems to me like you can make your library anywhere, so i made a p1 folder in /home and began writing the lib in source.c
 
+you also need to make a header file with function defintions, i did this under source.h in the same folder
 
