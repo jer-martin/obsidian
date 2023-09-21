@@ -29,4 +29,6 @@
 - There is a trade off between optimizing precision and optimizing recall
 - $F1 = \frac{\text{precision}*\text{recall}}{\text{precision}+\text{recall}}$ 
 
-
+## Support Vector Machines: The Idea
+- Let's construct a hyperplane that can separate two classes
+- 
