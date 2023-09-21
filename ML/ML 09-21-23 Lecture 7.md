@@ -31,4 +31,11 @@
 
 ## Support Vector Machines: The Idea
 - Let's construct a hyperplane that can separate two classes
-- 
+- If a dataset is linearly separable, you can find an infinite number of separating hyperplanes.
+	- What is the optimal plane?
+		- The optimal hyperplane is the one that maximizes "margin" between support vectors
+
+#### How does SVM maximize the margin?
+- Select two parallel planes which separate the data with no points between them
+- Maximize their difference
+- The average line will be the decision boundary
