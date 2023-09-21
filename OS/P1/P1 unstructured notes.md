@@ -36,6 +36,7 @@ This goes on the next clean line (example text):
 	    return sample_param + 1; // Adds 1 to the parameter and returns it
 	}
 
+the 1 denotes that theres 1 parameter for the function (i.e. for set log msg you want there to be 2 - log level and message)
 ### Init system call
 	sudo make -j8 && sudo make install && sudo make modules_install
 
