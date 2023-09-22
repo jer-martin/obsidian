@@ -38,4 +38,42 @@
 
 ![center](../zassets/Pasted%20image%2020230922115403.png)
 
-<div style="text-align: center; width: 100%;">Drying riverbed on Ea</div>
+<div style="text-align: center; width: 100%;">Drying riverbed on Earth - note the similarity</div>
+
+
+- Today, water would freeze and evaporate quickly due to low air temperature and pressure
+	- Mars is a bit too small
+
+![center](../zassets/Pasted%20image%2020230922115515.png)
+
+<div style="text-align: center; width: 100%;">Endurance Crater photo</div>
+
+
+![center](../zassets/Pasted%20image%2020230922115606.png)
+
+<div style="text-align: center; width: 100%;">SW Utah photo</div>
+
+## Size Matters!
+
+*Mars probably did have an ocean billions of years ago, but what happened?*
+
+If the interior is too cool:
+1. No outgassing to replenish atmosphere
+2. No magnetic field to protect atmosphere from solar wind
+
+### The Alan Hills Meteorite
+- 1984: meteorite found in Alan Hills, Antarctica
+- Abundance of various materials and isotopes are clearly only from Mars
+- Claim of ancient life in the rock!
+
+![center](../zassets/Pasted%20image%2020230922120602.png)
+
+![center](../zassets/Pasted%20image%2020230922120618.png)
+
+<div style="text-align: center; width: 100%;">Are these features biological?</div>
+
+
+### No.
+- Extraordinary claims, extraordinary evidence → not convincing
+
+
