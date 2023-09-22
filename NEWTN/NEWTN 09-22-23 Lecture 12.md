@@ -53,4 +53,27 @@
 	- Metonic cycle (19 years) is much more useful
 
 ### Criticism of Hawkins
-- Every age has the Ston
+- Every age has the Stonehenge it deserves - or desires (tendency to imbue it with out own ideas and purposes)
+	- modern "Druids" and New Age
+	- Inigo Jones's reconstruction of Stonehenge that looked like a Roman temple
+- Archaeological assessment of Bronze Age people doesn't indicate knowledge of the Moon cycle at this level
+- *Alignments found not necessarily intentional*
+	- However, the probability of standstill alignments of sun and moon by chance is very small (1 in 2 million)
+- Using the Sun as a calendar and the Moon's phases to keep track of tides is *very different* than predicting astrological events
+
+**Stonehenge is not an isolated monument**
+- A complex of hundreds of structures cover about 4.5 miles with Stonehenge near center
+
+
+### Rare Flint Rock
+- Flint on the nearby river turns pink when dry due to an algae
+
+![center](../zassets/Pasted%20image%2020230922112647.png)
+
+<div style="text-align: center; width: 100%;">Photo of the flint when dry</div>
+
+## Probable Astronomical Alignments
+- Rising and setting standstills of the Moon and Sun (calendar)
+- Moon used to track tides
+
+
