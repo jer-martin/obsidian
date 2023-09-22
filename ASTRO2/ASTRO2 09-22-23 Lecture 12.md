@@ -49,9 +49,11 @@
 <div style="text-align: center; width: 100%;">Endurance Crater photo</div>
 
 
+
 ![center](../zassets/Pasted%20image%2020230922115606.png)
 
 <div style="text-align: center; width: 100%;">SW Utah photo</div>
+
 
 ## Size Matters!
 
@@ -77,3 +79,7 @@ If the interior is too cool:
 - Extraordinary claims, extraordinary evidence → not convincing
 
 
+## Jupiter
+
+### The Temperature of Jupiter's Clouds
+- The temperature of Jupiter from the su
