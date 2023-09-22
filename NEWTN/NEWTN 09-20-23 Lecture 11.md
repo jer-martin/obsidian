@@ -31,7 +31,7 @@
 - First astronomer to use a digital computer to analyze Stonehenge
 	- Calculated azimuths of lines through each pair of stones
 	- Compared those with azimuths of Sun, Moon, planets, and stars looking for matches
-		- Comparison allowed small tolerqances
+		- Comparison allowed small tolerances
 		- All principle alignments seem to point towards the extreme positions on the horizon of the rising and setting of either the Sun or the full Moon
 - Hugely popular *and controversial*
 - Praised by some, attacked by others
