@@ -82,4 +82,13 @@ If the interior is too cool:
 ## Jupiter
 
 ### The Temperature of Jupiter's Clouds
-- The temperature of Jupiter from the su
+- The temperature of Jupiter from the Sun (A=0.51, r=5.2 AU)
+	- $T_{p}\approx \text{279 K} (1 - A)^{\frac{1}{4}}(\frac{r}{1AU})^{\frac{-1}{2}} = \text{102 K} = 1.0 * 10^{2} \text{K}$ 
+- How does energy flux depend on temperature?
+	- S-B Law
+	- $F ∝ T^{4} ∝ (\frac{T_{obs}}{T_{p}})^{4}$ 
+
+#### Gravitational Binding Energy
+$U = -3G(\frac{4\pi\rho}{3})^{2} → \frac{3GM^{2}}{5R^{2}}$ 
+
+
