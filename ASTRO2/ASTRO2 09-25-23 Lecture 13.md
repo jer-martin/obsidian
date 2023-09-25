@@ -1,3 +1,13 @@
+- [[#The (Jovian) Gas Giants|The (Jovian) Gas Giants]]
+	- [[#The (Jovian) Gas Giants#Jovian Weather|Jovian Weather]]
+		- [[#Jovian Weather#Great Red Spot|Great Red Spot]]
+	- [[#The (Jovian) Gas Giants#Clouds of Uranus and Neptune|Clouds of Uranus and Neptune]]
+	- [[#The (Jovian) Gas Giants#The Internal Structures of the Gas Giants|The Internal Structures of the Gas Giants]]
+	- [[#The (Jovian) Gas Giants#Magnetic Fields|Magnetic Fields]]
+	- [[#The (Jovian) Gas Giants#Moons|Moons]]
+	- [[#The (Jovian) Gas Giants#The Outer Planets - Mini Solar Systems|The Outer Planets - Mini Solar Systems]]
+
+
 
 ## The (Jovian) Gas Giants
 - Fast rotators! Periods less than 18 hrs.
@@ -50,3 +60,31 @@
 
 
 ### Moons
+- Jupiter and Saturn > 60 each, many recently discovered
+- The moons (larger than any dwarf planet) that we need to know:
+	- Four Galilean Moons (Named after Jupiter's lovers):
+		- Io
+		- Europa
+		- Ganymede
+		- Callisto
+	- Titan (Saturn, of the Titans)
+	- Triton (Neptune)
+
+![center](../zassets/Pasted%20image%2020230925121646.png)
+
+<div style="text-align: center; width: 100%;">Scaled moons of the Solar System</div>
+
+
+### The Outer Planets - Mini Solar Systems
+
+*How can Jupiter have such large moons?*
+- More things can condense farther out
+- This leads to runaway growth - extra condensable materials made the planets big enough to accrete hydrogen and helium
+- Most moons formed in accretion disks (only some were captured)
+	- Revolve in the same direction as the planet's rotation
+	- Smallest probably captured debris
+
+*How do the innermost moons rotate/revolve?*
+- Synchronously like our Moon
+
+### Io (Jupiter)

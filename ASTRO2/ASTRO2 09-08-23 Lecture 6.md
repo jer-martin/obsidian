@@ -1,7 +1,8 @@
+
 ## The Formation of the Solar System and Planetary Surfaces
 
-- ### Where do stars come from?
-	- Stellar nurseries, such as the "pillars of creation"
+### Where do stars come from?
+-  Stellar nurseries, such as the "pillars of creation"
 
 ![center](../zassets/Pasted%20image%2020230908115227.png)
 
