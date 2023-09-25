@@ -38,5 +38,11 @@ Also known as the spiral of life, it became an important symbol during the Celti
 
 ## Pre-Columbian America
 
+### The Incan Empire
+- "Land of Four Regions"
+- Rapid expansion
+- Highly organized society
+- Leader Pachacuti Inca Yupanaqui won most of the land
+- Ended with Spanish conquest
 
 
