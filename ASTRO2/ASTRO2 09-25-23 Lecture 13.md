@@ -87,4 +87,34 @@
 *How do the innermost moons rotate/revolve?*
 - Synchronously like our Moon
 
-### Io (Jupiter)
+#### Io (Jupiter)
+##### The Most Volcanically Active Object in the Solar System
+- No craters (very young surface)
+- Io should have cooled by now ($R_{IO} \approx R_{moon}$)
+	*Why is Io so volcanically active?*
+	- Tidal forces from Jupiter
+
+![center](../zassets/Pasted%20image%2020230925122424.png)
+<div style="text-align: center; width: 100%;">Jupiter's Moons orbital resonance</div>
+
+
+#### Europa
+- Surface temp: -150$\textdegree$C
+- Tidal force melts ice easier than rock
+- Fractured, floating ice sheets
+- Jupiter drives current in salty ocean, which drives Europa's magnetic field.
+
+#### Ganymede
+- Largest moon in the Solar System
+- Has a measurable magnetic field; salty ocean?
+- Heat?
+	- Radioactive decay + tidal heating
+	- Are they enough?
+
+#### Callisto
+- A heavily cratered ice-ball
+- Never melted and differentiated
+- Not a strong enough heat source
+
+*There are 30 moons that orbit retrograde around Jupiter!*
+
