@@ -1,3 +1,4 @@
+
 ## The (Jovian) Gas Giants
 - Fast rotators! Periods less than 18 hrs.
 	*Why is this important?*
@@ -36,4 +37,16 @@
 	- $\frac{dP}{dr}= \frac{-GM_{\rho}}{r^{2}}$ → $P_{c}= \frac{2\pi}{3}\rho^{2}GR^{2}$
 - Jupiter has excess heat due to contraction.
 - Saturn has excess heat from contraction *and* a possible He rainout.
-- 
+
+### Magnetic Fields
+- Magnetic field of Jupiter is largest and strongest
+	- 20,000x stronger than Earth's
+	*Why? What does magnetic field size and strength depend on?*
+	- Amount of planet's metallic substances
+		- Metallic hydrogen (Jupiter and Saturn only)
+		- Core metals
+		- Liquid water for Uranus and Neptune
+	- Rotation rate
+
+
+### Moons
