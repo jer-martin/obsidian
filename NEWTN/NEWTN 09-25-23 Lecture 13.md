@@ -31,3 +31,8 @@ Also known as the spiral of life, it became an important symbol during the Celti
 
 ![center](../zassets/Pasted%20image%2020230925105741.png)
 
+### Burial Site
+- Small chambers to the side of the main chamber contain human bones (some are burnt)
+- No smoke on ceiling → burning took place elsewhere, bones brought to chamber
+
+
