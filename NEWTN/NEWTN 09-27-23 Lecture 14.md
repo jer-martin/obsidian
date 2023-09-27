@@ -66,3 +66,12 @@
 - Planets rise in the east and set in the west (5 easily visible)
 - *Planet* means *wanderer*
 
+- Apparent motion relative to the stars
+
+![center](../zassets/Pasted%20image%2020230927112712.png)
+
+<div style="text-align: center; width: 100%;">Many photos stitched together showing retrograde motion</div>
+
+
+- This confused people for *centuries*, led to people believing that planets were caused by higher powers
+- 
