@@ -53,3 +53,16 @@
 - Each huaca corresponds to one day; 328 days in a year
 - 37 uncounted days are in the period of the invisibility of the Pleiades (near Sun) → 365 total
 
+![center](../zassets/Pasted%20image%2020230927112039.png)
+
+<div style="text-align: center; width: 100%;">Machu Picchu Sun Temple</div>
+
+- The Sun Temple has "weak" astronomical alignments with the June Solstice
+
+
+## Planetary Motion
+- Some planets are the *brightest* objects in the night sky (with the exception of the Moon)
+- They don't move with the stars, they are outliers
+- Planets rise in the east and set in the west (5 easily visible)
+- *Planet* means *wanderer*
+
