@@ -1,3 +1,16 @@
+
+- [[#Moons!|Moons!]]
+	- [[#Moons!#Titan (Saturn)|Titan (Saturn)]]
+	- [[#Moons!#Triton (Neptune)|Triton (Neptune)]]
+		- [[#Triton (Neptune)#How could a moon be shredded?|How could a moon be shredded?]]
+- [[#The Rings of the Outer Planets|The Rings of the Outer Planets]]
+	- [[#The Rings of the Outer Planets#Rings of Tiny Rock and Ice Chunks|Rings of Tiny Rock and Ice Chunks]]
+	- [[#The Rings of the Outer Planets#Where did the rings come from?|Where did the rings come from?]]
+	- [[#The Rings of the Outer Planets#Condition for Sphericity|Condition for Sphericity]]
+	- [[#The Rings of the Outer Planets#Asteroid Groups by Orbital Characteristics|Asteroid Groups by Orbital Characteristics]]
+	- [[#The Rings of the Outer Planets#Lagrangian Points of the Jupiter/Sun system|Lagrangian Points of the Jupiter/Sun system]]
+	- [[#The Rings of the Outer Planets#Trans-Neptunian Objects Lie in the *Kuiper Belt*|Trans-Neptunian Objects Lie in the *Kuiper Belt*]]
+
 ## Moons! 
 [Continued from last lecture...](ASTRO2%2009-25-23%20Lecture%2013.md)
 
@@ -18,7 +31,7 @@
 	- If the one object gets too close to another, the *differential* gravitational force can overcome the force holding the object together
 - The limit at which this happens is called the *Roche Limit*
 
-### The Rings of the Outer Planets
+## The Rings of the Outer Planets
 *What do we observe?*
 - Made of small particles of rock and ice
 
@@ -71,4 +84,25 @@
 <div style="text-align: center; width: 100%;">Denotations of asteroids</div>
 
 
+### Lagrangian Points of the Jupiter/Sun system
+*The gravitational potential*
+
+![center](../zassets/Pasted%20image%2020230927121913.png)
+
+<div style="text-align: center; width: 100%;">Shows how the Lagrange points are distributed around the system</div>
+
+## Trans-Neptunian Objects Lie in the *Kuiper Belt*
+- Centaurs
+	- Between Jupiter and Neptune
+- Plutinos (3:1) and Twotinos (2:1)
+	- Orbital resonances of Neptune
+
+![](Pasted%20image%2020230927122359.png)
+
+<div style="text-align: center; width: 100%;">Eccentricity vs Semi-major axis of Kuiper Belt bodies</div>
+
+*Why are there no objects with a large radius and low eccentricity?*
+	→ Likely a selection effect: easier to see when closer to the Sun
+
+*THE LINES DENOTE DETECTION LIMITS*
 
