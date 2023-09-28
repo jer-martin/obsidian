@@ -18,3 +18,27 @@ Maximizing the margin depends only on the dot product of pairs of support vector
 - Case 3: If two features are similar and predict different classes, they increase L.
 
 ## Kernel Trick
+- The kernel defines inner products in the transformed space
+- In other words, the kernel defines similarity between datapoints in the transformed space
+- The "trick" is that we work in the lower dimensional space, instead of explicitly applying the transformations to the higher-dimensional space
+- Most commonly used kernels
+	- linear: $K(x_{i},x_{j})=x_{i}\cdot x_{j}$
+		→ linear SVM
+	- polynomial: $K(x_{i},x_{j})=(\gamma x_{i}, x_{j}+r)^{d}$
+	- gaussian radial basis function (RBF): $K(x_{i}, x_{j})=\text{exp} (-\gamma |x_{i}-x_{j}|^{2})$
+		→ default in sklearn
+
+# SVM Summary
+- Idea
+	- Construct a hyperplane that can separate two classes
+	- The optimal hyperplane is the one that maximizes the margin between support vectors
+- Strengths
+	- Works the best with clear separation
+	- Effective with nonlinear, high-dimensional data
+	- Tends to avoid overfit
+	- No need to store training dataset after model is built
+- Weaknesses
+	- Slow for larger dataset (training time ∝ $n^{2}$)
+	- SMV does not directly provide probability estimates
+
+
