@@ -70,4 +70,21 @@ The Spanish destroyed all of the Mayan writings, believing them to be the work o
 - Deforestation (agriculture and fuel for fires to cook plaster)
 - Computer model showed that a cleared landscape reduced absorption of solar radiation → less water → less crops → less food
 
-## Mayan Archaelogical Sites
+## Mayan Archaeological Sites
+- Majority of the important sites are within the Lowlands
+- Tikal was the most important of the classical period
+	- Taken by the Snake Kings in the 600s
+- We will cover the cities of Uaxactun, Uxmal, and Chichen Itza
+
+## Alignments
+- Uaxactun (Eight Stones)
+	- In Guatemala
+	- 500-900 AD
+![center](../zassets/Pasted%20image%2020230929112329.png)
+
+<div style="text-align: center; width: 100%;">Modern Photo of Uaxactun</div>
+
+![center](../zassets/Pasted%20image%2020230929112423.png)
+
+<div style="text-align: center; width: 100%;">3D model of what the city may have looked like</div>
+
