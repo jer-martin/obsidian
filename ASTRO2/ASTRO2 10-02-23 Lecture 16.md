@@ -42,4 +42,17 @@
 
 *How do we observe exoplanets?*
 	→ Coronagraph
+	*Just a mask...*
 
+![center](../zassets/Pasted%20image%2020231002121444.png)
+
+- In the easiest case, could an observer resolve Jupiter from Proxima / Alpha Centauri?
+	- Diffraction limit - limit of telescopes outside the atmosphere
+	- $\theta = 1.22 \frac{\lambda}{D}$
+		*This is a fundamental limitation - you cannot get around it*
+
+- Limit of telescopes from the ground (atmospheric turbulence)
+	- $\theta$ ~ $0.5$''
+
+
+ 
