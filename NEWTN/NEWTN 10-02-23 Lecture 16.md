@@ -67,4 +67,18 @@
 
 - 52 year calendar round
 	- Both 365 and 260 calendars run simultaneously
-	- Every day has a *haab* and *tzolk*
+	- Every day has a *haab* and *tzolk'in* symbol
+	- The recurrence of the same *haab* and *tzolk'in* dates occur every 52 years (calendar round)
+
+## Long Count
+
+- Mayan long count starting date is 0.0.0.0.0 (most recent creation period)
+	- 1 day = 1 kin
+	- 1 uinal = 20 kins
+	- 1 tun = 18 uinals = 360 kins → + 5 uayeb → 365 haab
+	- 1 katun = 20 tuns = 7200 kins
+	- 1 baktun = 20 katuns = 144,000 kins
+	- 13 baktun completes one creation epoch = 1,872,000 kins
+- Ends on 13.0.0.0.0 (about 5000 years)
+
+
