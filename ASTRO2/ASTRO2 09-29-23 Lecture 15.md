@@ -43,3 +43,4 @@ The massive event that killed the dinosaurs.
 
 *Small mammals survived!*
 
+![center](../zassets/Pasted%20image%2020231002115134.png)
