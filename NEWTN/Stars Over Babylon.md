@@ -3,18 +3,18 @@
 ### Geography and Context
 
 1. **Where was Babylon?**
-    
+    Mesopotamia
 2. **What are the Enuma Anu Enlil?**
-    
+    a set of tablets dealing with Babylonian astronomy
 3. **What was the main purpose of the Scribes of Enuma Anu Enlil?**
-    
+    The offered council on affairs of the state
 
 ### Influence on Greek Astronomy
 
 4. **Why was the knowledge of these scribes essential to the development of Greek astronomy?**
     
 5. **Who was Kidenas?**
-    
+    leader of astronomers in babylo
 
 ### Writing Systems
 
