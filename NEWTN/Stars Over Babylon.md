@@ -19,24 +19,24 @@
 ### Writing Systems
 
 6. **What is a pictogram?**
-    
+    a way to communicate with pictures (street sign)
 7. **What is a syllabary?**
-    
-8. **Where did the scribes write their knowledge?**
-    
+    collection of about 300 symbols, where each symbol represents one syllable
+1. **Where did the scribes write their knowledge?**
+    cuneiform tablets
 9. **What does cuneiform mean?**
-    
+    latin for "wedge like"
 
 ### Astronomical Observations
 
 10. **For how long did scribes in ancient Babylon observe the sky?**
-    
+    20 centuries
 11. **Name some of the constellations that have Sumerian origin?**
-    
+    Leo, Virgo, Libra
 12. **What is the ecliptic as described in the video?**
-    
+    the annual path of the sun around the sky
 13. **What is the zodiac?**
-    
+    the constellations that the ecliptic goes through
 14. **When is Venus the evening star?**
     
 15. **When is Venus the morning star?**
