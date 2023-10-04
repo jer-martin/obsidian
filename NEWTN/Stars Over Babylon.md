@@ -12,9 +12,9 @@
 ### Influence on Greek Astronomy
 
 4. **Why was the knowledge of these scribes essential to the development of Greek astronomy?**
-    
+    the Babylonian astronomy influenced Greek astronomy greatly
 5. **Who was Kidenas?**
-    leader of astronomers in babylo
+    leader of astronomers in Babylon
 
 ### Writing Systems
 
