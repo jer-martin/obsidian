@@ -37,7 +37,7 @@ Extra randomness
 Idea:
 - Sequentially improve a poor estimator to make a more powerful estimator by correcting errors
 
-### AdaBoost
+### AdaBoost (Adaptive Boost)
 - Pay more attention to underfitted training data points by adjusting "weights"
 - Can optimize learning rate, varies how quickly your decision boundary evolves
 
