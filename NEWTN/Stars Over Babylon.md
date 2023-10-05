@@ -1,4 +1,6 @@
-## Stars Over Ancient Babylon Lecture Notes
+## Stars Over Ancient Babylon Lecture Notes 
+
+Jeremy Martin
 
 ### Geography and Context
 
@@ -85,25 +87,33 @@
 ### Tablets and Records
 
 30. **What is the content of the Gold Year tablet?**
-    records of motio
+    records of motions of planets in the past
 31. **What does it mean that the goal year of Jupiter is 71 and that of Venus 8?**
-    
+    to predict how jupiter will move this year, we need to see how it moved 71 years ago
 
 ### Predictions and Ephemerides
 
 32. **What are ephemerides?**
-    
+    calculated tablets that contain the location of planets during significant planetary events
 33. **What planetary ephemerides were accurately predicted by the scribes?**
-    
+    mars and jupiter
 34. **What is the zig-zag function and what was its use?**
-    
+    they changed the speed of items by a regular amount so that it may average out. this helped them predict movements
 
 ### Overall Understanding
 
 35. **Were Babylonian scribes concerned with geometry or modeling the universe?**
-    
+    not particularly
 36. **List the astronomical accomplishments of the scribes of Enuma Anu Enlil**
-    
+    they created the tradition of mathematical astronomy
+    - zodiac
+    - calendar
+    - planetary periods
+    - eclipses
+    - planetary cycles
+	    - retrograde motion
+	    - stationary points
 37. **Where is the sexagesimal system still used today?**
-    
+    timekeeping! (minutes, seconds)
 38. **Why was Babylonian mathematical astronomy the origin of the study of exact sciences?**
+	their work provided the foundation for the scientific method
