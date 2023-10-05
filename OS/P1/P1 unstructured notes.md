@@ -61,3 +61,6 @@ do *NOT* use coderunner's implementation of 'run code', as you need to follow th
 
 
 
+diff -u original/arch/x86/entry/syscalls/syscall_64.tbl modified/arch/x86/entry/syscalls/syscall_64.tbl >> p1.diff
+diff -u original/include/linux/syscalls.h modified/include/linux/syscalls.h >> p1.diff
+diff -u original/kernel/sys.c modified/kernel/sys.c >> p1.diff

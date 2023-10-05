@@ -3,11 +3,11 @@
 ### Testing Harness
 
 - [x]  Implement `#define PROC_LOG_CALL <number>` in header.
-- [ ]  Implement `int* retrieve_set_level_params(int new_level)`.
-- [ ]  Implement `int* retrieve_get_level_params()`.
-- [ ]  Implement `int interpret_set_level_result(int ret_value)`.
-- [ ]  Implement `int interpret_get_level_result(int ret_value)`.
-- [ ]  Implement `int interpret_log_message_result(int ret_value)`.
+- [x]  Implement `int* retrieve_set_level_params(int new_level)`.
+- [x]  Implement `int* retrieve_get_level_params()`.
+- [x]  Implement `int interpret_set_level_result(int ret_value)`.
+- [x]  Implement `int interpret_get_level_result(int ret_value)`.
+- [x]  Implement `int interpret_log_message_result(int ret_value)`.
 
 ### Report (p1.txt)
 
