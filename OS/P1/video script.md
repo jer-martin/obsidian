@@ -9,10 +9,13 @@ After the switch statement, we can see the implementation for the message set. S
 
 Lets see these calls in action. 
 First, I will run setlevel and getlevel to make sure they work.
+sudo ./setlevel 4
+sudo ./getlevel
 
-Next, I am going to set a log message.
+Here is the library and harness implementations,
+the functions that actually perform the syscalls are obviously simple, and then we have the retrieve parameters functions which just take in the parameters passed in to be used by the harness. I also have interpret functions, which simply return the return value, as the value was already interpreted in sys.c.
 
-I am going to run the harness_test testing suite provided by Professor Gomes.
+Next, I am going to run the harness_test testing suite provided by Professor Gomes.
 
 Finally, we will run the library test.
 
