@@ -35,3 +35,10 @@
 - Calendar cycles
 - Zodiac
 
+### Dresden Codex
+- Oldest Mayan manuscript
+- Written and painted on amatl paper, around 1200 or 1250 in Yucatan
+- It depicts calendars of Venus, almanacs, predictions, divination, and astronomy
+- Bought in Viena in the XVIII century and taken to Dresden
+- Suffered significant damage in the WW2 bombing at Dresden
+
