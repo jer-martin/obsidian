@@ -30,4 +30,4 @@
 - Using a string, draw a circle that puts the arc of shadows in two places
 - A line through those two points mark E-W and the meridian is perpendicular to this line and passes by the middle of it
 
-
+*Remember! Precession causes the North Star to change over time*
