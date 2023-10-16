@@ -71,4 +71,38 @@
 #### About Earth
 - Reputation of having predicted solar eclipse 585 BC
 - Eclipse did occur, but it was impossible to predict solar eclipses given the observations they had
-- Many other ideas attributed to h
+#### Scientific Accomplishments
+- Many other ideas attributed to him, the exact time of solstices, the seasons, the diameters of the Sun and the Moon
+- Also five mathematical theorems, including diameter of a circle, relation of sides and angles in triangles
+
+### Pythagoras (580-520 BC)
+- Universe designed according to mathematics and geometry, with special numbers
+- Principle of everything is the Monad, or Unit. Arising from the Monad is the undefined Dyad, or two. 
+- *Numbers arise from the Monad and Dyad*- from numbers come points, then lines, planes, solids, and then sensible bodies and the elements: fire, water, earth, air
+- Seasons follow the elements (Spring is moist, Summer hot, Autumn dry, Winter cold)
+#### About Earth
+- Heavenly bodies are spherical, including Earth - most compact shape for given volume
+- First to call the heavens "Universe" - Cosmos/Kosmos : an ordered system
+- Dualities of the cosmos (up/down, hot/cold, light/dark, dry/moist)
+- Soul divided into passion, reason, and intelligence
+- Everything constructed with symmetry, beauty and harmony
+#### Scientific Accomplishments
+- Described the basis of all musical scales, and showed that the notes are not random and follow mathematics
+- He didnt use frequencies, but lengths of string on a Lyre (these are correlated)
+
+### Anaxagoras (499-428 BC)
+- Presocratic natural philospher
+- A portion of everything in everything
+- Things are infinitely divisible
+- "Mind" is the life force that causes motion in the universe, arranges the universe into order
+- Individual mind comes from the universal mind
+- Sun is a fiery rock
+- Sentenced to death in Athens
+#### About Earth
+- First to state clearly that Moon reflects Sunlight
+- First to explain eclipses in terms of shadows of Earth and Moon
+- Reputation of having predicted fall of large meteorite in 467 BC - daytime → from Sun, assumed Sun was mass of molten metal
+
+## Atomists
+- Democritus, Epicurus, Leucippus, Lucretius
+- 
