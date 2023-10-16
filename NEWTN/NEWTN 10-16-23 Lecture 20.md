@@ -22,7 +22,7 @@
 - Not all nights had the same number of Decans - about 12 per night
 - Applied to daytime by analogy → 24 hours of day, still used today
 
-### 24 Hour Day
+#### 24 Hour Day
 - Upper half southern sky
 - Narrow columns are the decans, named after each star or group
 - Also gods and planets
@@ -41,6 +41,34 @@
 
 <div style="text-align: center; width: 100%;">Zodiac at Dendera</div>
 
-## Egyptian Zodiac
+### Egyptian Zodiac
 - Divided ecliptic into 12 parts
-- *Not* ev
+- *Not* evenly divided
+- Dates differ from usual zodiac
+	- 25-29 instead of 21 → different zero points
+- Cancer → scarab (Ra)
+- Gemini → Horus (god of the Sky, son of Osiris)
+- Leo → Sphynx
+- Orion → Osirus
+
+## Egyptian Theoretical Astronomy
+- Clear skies much of the time - similar to Babylon
+- Great technological ability (ex. Pyramids)
+**Never developed theoretical astronomy.**
+*Why?*
+- Cumbersome math:
+	- No place values
+	- Fractions can only have 1 in numerator (1/2, 1/4, etc)
+
+## Astronomy In Antiquity Greece
+### Thales of Miletus (625 - 547 BC)
+- Founded Milesian school of natural philosophy
+- Developed the scientific method
+- First known to consider cosmos as understandable through reason, free from divine intervention (first natural philosopher)
+- Believed universe ultimately consists of one element - water
+- Original thinker the idea of water similar to Greek mythological gods
+- Water can spontaneously change → life
+#### About Earth
+- Reputation of having predicted solar eclipse 585 BC
+- Eclipse did occur, but it was impossible to predict solar eclipses given the observations they had
+- Many other ideas attributed to h
