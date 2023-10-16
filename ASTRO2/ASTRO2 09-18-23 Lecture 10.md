@@ -13,19 +13,7 @@
 
 ### Properties of the Moon and Earth's Atmosphere
 
-#### The Coriolis Effect
-- Rotation causes objects to appear to divert paths depending on your relative motion
-##### Not Important For *(Local Forces Win)*:
-- Toilets / Drains
-- Tornadoes / Dust devils
-##### Important For:
-- Large pressure systems (hurricanes)
-- Firing a missle
 
-#### Large-Scale Weather Patterns
-- The Coriolis effect makes moving air deviate to its right in the Northern hemisphere
-	- Opposite in Southern
-- Coriolis effect denotes *Hadley cells*, which are "storm containers"
 
 ![center](../zassets/Pasted%20image%2020230918115258.png)
 
