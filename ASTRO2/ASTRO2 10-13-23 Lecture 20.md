@@ -1,4 +1,4 @@
-# Special Relativity
+## Special Relativity
 ### The Nature of Sound
 - Sound waves are particle group compressions
 - No particles in space, no medium to propagate through
