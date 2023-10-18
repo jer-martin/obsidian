@@ -27,5 +27,20 @@
 
 - This can sometimes lead to a linearly separable dataset
 #### Kernel Trick
+- The kernel trick takes a certain number of parameters and uses a Gaussian mapping to raise the degree of the dataset
 
+$$\phi(x)=\phi\left( \begin{array}{c} x_1 \\ x_2 \end{array} \right) = \left( \begin{array}{c} x_{1}^{2} \\ \sqrt{2}x_{1}x_{2} \\ x_{2}^{2}\end{array} \right)$$
 
+- Notice how now that mapping $\phi$ is applied, the parameters are in 3 dimensions
+
+![](Pasted%20image%2020231018172858.png)
+
+- In machine learning, a *kernel* is a function capable of producing the dot product $\phi(a)^{T} \phi(b)$ based only on the original vectors $a$ and $b$
+	- It shouldn't have to compute (or even know about) transformation $\phi$
+
+- Here are some common kernels:
+	- Linear: $K(a,b) = a^{T}b$
+	- Polynomial: $K(a,b) = (\gamma a^{T}b+r)^{d}$
+	- Gaussian RBF: $K(a,b)=\exp(-\gamma||a-b||^{2})$
+	- Sigmoid: $K(a,b)=\tanh(\gamma a^{T}b+r)$
+	
