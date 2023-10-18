@@ -61,3 +61,23 @@ $$\phi(x)=\phi\left( \begin{array}{c} x_1 \\ x_2 \end{array} \right) = \left( \b
 	- The downside is that a training set with $m$ instances and $n$ features gets transformed into a training set with $m$ instances and $m$ features → large training set = large feature set
 
 #### Gaussian RBF Kernel
+![](Pasted%20image%2020231018174912.png)
+- The plots show models trained with different values of hyperparameters gamma ($\gamma$) and C
+- Increasing $\gamma$ makes the bell shaped curve narrower
+	- As a result, each instance's range of influence is smaller
+	- Decision boundary is more irregular
+- Decreasing $\gamma$ makes the bell curve wider
+	- Instances have a larger range of influence
+	- Decision boundary is smoother
+- Therefore, $\gamma$ is a regulation parameter
+	- If model is overfitting, reduce. If underfitting, increase
+		- Similar to the C hyperparameter
+
+![](Pasted%20image%2020231018175133.png)
+
+### SVM Regression
+- As mentioned earlier, the SVM algorithm is versatile: not only does it support linear and nonlinear classification, but it also supports linear and nonlinear regression
+- This is the exact opposite of classification
+	- The XVM tries to fit as many instances as possible *on the street* while limiting margin violations (*off the street*)
+- To do this, use SVR instead of SVC
+
