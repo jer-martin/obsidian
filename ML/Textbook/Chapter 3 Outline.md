@@ -22,5 +22,8 @@
 - Batch is more regular
 	- Sits on the minima
 ![center](../../zassets/Pasted%20image%2020231018170241.png)
+
 - Stochastic jumps around, can go positive again, but on average moves down the gradient
+	- Doesn't settle on the minima
 ![center](Pasted%20image%2020231018170351.png)
+
