@@ -17,7 +17,10 @@
 - left academy after he was passed on as a successor to Plato
 - Lesbos - wrote History of Animals becoming the first biologist
 
-#### Sublunary region:
+#### Sublunary region (terrestrial):
 - everything consisting of varying portions of four elements - earth, water (heavy) and fire, air (light)
 - mutability (change) is endemic
-- 
+
+#### Superlunary region (celestial):
+- Unchanging
+- Perfect
