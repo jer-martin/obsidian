@@ -43,4 +43,21 @@ $$\phi(x)=\phi\left( \begin{array}{c} x_1 \\ x_2 \end{array} \right) = \left( \b
 	- Polynomial: $K(a,b) = (\gamma a^{T}b+r)^{d}$
 	- Gaussian RBF: $K(a,b)=\exp(-\gamma||a-b||^{2})$
 	- Sigmoid: $K(a,b)=\tanh(\gamma a^{T}b+r)$
-	
+
+#### Polynomial Kernel
+- At a low polynomial degree, this kernel can't deal with complex datasets
+- At high degree, there is a huge number of features → becomes slow
+	- This is why we use the kernel trick
+
+- If your model is overfitting, reduce degree
+	- Underfitting, increase
+
+#### Similarity Features
+- Another technique is to add a feature computed using a *similarity function*
+	- *Similarity functions* measure how much each instance resembles a particular *landmark*
+*How to select landmarks?*
+- Simplest approach is to create a landmark at each instance in the dataset
+	- This creates many dimensions, increasing chances that the new set will be linearly separable
+	- The downside is that a training set with $m$ instances and $n$ features gets transformed into a training set with $m$ instances and $m$ features → large training set = large feature set
+
+#### Gaussian RBF Kernel
