@@ -21,3 +21,5 @@
 - The larger the baseline of the moving object, the larger the parallax observed
 	→ parallax from stars are not observable, they're too far away
 
+**ARISTOTLES IDEAS WERE CONSIDERED AUTHORITATIVE UNTIL THE 17th CENTURY**
+
