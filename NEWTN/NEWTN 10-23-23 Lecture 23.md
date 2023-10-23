@@ -27,4 +27,16 @@
 - Positions in equatorial coordinates, given as celestial latitude and longitude, not RA and declination
 - Comparison of his positions with those of Timocharis and Aristllos from a century earlier led to discovery of procession of equinoxes
 - Vernal equinox defines the celestial frame of reference
-- Apparent brightness assigned to cat
+- Apparent brightness assigned to categories called *magnitudes*, became basis of magnitude system used today
+
+##### Magnitude System
+- Hipparchus placed the brightest stars in the first magnitude and the faintest in the sixth
+- Scale is logarithmic or geometric, like Richter scale
+	- A change of 5 in magnitude is a change of 100 in brightness
+
+### Ptolemy → Claudius Ptolemaeus
+- Resided in Alexandria as Roman citizen, but Greek origin
+- Was also an astrologer - hence his interest in the motions of the planets
+- Greatest work was *Matematike syntaxis (Mathematical Compilation)* in 13 volumes
+	- Also known as the Megiste (greatest) syntaxis, al-Majisti, Almagestum, Almagest
+- 
