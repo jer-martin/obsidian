@@ -7,7 +7,7 @@
     - [x]  Implement getMemoryStart `void getMemoryStart()`
   
 2. **Memory Allocation Algorithms**:
-    - [ ]  Implement best fit `int bestFit(int sizeInWords, void *list)`
+    - [x]  Implement best fit `int bestFit(int sizeInWords, void *list)`
     - [ ]  Implement worst fit `int worstFit(int sizeInWords, void *list)`
 
 3. **Core Memory Operations**:
