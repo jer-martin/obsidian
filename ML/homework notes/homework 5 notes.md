@@ -28,5 +28,9 @@ print(f'Average 5-Fold RMSE Score: {np.mean(rmse_scores)}')
 
 - out of bag score
 ```
+rf.fit(X_train, y_train)
 
+oob_score = rf.oob_score_
 ```
+
+- 
