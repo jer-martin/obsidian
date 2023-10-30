@@ -33,4 +33,22 @@ rf.fit(X_train, y_train)
 oob_score = rf.oob_score_
 ```
 
-- 
+- how to optimize hyperparams
+	- make a param grid
+```
+param_grid = { 'max_features': [None, 'sqrt', 2], 'n_estimators': [50, 100, 150] }
+```
+- use gridsearch
+```
+# Create the GridSearchCV object 
+grid_search = GridSearchCV(RandomForestRegressor(random_state=42, oob_score=True), param_grid, cv=5) 
+# Fit to the training data 
+grid_search.fit(X_train, y_train) 
+# Get the best parameters and best score 
+best_params = grid_search.best_params_ 
+best_score = grid_search.best_score_ 
+print(f"Best Parameters: {best_params}") 
+print(f"Best Score: {best_score}") 
+# Create and fit the best model 
+best_rf = RandomForestRegressor(max_features=best_params['max_features'], n_estimators=best_params['n_estimators'], random_state=42, oob_score=True)
+```
