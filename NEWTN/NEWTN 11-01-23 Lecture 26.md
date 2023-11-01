@@ -30,3 +30,12 @@ latitude independent or *universal* astrolabe)
 
 #### Alphonsine Tables
 - Sponsored by King Alfonso X ("Wise") of Leon and Castile to correct anomalies in Toledo Tables
+
+
+## Observatories
+- Few major observatories, some small ones (e.g. Baghdad)
+- Only three major observatories lasted a couple of decades:
+	- isfahan (virtually unknown)
+	- Maragha (most famous)
+	- Samarkand (second most famous)
+- 
