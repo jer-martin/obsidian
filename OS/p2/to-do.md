@@ -11,7 +11,7 @@
     - [x]  Implement worst fit `int worstFit(int sizeInWords, void *list)`
 
 3. **Core Memory Operations**:
-    - [ ]  Implement allocation `void *allocate(size_t sizeInBytes)`
+    - [x]  Implement allocation `void *allocate(size_t sizeInBytes)`
     - [ ]  Implement freeing `void free(void *address)`
 
 4. **Setting Allocation Strategy**:
@@ -19,7 +19,7 @@
 
 5. **Memory Reporting and Diagnostics**:
     - [ ]  Implement getList (ensure to return in decimal) `void *getList()`
-    - [ ]  Implement getBitmap `void *getBitmap()`
+    - [x]  Implement getBitmap `void *getBitmap()`
     - [ ]  Implement dumpMemoryMap `int dumpMemoryMap(char * filename)`
 
 6. **Memory Information Retrieval**:
