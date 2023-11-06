@@ -14,16 +14,15 @@
 
 # Chapter 4: Copernican Revolution
 
-## Intellectual Climate: Fall of Constantinople
+### Intellectual Climate 
+**Fall of Constantinople**
 - Largest, most powerful city for over 1000 years
 - Major center of trade
 - Fell to Ottoman Turks
-
-## Intellectual Climate: Renaissance
+**Renaissance**
 - Rebirth of cultural activity in Europe
 - Revival of Greek culture
-
-## Intellectual Climate: Reformation
+**Reformation**
 - Martin Luther (1483-1546) - Germany
 	- Salvation as a gift of God's grace, possible through faith
 	- Church is corrupt
@@ -58,3 +57,59 @@
 - Poland vs the Teutonic Knights
 - Copernicus involved in organizing and coordinating the defense of the town (Olsztyn)
 
+### New Theories
+- 1530 first handwritten draft of De Revolutionibus
+- Pope Clement VII requested to be briefed on new Copernican theory in 1533
+- 1539 visit by Rheticus, professor of astronomy and mathematics at Wittenberg University
+
+### De Revolutionibus (1543)
+- Six books
+- Heliocentric model
+- Dedicated to Pope Paul III
+- Printed in Nuremberg (Rheticus first, then Andreas Osiander)
+- Osiander made two unauthorized changes, probably with the best of intentions
+	- Title changed to On the Revolutions of the Heavenly Spheres, Six Books
+		→ suggesting Earth excluded
+	- Preface added without Osiander's name attached
+		→ preface contradicts heliocentricity!
+		- Introduced without consultation from Copernicus or Rheticus
+		- Admitted contents controversial
+		- Denied models were real
+
+*Why did he make these changes?*
+→ He was afraid of the Protestants!
+*He was right too...*
+→ Martin Luther called Copernicus "that fool who would overturn all of astronomy"
+
+*Why were the Protestants opposed?*
+- They believed that each man could and should interpret the Bible for himself
+- There are passages that show the sun moving, opposing Copernicism
+
+*Why was the Roman Catholic Church not opposed?*
+- the bishops and cardinals thought Copernicus' work was interesting
+- Church officials saw no threat to Church doctrine; interpretation of the Bible was in the hands of Church theologians
+- Copernicus was one of their own!
+
+1. Outline of Copernican system and arguments for it, plus two chapters on planes and spherical triangles
+2. Spherical astronomy
+3. Earth's motions
+4. Moon's motions
+5. Planetary motions in (celestial) longitude
+6. Planetary motions in (celestial) latitude
+
+### Arguments for Copernican System
+1. Citations from ancients - Philolaus, Heraclides, and others, but *not* Aristarchus; also, idea of Sun as "hearth of the Universe"
+2. Criticisms of Ptolemy - equant, celestial sphere rotating more rapidly than Earth; also Sun's role
+
+## Book 1
+- Sun-centered
+- Earth is a planet (3rd from the Sun)
+- Earth motions:
+	- Daily rotation
+	- Annual revolution around the Sun
+- Daily rotation of celestial sphere due to Earth rotation
+- Yearly motion of the Sun along the ecliptic due to Earth orbit
+
+*Parallax still a problem!*
+
+## Bo
