@@ -8,14 +8,14 @@
   
 2. **Memory Allocation Algorithms**:
     - [x]  Implement best fit `int bestFit(int sizeInWords, void *list)`
-    - [ ]  Implement worst fit `int worstFit(int sizeInWords, void *list)`
+    - [x]  Implement worst fit `int worstFit(int sizeInWords, void *list)`
 
 3. **Core Memory Operations**:
     - [ ]  Implement allocation `void *allocate(size_t sizeInBytes)`
     - [ ]  Implement freeing `void free(void *address)`
 
 4. **Setting Allocation Strategy**:
-    - [ ]  Implement setAllocator `void setAllocator(std::function<int(int, void *)> allocator`
+    - [x]  Implement setAllocator `void setAllocator(std::function<int(int, void *)> allocator`
 
 5. **Memory Reporting and Diagnostics**:
     - [ ]  Implement getList (ensure to return in decimal) `void *getList()`
@@ -23,4 +23,4 @@
     - [ ]  Implement dumpMemoryMap `int dumpMemoryMap(char * filename)`
 
 6. **Memory Information Retrieval**:
-    - [ ]  Implement getMemoryLimit `unsigned getMemoryLimit()`
+    - [x]  Implement getMemoryLimit `unsigned getMemoryLimit()`
