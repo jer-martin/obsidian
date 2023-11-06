@@ -112,4 +112,10 @@
 
 *Parallax still a problem!*
 
-## Bo
+- Orbital distances given roughly
+- Orbital distances calculated from separate formulae for inferior, superior planets
+
+
+
+## Book 2
+- 
