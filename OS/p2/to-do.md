@@ -1,3 +1,7 @@
+### motd
+next up is to fix the hardcoded offset in the allocator and actually use the allocation algorithms i wrote
+do i use the second person to write in notes?
+
 1. **Basic Setup**:
     - [x]  Implement verbose constructor `MemoryManager(unsigned wordSize, std::function allocator)`
     - [x]  Implement destructor `~MemoryManager()`
@@ -12,15 +16,15 @@
 
 3. **Core Memory Operations**:
     - [x]  Implement allocation `void *allocate(size_t sizeInBytes)`
-    - [ ]  Implement freeing `void free(void *address)`
+    - [x]  Implement freeing `void free(void *address)`
 
 4. **Setting Allocation Strategy**:
     - [x]  Implement setAllocator `void setAllocator(std::function<int(int, void *)> allocator`
 
 5. **Memory Reporting and Diagnostics**:
     - [ ]  Implement getList (ensure to return in decimal) `void *getList()`
-    - [x]  Implement getBitmap `void *getBitmap()`
-    - [ ]  Implement dumpMemoryMap `int dumpMemoryMap(char * filename)`
+    - [ ]  Implement getBitmap `void *getBitmap()`
+    - [x]  Implement dumpMemoryMap `int dumpMemoryMap(char * filename)`
 
 6. **Memory Information Retrieval**:
     - [x]  Implement getMemoryLimit `unsigned getMemoryLimit()`
