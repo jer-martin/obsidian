@@ -1,5 +1,5 @@
 ### motd
-nothing as of yet
+13/38! good job. todays work: go over the set of tests to try to figure out which methods are failing out. also, figure out why the 'repeated shutdown' test case infinitely hangs
 
 1. **Basic Setup**:
     - [x]  Implement verbose constructor `MemoryManager(unsigned wordSize, std::function allocator)`
