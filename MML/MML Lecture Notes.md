@@ -12,7 +12,7 @@
 *The process of using data to learn $f$ is called <font color="HotPink" style="font-style: italic;">learning</font> or <font color="HotPink" style="font-style: italic;">training</font>
 - <font color="HotPink" style="font-style: italic;">machine learning</font> if the process is automated by computer programs
 
-*The learned relationship $y \approx f(x)$ is **inductive, not deductive***
+*The learned relationship* $y \approx f(x)$ is ***inductive, not deductive***
 - data-driven
 - not based on physics or any other type of science
 
