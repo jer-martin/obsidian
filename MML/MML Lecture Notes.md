@@ -46,9 +46,9 @@ $$\text{minimize}_{f}\text{ }E[l(y,f(x))]$$
 	- Probabilistic PCA
 
 #### Empirical Risk Minimization
-*Replace expectation $E[.]$ with sample average*
+*Replace expectation* $E[.]$ *with sample average*
 $$\text{minimize}_{f} \text{} \frac{1}{n}\sum\limits^{n}_{i=1}l(y_{i},f(x_{i}))$$
-*with no limit to choose $f$, can pick the following **bad** function*
+*with no limit to choose* $f$, *can pick the following **bad** function*
 $$f(x)=
 
     \alpha(x)=\left\{
@@ -59,7 +59,7 @@ $$f(x)=
               \right.
   
 $$
-*need to restrict the set of candidate functions $f$ to a family $F$*
+*need to restrict the set of candidate functions* $f$ *to a family* $F$
 #### Common Function Families $F$
 - Linear models $$f(x)=w^{\top}x+v=w_{1}x_{1}+...+w_{d}x_{d}+v$$
 - Generalized linear models $$f(x)=\theta_{1}\psi_{1}(x)+...+\theta_{m}\psi_{m}(x)=\theta^{\perp}\Phi$$
