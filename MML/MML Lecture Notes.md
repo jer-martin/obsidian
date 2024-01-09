@@ -30,12 +30,12 @@
 - Recommendation systems (clustering numbers and/or products)
 
 ### Supervised Learning
-*Criterion to find $f(*)$:
+*Criterion to find $f(.)$:
 $$\text{minimize}_{f}\text{ }E[l(y,f(x))]$$
 - Among all possible $(x,y)$ pairs, treat as random variables
-- $l(*,*)$ is some loss/risk function to measure error
+- $l(.,.)$ is some loss/risk function to measure error
 - Pretend we know the distributions of $(x,y)$ generative models
-- or, replace expectation $E[*]$ with sample average
+- or, replace expectation $E[.]$ with sample average
 
 *Generative models*:
 - regression: Wiener filter
@@ -46,7 +46,7 @@ $$\text{minimize}_{f}\text{ }E[l(y,f(x))]$$
 	- Probabilistic PCA
 
 #### Empirical Risk Minimization
-*Replace expectation $E[*]$ with sample average*
+*Replace expectation $E[.]$ with sample average*
 $$\text{minimize}_{f} \text{} \frac{1}{n}\sum\limits^{n}_{i=1}l(y_{i},f(x_{i}))$$
 *with no limit to choose $f$, can pick the following **bad** function*
 $$f(x)=
