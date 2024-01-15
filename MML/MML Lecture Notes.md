@@ -67,7 +67,8 @@ $$
 - Kernel methods
 	- Least squares, logistic regression, support vector machines (SVM)
 
-### Vectors
+## Vectors
+### Overview
 - A <font color="HotPink" style="font-style: italic;">vector</font> is an ordered list of numbers
 - Written as $$\left[\
                 \begin{array}
@@ -207,6 +208,165 @@ $$a=\left[\
 - vector elements can represent very different quantities, in different units
 - can contain categorical features (e.g. 1/0 for house/condo)
 - ordering has no particular meaning
+
+### Vector Operations
+#### Vector Addition
+- $m$-vectors $a$ and $b$ can be added, with sum denoted $a + b$
+- to get sum, add corresponding entries $$\left[\ 
+                \begin{array} 
+                  - 
+                  0\\ 
+                  7\\ 
+                  3 
+                \end{array} 
+              \right] + \left[\ 
+                \begin{array} 
+                  - 
+                  1\\ 
+                  2\\ 
+                  0 
+                \end{array} 
+              \right] = \left[\ 
+                \begin{array} 
+                  - 
+                  1\\ 
+                  9\\ 
+                  3 
+                \end{array} 
+              \right]$$
+- subtraction works in the same way
+##### Properties of Vector addition
+- commutative: $a + b = b + a$
+- associative: $(a + b) + c = a + (b + c), \; a + b + c$
+- $a + 0 = 0 + a = a$
+- $a - a = 0$
+##### Adding Displacement
+- if $2$-vectors $a$ and $b$ are displacements, $a + b$ is the sum displacement
+![center](../zassets/Pasted%20image%2020240115140400.png)
+- displacement from point $q$ to point $p$ is $p - q$
+![center](../zassets/Pasted%20image%2020240115140431.png)
+
+#### Scalar-Vector multiplication
+- scalar $\beta$ and $d$-vector $a$ can be multiplied $$\beta a = (\beta a_{1},...,\beta a_{d})$$
+- also denoted as $a\beta$ $$(-2)\left[\ 
+                \begin{array} 
+                  0 
+                  1\\ 
+                  9\\ 
+                  6 
+                \end{array} 
+              \right]=\left[\ 
+                \begin{array} 
+                  0 
+                  -2\\ 
+                  -18\\ 
+                  -12 
+                \end{array} 
+              \right]$$
+##### Properties of Scalar-Vector multiplication
+- associative: $(\beta\gamma)a = \beta(\gamma a)$
+- left distributive: $(\beta + \gamma)a = \beta a + \gamma a$
+- right distributive: $\beta(a + b) = \beta a + \beta b$
+
+#### Linear combinations
+- for vectors $a_{1},...,a_{n}$ and scalars $\beta_{1},...,\beta_{n}$, $$\beta_{1}a_{1},...,\beta_{n}a_{n}$$
+	is a <font color="HotPink" style="font-style: italic;">linear combination</font> of the vectors
+- $\beta_{1},...,\beta_{n}$ are the <font color="HotPink" style="font-style: italic;">coefficients</font>
+- a simple identity: for any $m$-vector $b$ $$b = b_{1}e_{1}+...+b_{m}e_{m}$$
+- two vectors $a_{1}$ and $a_{2}$ and linear combination $b = 0.75 a_{1}+ 1.5 a_{2}$
+![center](../zassets/Pasted%20image%2020240115141229.png)
+
+#### Inner Product
+- <font color="HotPink" style="font-style: italic;">inner product</font> (or <font color="HotPink" style="font-style: italic;">dot product</font>) of $m$-vectors $a$ and $b$ is $$a^{\top}b= a_{1}b_{1}+...+a_{m}b_{m}$$
+- other notations used: $$<a,b>\;\;<a|b>\;\;(a,b)\;\;\;\;a \cdot b$$
+$$\left[\ 
+                \begin{array} 
+                  - 
+                  -1\\ 
+                  2\\ 
+                  2 
+                \end{array} 
+              \right]^{\top}\left[\ 
+                \begin{array} 
+                  - 
+                  1\\ 
+                  0\\ 
+                  -3 
+                \end{array} 
+              \right] = (-1)(1)+(2)(0)+(2)(-3)=-7$$
+##### Properties of Inner Product
+- commutative: $a^\top b = b^\top a$
+- associative with scalar multiplication: $(\gamma a)^{\top}b = \gamma (a^{\top}b)$
+- distributive with vector addition: $(a+b)^{\top}c=a^{\top}c + b^{\top}c$ 
+- block vectors
+$$\left[\ 
+                \begin{array} 
+                  - 
+                  a_{1}\\ 
+                  ...\\ 
+                  a_{k} 
+                \end{array} 
+              \right]^{\top}\left[\ 
+                \begin{array} 
+                  - 
+                  b_{1}\\ 
+                  ...\\ 
+                  b_{k} 
+                \end{array} 
+              \right] = a_{1}^{\top}b_{1} +...+a_{k}^{\top}b_{k}$$
+    if the partitions make sense
+#### Examples
+- $e_{i}^{\top}a = a_{i}$ (picks out $i$th entry)
+- $1^{\top}a=a_{1}+...+a_{m}$ (sum of entries)
+- $a^{\top}a = a^{2}_{i}+...+a_{m}^{2}$ (sum of squares of entries)
+- $w$ is weight vector, $f$ is feature vector; $w^{\top}f$ is score
+- $p$ is price vector, $q$ is quantities; $p^{\top}q$ is total cost
+
+### Complexity
+##### Flop Count:
+- total number of floating point operations in an algorithm
+- in linear algebra, typically a polynomial of the dimensions in the problem
+- a crude predictor of runtime: $$\text{runtime}=\frac{\text{\# of operations (flops)}}{\text{computer speed (flops / sec)}}$$
+- dominant term: the highest order term in the flop count $$\frac{1}{3}m^{3} + 100m^{2}+ 10m + 5 \approx \frac{1}{3}m^{3}$$
+- order: the power in the dominant term (big $\mathcal{O}$ notation) $$\frac{1}{3}m^{3}+100m^{2}+10n+5=\mathcal{O}(m^{3}) $$
+##### Complexity of Vector Addition, Inner Product
+- $x + y$ needs $m$ additions, so $m$ flops
+- $\gamma x$ needs $m$ multiplications, so $m$ flops
+- $x^{\top}y$ needs $m$ multiplications and $m-1$ additions, so $2m-1 \approx 2m$ flops
+- all $\mathcal{O}(m)$ operations
+- much less when $x$ or $y$ is sparse: $\mathcal{O}(\text{nnz})$
+
+### Norm
+- a function used to measure the size of a vector $a$, denoted $||a||$
+- properties: for any $m$-vectors $a$ and $b$ and any scalar $\gamma$
+	- non-negativity: $||a|| \ge 0$
+	- definiteness: $||a|| = 0$ only if $a=0$
+	- homogeneity: $||\gamma a||=|\gamma|\;||a||$
+	- triangle inequality: $||a+b||\le ||a|| +||b||$
+- the <font color="HotPink" style="font-style: italic;">Euclidean Norm</font> (or just <font color="HotPink" style="font-style: italic;">norm</font>) of an $m$-vector $a$ is $$||a||=\sqrt{a_{1}^{2}+...+a_{m}^{2}}=\sqrt{a\top a}$$
+- reduced to absolute value for $m = 1$
+- more generally: vector $\mathscr{l}_p$ norms $$||a||_{p}=(|a_{1}|^{p}+...+|a_{m}|^{p})^\frac{1}{p}$$
+##### Special Cases
+- $p =2$: Euclidian norm or $\mathscr{l}_{2}$ norm
+- $p =1$: $\mathscr{l}_{1}$ norm, $||a||_{1} = |a_{1}|+...+|a_{m}|$
+- $p = \infty$: $\mathscr{l}_{\infty}$ norm, $||a||_{\infty} = \text{max}(|a_{1}|,...,|a_{m}|)$
+
+#### Euclidean Norm
+- useful equality $$||a+b||^{2}=||a||^{2}+2a^{\top}b +||b||^{2}$$
+- similarly, $$||a-b||^{2}=||a||^{2}-2a^{\top}b+||b||^{2}$$
+#### Cauchy-Schwarz Inequality
+- for two $m$-vectors $a$ and $b$, $|a^{\top}b\le||a||\;||b||$
+- assume $\alpha = ||a||$ and $\beta = b$ $$2||a||^{2}||b||^{2}\pm2\;||a||\;||b||\;a^{\top}b$$
+- equality if $a$ or $b$ is 0
+- otherwise, divide by $2||a||\;||b||$ to get $$\pm a^{\top}b\le||a||\;||b||$$ $$|a^{\top}b|=||a||\;||b|| \text{ if } a=\gamma b \text{ for some scalar } \gamma$$
+#### Triangle Inequality for Euclidean Norm
+$$||a+b||\le||a||+||b||$$
+### Distance
+- (Euclidean) distance between $m$-vectors $a$ and $b$ is $||a-b||$
+- agrees with ordinary distance for $m = 1,2,3$ ![center](../zassets/Pasted%20image%2020240115151219.png)
+- triangle inequality $$||a-c||=||(a-b) + (b-c)||\le||a-b||+||b-c||$$![center](../zassets/Pasted%20image%2020240115151312.png)
+
+
 
 
  
