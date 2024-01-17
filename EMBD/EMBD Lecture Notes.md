@@ -82,6 +82,79 @@ $$E = \int P\;dt$$
 	- A task is given with workload W and deadline D. Assume that idle energy is negligible.
 ![center](../zassets/Pasted%20image%2020240109155254.png)
 
+## Design Complexity
+- <font color="HotPink" style="font-style: italic;">Moore's Law</font> - exponential growth; transistors double every couple of years
+### Technology and Demand
+![center](../zassets/Pasted%20image%2020240116150649.png)
 
+#### Who wants to be a millionaire?
+- Starting investment is <font style="color:red">one cent</font>.
+- Double it every day
+	- 20 days - 1 million cents
+	- 27 days - millionaire
+	- 37 days - billionaire
+- Doubling transistors every 18 months becomes hard to imagine
+- Believe it or not, each of us has more than a million ancestors in the last 20 generations
 
+## Verification Complexity
+- ASIC/SOC <font color="HotPink" style="font-style: italic;">respin</font> is when there is a problem with a chip and the chip needs to be rebuilt
+- The success rate for new silicon is dropping - 48% 1st silicon success in 1999, versus 39% in 2004
+- 71% of SOC re-spins are due to logic bugs
+![center](../zassets/Pasted%20image%2020240116151152.png)
+
+## Time-To-Market
+- Many devices are built on aggressive schedules: 1 year for exploration and planning, then 3-4 years for development and production
+- <font color="HotPink" style="font-style: italic;">Time-To-Market</font> is the time required to develop a product to the point it can be sold to consumers
+- <font color="HotPink" style="font-style: italic;">Market Window</font> is the period during which the product will have the highest sales
+- Average TTM constraint is about 8 months
+- Delays can be costly
+#### Losses due to Delayed Market Entry
+- Simplified revenue model
+	- Product live = 2W, peaks at W
+	- **Revenue** = area of the triangle
+	- **Loss** = difference between on-time and delayed triangle areas (shaded region)
+![center](../zassets/Pasted%20image%2020240116151647.png)
+- Area  = $\frac{1}{2}\times\text{base}\times\text{height}$
+	- On-time = $\frac{1}{2}*2W* W$
+	- Delayed = $\frac{1}{2}*(2W-D)*(W-D)$
+- Percentage revenue loss = $D\frac{3W-D}{2W^{2}}* 100\%$
+##### Examples
+- Lifetime 2W = 52 weeks, delay D = 4 weeks, loss = $\left(4 * \frac{3 * 26 - 4}{2*26^{2}}\right)* 100\% = 22\%$
+- Lifetime 2W = 53 weeks, delay D = 10 weeks, loss = $(10 * \frac{3*26-10}{2*26^{2}})*100\%=50\%$
+
+#### Design Productivity Gap
+![center](../zassets/Pasted%20image%2020240116152204.png)
+
+- 1981 leading edge chip required 100 man-months
+	- 10,000 transistors / 100 transistors/month
+- 2002 leading edge chip requires 30k man-months
+	- 150,000,000 / 5000 transistors/month
+- Designer cost increase from $1M to $300M
+##### Mythical Man-Month
+- In theory, adding designers to team reduces project completion time
+- In reality, productivity per designer decreases due to team management complexity and communication overhead
+- In the software community, known as the <font color="HotPink" style="font-style: italic;">"mythical man-month"</font> (Brooks, 1975)
+- At some point, can actually lengthen completion time!
+![center](../zassets/Pasted%20image%2020240116152504.png)
+
+## Security and Reliability
+#### Putting Computing In Everyones Hands
+- Too many opportunities to attack
+- Users less savvy/caring of system internals and vulnerabilities
+*How to minimize vulnerability to malicious attacks of diverse and complex computing?*
+- Especially in the hands of naive users
+#### Mobile Devices: Attack Surface
+- Attacks on privacy via malicious apps and in-app ad libraries
+- Premium-rate services
+- hardware attacks
+- browser attacks
+- mobile network attacks
+- sensor malware exploit
+- mobile cloud apps malware
+#### Attacks on Embedded Systems
+- Remote software (worm, trojan, virus)
+- Priority based passive hardware attacks (power or EM analysis)
+- Reversible active proximity-based attacks (fault injectors)
+- Irreversible hardware attacks (tampering)
+*Fakes make this easier to do*
 

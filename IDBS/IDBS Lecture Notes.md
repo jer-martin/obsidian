@@ -189,3 +189,84 @@
 
 ![center](../zassets/Pasted%20image%2020240112102136.png)
 
+### Weak Entity Sets
+- Existence dependent (that is, <font color="HotPink" style="font-style: italic;">weak</font>) <font color="HotPink" style="font-style: italic;">entity set</font>
+	- Assumption so far: entities exist autonomously and can be uniquely identified within an entity set by their key attributes (<font color="HotPink" style="font-style: italic;">strong entity set</font>)
+	- In reality, there are also *weak* entities that do not have sufficient attributes to form a key. These entities are
+		- dependent in their existence from one another, superior entity
+		- can be uniquely identified only in combination with the key of a superior strong entity
+	- But: Examples of weak entity sets are rare and thus difficult to find
+	- Superior strong entity set is called <font color="HotPink" style="font-style: italic;">identifying</font> or <font color="HotPink" style="font-style: italic;">owner entity set</font>
+	- Graphical notation is double rectangle
+- An <font color="HotPink" style="font-style: italic;">Identifying relationship set</font> $R$ associates a *weak entity set* $E_{1}$ with an *identifying entity set* $E_{2}$  such that the key of $E_{1}$ comprises the key of $E_{2}$ and *all* entities of $E_{1}$ are involved in a relationship to an entity in $E_{2}$ (total participation, see below)
+	- Relationship from the weak entity set to the superior set has usually an $m:1$ cardinality and more seldom a $1:1$ cardinality
+	- Graphical notation is double diamond
+- **Example**
+![center](../zassets/Pasted%20image%2020240117095725.png)
+	The weak entity set *room* has a <font color="HotPink" style="font-style: italic;">total participation</font> (indicated by the double edge) in the identifying relationship set *lies_in*
+
+### Total Participation
+- <font color="HotPink" style="font-style: italic;">Total (mandatory) participation</font> of an entity set in a relationship
+	- *All* entities of an entity set $E_{1}$ are associated with <font style="color:crimson">at least </font>one or other entity set $E_{2}$ by a relationship set $R$
+	- This holds, in particular, for weak entity sets
+- **Example**
+![center](../zassets/Pasted%20image%2020240117100037.png)
+
+### Min-Max Notation
+- More precise characterization and constraint the cardinality of a relationship set by the $\text{(min, max)}$ notation
+- For each entity set $E$ participating in a relationship set $R$
+	- the value *min* expresses that each entity of $E$ participates in *at least min* relationships in $R$
+	- the value *max* expresses that each entity of $E$ participates in *at most max* relationships in $R$
+- Special cases
+	- min = 0; an entity does not have to be in a relationship (optional)
+	- max = \*; an entity may be in a relationship arbitrarily many times
+
+### Multivalued Attributes
+- <font color="HotPink" style="font-style: italic;">Optional attribute</font>: Minimal cardinality is equal to 0
+- <font color="HotPink" style="font-style: italic;">Simple attribute</font>: Cardinality is equal to 1
+- <font color="HotPink" style="font-style: italic;">Prescribed attribute</font>: Minimal cardinality is equal to 1
+- <font color="HotPink" style="font-style: italic;">Multivalued attribute</font>: Maximal cardinality is equal to a natural number *n*
+- **Example**
+![center](../zassets/Pasted%20image%2020240117100844.png)
+
+### Composite Attributes
+- Grouping of attributes of the same entity set or relationship set which are closely related
+- Hierarchy of closely related attributes
+- Antonym: simple attribute
+- **Example**
+![center](../zassets/Pasted%20image%2020240117101039.png)
+
+### Derived Attributes
+- Attributes that can be derived from one or more attributes
+- Antonym: <font color="HotPink" style="font-style: italic;">base</font>/<font color="HotPink" style="font-style: italic;">stored attribute</font>
+- Graphical representation is dotted ellipse
+- **Example**
+![center](../zassets/Pasted%20image%2020240117101233.png)
+- If used in databases
+	- They have to be updated regularly, can be expensive
+	- Better to avoid and compute if needed
+	- In the example above, *age* can be derived from the difference of *system date* and *birthdate*
+
+### Entity Set vs. Attribute
+- Should *address* be an attribute of *person* or its own entity set connected to *person* by a relationship set?
+- **Example**
+![center](../zassets/Pasted%20image%2020240117101510.png)
+- Both ways are feasible but the attribute variant can introduce redundancy if several people live at the same address
+- For the entity variant it makes sense to introduce an identifier for entity set *address*
+- Similar situation for relationship sets: Employee works in a department for a *single* period
+![center](../zassets/Pasted%20image%2020240117101636.png)
+- Several values of the descriptive attributes for each instance of this relationship: Employee works in a department for *several* periods
+![center](../zassets/Pasted%20image%2020240117101732.png)
+
+## Generalization
+- **Objectives**
+	- Abstraction at the set level in order to not overwhelm with details but to achieve a more understandable and more concise structuring of entity sets
+	- Abstraction at the instance level in order to model similar entities by a common entity set
+- Factoring (extracting) properties (attributes, relationships) of similar entity sets (<font color="HotPink" style="font-style: italic;">subclasses, subtypes, categories</font>) to a common <font color="HotPink" style="font-style: italic;">superclass</font> (<font color="HotPink" style="font-style: italic;">supertype</font>)
+- Properties that cannot be extracted remain with the respective subclass i.e., the subclass is a <font color="HotPink" style="font-style: italic;">specialization</font> of the superclass
+- <font color="crimson" style="font-weight: bold;">Inheritance</font> as the key concept of <font color="crimson" style="font-weight: bold;">generalization</font>: a subclass inherits all properties of its superclass
+- Entities of a subclass are implicitly considered as entities of the superclass, therefore the relationship <font style="color:HotPink">is-a</font> (hexagon) is used in the E-R diagrams
+- Two special cases of specialization
+	- <font color="HotPink" style="font-style: italic;">Disjoint/overlapping specialization</font>: All subclasses of a superclass are pairwise disjoint/overlapping
+	- <font color="HotPink" style="font-style: italic;">Total specialization</font>: The superclass does not contain explicit elements, but is only given by the union of its subclasses (antonym: <font color="HotPink" style="font-style: italic;">partial specialization</font>)
+

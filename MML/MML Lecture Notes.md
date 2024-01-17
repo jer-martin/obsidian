@@ -365,8 +365,113 @@ $$||a+b||\le||a||+||b||$$
 - (Euclidean) distance between $m$-vectors $a$ and $b$ is $||a-b||$
 - agrees with ordinary distance for $m = 1,2,3$ ![center](../zassets/Pasted%20image%2020240115151219.png)
 - triangle inequality $$||a-c||=||(a-b) + (b-c)||\le||a-b||+||b-c||$$![center](../zassets/Pasted%20image%2020240115151312.png)
+## Nearest Neighbor Predictor
+- We are given data set $(x_{1},y_{1}),...,(x_{n},y_{n})$
+- among $x_{1},...,x_{n}, x_{i}$ is the nearest neighbor of $x$ if $$||x-x_{i}||\le||x-x_{j}||,\: j=1,...,n$$
+- <font color="HotPink" style="font-style: italic;">nearest neighbor predictor</font>:
+	- given new sample $x$, find its nearest neighbor $x_{i}$
+	- then predict $\hat{y}=f(x)=y_{i}$
+- works for both regression and classification
+- 'training' is easy: requires no computation
+- model requires to memorize the entire data set $(x_{1},y_{1}),...,(x_{n},y_{n})$
+- *what is the complexity when making one prediction?*
+	- $\mathcal{O}(mn)$, you have to check all data
+##### Example
+- prediction function $f$ is a piece-wise constant function
+![center](../zassets/Pasted%20image%2020240116123650.png)
+- dots show data points $(x_{i},y_{i}), x_{i} \in \mathbb{R}^{2}\;\; (d=2),$ red surface is $\hat{y}=f(x)$
 
+### $k$-nearest neighbor predictor
+- given data set $(x_{1},y_{1}),...,(x_{n},y_{n})$
+- given new sample $x$, find its $k$ nearest neighbors $x_{i1},...,x_{ik}$
+- <font color="HotPink" style="font-style: italic;">k-nearest neighbors regression</font> predicts the average $$\hat{y}=f(x)=\frac{1}{k}(y_{i1}+...+y_{ik})$$
+- <font color="HotPink" style="font-style: italic;">k-nearest neighbors classification</font> (binary) predicts the majority vote $$\hat{y}=f(x)=\text{argmax}_{\text{c=1,2}}(\text{ \# of points in } x_{i1},...,x_{ik}\text{ with }y_{i}=c\;) $$
+	- usually with odd $k$
+	- could extend to multiple classes, but *needs to solve problems with tie votes*
+- again, training is easy: requires no computation
+- model requires memorization of dataset
 
+## K-Means Clustering
+### Clustering
+- given $n$ $d$-vectors $x_{1},...,x_{n}$
+- goal: partition into $k$ groups
+- want vectors in the same group to be close to one another
+##### Examples
+- topic discovery and document classification
+	- $x_{i}$ is word count histogram for document $i$
+- patient clustering
+	- $x_{i}$ are patient attributes, test results, symptoms
+- costumer market segmentation
+	- $x_{i}$ is purchase history and other attributes
+- color compression of images
+	- $x_i$ are RGB pixel values
+- financial sectors
+	- $x_{i}$ are $n$-vectors of financial attributes
+
+#### Clustering objective
+- $\mathcal{G}_{c}\subset{1,...,n}$ is group $c$, for $c=1,...,k$
+- $c_{i}$ is group that $x_{i}$ is in: $i\in\mathcal{G}_{ci}$
+- <font color="HotPink" style="font-style: italic;">group representatives</font>: $d$-vectors $y_{1},...,y_{k}$
+- clustering objective is $$L^{clust}=\sum\limits^{m}_{i=1}||x_{i}-y_{ci}||^{2}$$
+	mean square distance from vectors to associated representative
+- $L^{clust}$: smaller means good clustering
+- goal: choose clustering $c_{i}$ and representatives $y_{c}$ to minimize $L^{clust}$
+#### Partitioning the vectors given representatives
+- suppose representatives $y_{1},...,y_{k}$ are given
+- *how do we assign the vectors to groups? i.e., choose* $c_{1},...,c_{n}$
+- $c_{i}$ only appears in term $||x_{i}=y_{ci}||^{2}$ in $L^{clust}$
+- to minimize over $c_{i}$, choose $c_{i}$ so $||x_{i}-y_{ci}||^{2}=\text{min}_{c=1,...,k}||x_{i}-y_{c}||^{2}$
+- i.e., assign each vector to its nearest representative
+#### Choosing representatives given the partition
+- suppose partition $\mathcal{G}_{1},...,\mathcal{G}_{k}$, i.e., the assignments $c_{1},...,c_{n}$ are given
+- how do we choose representatives $y_{1},...,y_{k}$?
+- $L^{clust}$ splits into a sum of $k$ sums, one for each $y_{c}$ $$L^{clust}=\sum\limits_{i\in\mathcal{G}_{1}}||x_{i}-y_{1}||^{2}+...+\sum\limits_{i\in\mathcal{G}_{k}}||x_{i}-y_{k}||^{2}$$
+- $y_{c}$ should be the average (<font color="HotPink" style="font-style: italic;">centroid</font>) of the points in the partition $$y_{c}=\text{argmin}_{y}\sum\limits_{i\in\mathcal{G}_{c}}||x_{i}-y||^{2}=\frac{1}{\mathcal{G_{j}}}\sum\limits_{i\in\mathcal{G}_{c}}x_{i} $$
+### K-Means Algorithm
+- alternate between updating the partition, then the representatives
+- a famous algorithm called $k$-means
+- objective $L^{clust}$ decreases in each step
+##### Algorithm Steps:
+1. given $x_{1},...,x_{n}\in\mathbb{R}^{d}$
+2. initialize $y_{1},...,y_{k}\in\mathbb{R}^{d}$
+3. **repeat**
+	1. <font style="color:crimson;font-weight:bold">update partition:</font> assign $i$ to $\mathcal{G}_{c}$ where $c=\text{argmin}_{c}||x_{i}-y_{c}||^2$ 
+	2. <font color="crimson" style="font-weight: bold;">update centroids:</font> $y_{c}=1/|\mathcal{G}_{c}|\sum\limits_{i\in\mathcal{G}_{c}}x_{i}$
+4. **until** $y_{1},...,y_{k}$ stop changing
+
+#### Convergence of K-Means
+- $L^{clust}$ goes down in each step until the $y_{c}$'s stop changing
+- but (in general) the $k$-means algorithm <font color="crimson" style="font-weight: bold;">does not</font> find the partition that minimizes $L^{clust}$
+- $k$-means is a <font color="HotPink" style="font-style: italic;">heuristic</font>:
+	- it is not guaranteed to find the smallest value of $L^{clust}$
+- the final partition (therefore its value of $L^{clust}$) can depend on initialization
+- common approach:
+	- run $k$-means 10 times, with different (often random) initial representatives
+	- take as final partition the one with the smallest $L^{clust}$
+
+## Linear Functions
+- $f\;:\;\mathbb{R}^{d}\rightarrow\mathbb{R}$ means $f$ is a function that maps $d$-vectors to numbers
+- $f$ satisfies the <font color="HotPink" style="font-style: italic;">superposition property</font> if $$f(\alpha x +\beta y)=\alpha f(x)+\beta f(y)$$
+	holds for all numbers $\alpha, \beta$ and $d$-vectors $x,y$
+- *be sure to parse this very carefully!*
+- a function that *satisfies superposition* is called <font color="HotPink" style="font-style: italic;">linear</font>
+- can be extended to more elements $$f(\alpha_{1}x_{1}+...+\alpha_{n}x_{n})=\sum\limits^{n}_{i=1}\alpha_{i}f(x_{i})$$
+#### The Inner Product Function
+- with $w$ an $m$-vector, the function $$f(x)=w^{\top}x=w_{1}x_{1}+...+w_{n}x_{n}$$
+	is the inner product function
+- $f(x)$ is a weighted sum of the entries of $x$
+- the inner product function is linear $$f(\alpha x + \beta y)=a^{\top}(\alpha x + \beta y) = \alpha a^{\top}x + \beta a^{\top}y = \alpha f(x) + \beta f(y)$$
+- and all linear functions are inner products! $$f(x)=f(x_{1}e_{1}+...+x_{d}e_{d})=x_{1}f(e_{1})+...+x_{d}f(e_{d})=w^{\top}x$$
+	where $w_{i}=f(e_{i})$ for $i = 1,...,d$
+
+#### Affine Functions
+- a function is called <font color="HotPink" style="font-style: italic;">affine</font> if and only if $$f(\alpha x +\beta y)=\alpha f(x)+\beta f(y)$$
+	holds for $\alpha, \beta$ with $\alpha + \beta=1$ and all $d$-vectors $x,y$
+- the inner product function plus a constant $f(x)=w^{\top}x+v$ is affine $$f(\alpha x + \beta y)=w^{\top}(\alpha x + \beta y) +v= \alpha(w^{\top}x+v) + \beta(w^{\top}y+v)= \alpha f(x) + \beta f(y)$$
+- and all affine functions have such forms $$\begin{align}f(x)&=f(x_{1}e_{1}\;+...+\;x_{d}e_{d}+(1-1x)0)\\&=x_{1}f(e_{1})+...+x_{d}f(e_{d})+(1-1x)f(0)=w^{\top}x+v\end{align}$$
+	where $w_{i}=f(e_{i})-f(0)$ for $i=1,...,d$ and $v=f(0)$
+
+<font color="crimson" style="font-weight: bold;">LINEAR FUNCTIONS MUST GO THROUGH ORIGIN - THEREFORE, ALL LINEAR FUNCTIONS ARE AFFINE, BUT ALL AFFINE FUNCTIONS ARE NOT LINEAR</font>
 
 
  
