@@ -270,3 +270,92 @@
 	- <font color="HotPink" style="font-style: italic;">Disjoint/overlapping specialization</font>: All subclasses of a superclass are pairwise disjoint/overlapping
 	- <font color="HotPink" style="font-style: italic;">Total specialization</font>: The superclass does not contain explicit elements, but is only given by the union of its subclasses (antonym: <font color="HotPink" style="font-style: italic;">partial specialization</font>)
 
+## Main Steps for Designing E-R Diagrams in the Small
+1. Identify (weak) entity sets
+2. Draw (weak) entity sets
+3. Identify (key) attributes of (weak) entity sets
+4. Draw (key) attributes of (weak) entity sets
+5. Identify (identifying) relationship sets
+6. Draw (identifying) relationship sets
+7. Identify attributes of (identifying) relationship sets
+8. Draw attributes of (identifying) relationship sets
+9. Insert cardinalities
+
+# Relational Data Model
+## Introduction
+- Commercial DBMSs such as Oracle, Informix, SQL Server, Sybase, DB2 as well as public domain DBMS such as PostgreSQL and MySQL are based on the relational data model
+#### Main reasons for the success of the relational data model
+- Flat two-dimensional tables (relations) as the simple underlying data structure
+- "Flat" means: No nested complicated structures, that is, attribute fields may *not* contain values such as tables, arrays, lists, trees, etc, but only atomic values
+- <font color="HotPink" style="font-style: italic;">Set oriented</font> processing of data in contrast to <font color="HotPink" style="font-style: italic;">record oriented</font> processing prevailing til then
+	- Compare to a programming language example: The task is to copy an array A of integers to an array B
+	- Usually performed element-wise by a record oriented loop: for (int i = 0; i < n; ++i) B\[i] = A\[i]; // “=” is the assignment operator
+	- Desired set-oriented syntax: B = A;
+	- Only possible in object-oriented programming languages by overloading the assignment operator
+- Simple comprehensibility for even the unskilled user
+- Very good performance for standard, alphanumerical database applications
+- Existence of a mature, formal theory (in contrast to other data models) in particular with respect to the design of relational databases and with respect to an efficient processing of user queries
+
+## Model Definition
+- Given $n$ <font color="HotPink" style="font-style: italic;">domains</font> $D_{1},D_{2},...,D_{n}$
+	- The term "domain" is a database term for the term "data type"
+	- Examples for domains: data types *integer*, *string\[20]*, *real*, *bool*, *date*,...
+	- Domains need not be disjoint, i.e., $D_{i}=D_{j}$ is admissible for $i\ne j$
+	- Domains may only contain <font color="HotPink" style="font-style: italic;">atomic</font> values, they must not be structured
+- A <font color="HotPink" style="font-style: italic;">relation (instance)</font> $r_{R}$ is defined as a subset of the Cartesian product of $n$ domains: $$r_{R}\subseteq D_{1}\times D_{2} \times ... \times D_{n}, \;\;\; r_{R}\text{ finite}$$
+- $r_R$ is an <font color="HotPink" style="font-style: italic;">occurrence (instance)</font> of a pertaining <font color="HotPink" style="font-style: italic;">relation schema</font> $R$ (analogously to the programming language notions of *variable* and *type*)
+- An element of the set $r_{R}$ is called a <font color="HotPink" style="font-style: italic;">tuple</font>, a tuple has the <font color="HotPink" style="font-style: italic;">arity</font> or <font color="HotPink" style="font-style: italic;">degree</font> $n$
+- Example: Assume domains $D_{1}=\{a,b,c\}, D_{2}=\{0,1\}$
+	- Cartesian product: $D_{1}\times D_{2}= \{(a,0),(a,1),(b,0),(b,1),(c,0),(c,1)\}$
+	- Examples of instances: $r_{1}=\{(a,0),(b,0),(c,0),(c,1)\},r_{2}=\{(a,0)\},r_{3}=\emptyset$ 
+- Number of elements of $D_{1}\times D_{2}:|D_{1}\times D_{2}|=|D_{1}|*|D_{2}|$ where $|A|$ denotes the (finite) cardinality, that is, the number of elements, of a set $A$
+- Difference between a relation and a function
+	- A <font color="HotPink" style="font-style: italic;">function</font> $f$ between two sets $A$ and $B$ (notation: $f : A\rightarrow B$) is a relation such that each element in $A$ is related (mapped) to exactly one element in $B$
+![center](../zassets/Pasted%20image%2020240122094839.png)
+- Distinction between the <font color="HotPink" style="font-style: italic;">schema</font> of a relation $R$, which is given by the $n$ domains (data types), and the current <font color="HotPink" style="font-style: italic;">instance</font> of this relation schema, which is given by a subset of the Cartesian product
+- Schema analogously to the programming language notion of *type*
+- A <font color="HotPink" style="font-style: italic;">relation schema</font> $R$, denoted by $R(A_{1},A_{2},...,A_{n})$ consists of the <font color="HotPink" style="font-style: italic;">relation name</font> $R$ and a list of <font color="HotPink" style="font-style: italic;">attributes</font> $A_{1},A_{2},...,A_{n}$
+- Each <font color="HotPink" style="font-style: italic;">attribute</font> $A_{i}$ is the name of a role played by domain $D_{i}$ in the relation schema $R$
+	- $D_{i}$ is also the domain (type) of $A_{i}$
+	- Notation: $D_{i}=\text{dom}(A_{i})$
+- For the schema $R(A_{1},...,A_{n})$ holds: $r_{R}\subseteq \text{dom}(A_{1}:D_{1},...,A_{n}:D_{n})$
+- Because we often do *not* make a clear distinction between the meta level (schema) and the instance level (occurrence), we also denote relation instances with the letter $R$
+- Representation of a relation as *tables* with *rows* (tuples) and *columns*
+	- R is a *table name*, A and N are *attributes* and have the function of *column* names, each horizontal line represents a *row* or tuple
+![center](../zassets/Pasted%20image%2020240122095620.png)
+- <font color="HotPink" style="font-style: italic;">Database schema</font>: collection of relation schemas (more static character, changes rarely)
+- <font color="HotPink" style="font-style: italic;">Database</font>: collection of the current relation instances (more dynamic character, changes more often)
+- The definitions so far allow for instances that cannot exist in reality
+	- Example: An attribute *age* of type *integer.* Values such as -34 and 18792 are syntactically correct but make no sense semantically
+	- Therefore it makes sense to restrict the instances by suitable semantical conditions called <font color="HotPink" style="font-style: italic;">integrity constraints</font>
+
+## Features of Relations
+- Difference between a *set* and a *list*
+	- Set is *unordered* homogenous collection of values
+		- $\{3,9,6,4,1,2\}$
+		- Duplicates not possible, sorting is not possible
+	- A list is an *ordered* homogenous collection of values
+		- $<5,2,1,9,17>$
+		- Duplicates are possible, sorting is possible
+- A relation is defined as a *set of tuples*
+	- Tuples in a relation aren't ordered, order isn't relevant
+	- Defining a relation as a list of tuples would allow sorting
+	- Note: rows in a table are ordered
+- Relations are based on a <font color="HotPink" style="font-style: italic;">set model</font>, relational tables (SQL Tables) are based on a <font color="HotPink" style="font-style: italic;">list model</font>
+- A tuple is defined as a *list* of $n$ attribute values
+	- Attribute values in a tuple are ordered
+	- But the order of attributes and their values is not semantically relevant
+	- It is only necessary to maintain the implicit, position based correspondence between attributes and their values: Given the attributes $(A_{1},...,A_{n})$ and the tuple $(v_{1},...,v_{n})$, the value $v_{i}$ corresponds to the attribute $A_{i}$
+	- A tuple $t$ could be defined as a *set* of (attribute, attribute value) pairs, that is, $t=\{(A_{1},v_{1}),(A_{2},v_{2}),...,(A_{n},v_{n})\}$ where the $A_{i}$ are attributes and the $v_{i}\in \text{dom}(A_{i})$
+- Attribute values in tuples
+	- Each attribute value in a tuple is <font color="HotPink" style="font-style: italic;">atomic (indivisible)</font>, that is, no composite or multivalued attributes are allowed <font color="HotPink" style="font-style: italic;">(first normal form)</font>
+	- Values of attributes in a tuple can be unknown: use of a special value <font color="HotPink" style="font-style: italic;">null</font> in this case
+
+### Keys
+- Analogously to the notion of key in the E-R model
+- Due to the set property of relations, there are no two tuples that have the same combination of values for all their attributes
+- Let us assume $R(A_{1},A_{2},...,A_{n})$ and let $X \subseteq \{A_{1},A_{2},...,A_{n}\}$ for $t\in r_{R}$ let $t[X]$ be the projection of $t$ to the attributes in $X$. $X$ is called <font color="HotPink" style="font-style: italic;">key</font> if the following two conditions are fulfilled:
+	1. <font color="HotPink" style="font-style: italic;">Uniqueness</font>: For all relation instances $r_{R}$ of $R$ holds: $$\vee t_{1},t_{2}\in r_{R}:t_{1}[X]=t_{2}[X]\rightarrow t_{1}[X]\ne t_{2}[X]$$
+	2. <font color="HotPink" style="font-style: italic;">Minimality</font>: There is no $Y\subset X$ so that uniqueness is fulfilled
+- <font color="HotPink" style="font-style: italic;">Candidate keys</font>: Several possible keys, one of them is selected as the <font color="HotPink" style="font-style: italic;">primary key</font>, the others do not lose their key property and can be used for creating indices on them
+- Examples: UFID and SSN are candidate keys for students, ISBN and article numbers are candidate keys for books

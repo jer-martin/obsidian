@@ -473,5 +473,278 @@ $$||a+b||\le||a||+||b||$$
 
 <font color="crimson" style="font-weight: bold;">LINEAR FUNCTIONS MUST GO THROUGH ORIGIN - THEREFORE, ALL LINEAR FUNCTIONS ARE AFFINE, BUT ALL AFFINE FUNCTIONS ARE NOT LINEAR</font>
 
+#### Affine Approximation
+- Suppose $f$: $\mathbb{R}^{d}\rightarrow\mathbb{R}$ (not necessarily linear or affine)
+- first-order Taylor approximation of $f$, near point $z$: $$\hat{f}(x;z)=f(z)+\frac{\delta f}{\delta x_{1}}(z)(x_{1}-z_{1})+...+\frac{\delta f}{\delta x_{d}}(z)(x_{d}-z_{d})$$
+- $\hat{f}(x;z)$ is close to $f(x)$ when all $x_{i}$ are close to $z_i$
+- $\hat{f}$ is affine (slang: linear approximation)
+- can write inner product as $$\hat{f}(x;z)=f(z)+\nabla f(z)(x-z)$$
+	where $n$-vector $\nabla f(z)$ is the gradient of $f$ at $z$
+##### Example
+- consider the nonlinear function $f$: $\mathbb{R}^{2}\rightarrow\mathbb{R}$ $$f(x)=x_{1}+\text{exp}(x_{2}-x_{1})$$
+- gradient of $f$ at $z = (1,2)$ $$\nabla f(z)=\left[\ 
+                \begin{array} 
+                  - 
+                  1-\text{exp}(z_{2}-z_{1})\\ 
+                  \text{exp}(z_{2}-z_{1})
+                \end{array} 
+              \right]=\left[\ 
+                \begin{array} 
+                  - 
+                  -1.7183\\ 
+                  2.7183
+                \end{array} 
+              \right]$$
+- first order Taylor approximation at $z$ $$\hat{f}(x;z)=3.7183+\left[\ 
+                \begin{array} 
+                  - 
+                  -1.7183\\ 
+                  2.7183
+                \end{array} 
+              \right]^{\top}\left[\ 
+                \begin{array} 
+                  - 
+                  x_{1}-1\\ 
+                  x_{2}-2
+                \end{array} 
+              \right]=3.7183-1.7183(x_{1}-1)+2.7183(x_{2}-2)$$
+![center](../zassets/Pasted%20image%2020240118095316.png) 
 
  
+### Regression model
+- regression model is a hypothetical relationship between $x$ and $\hat{y}$ $$\hat{y}=w^{\top}x+v$$
+	is an affine function of $x$
+- $x$ is a feature vector; its elements $x_{i}$ are called regressors
+- $d$-vector $w$ is the weight vector
+- scalar $v$ is the offset
+- scalar $\hat{y}$ is the prediction (of some actual outcome or dependent variable, labeled $y$)
+- simplified notation $$\hat{y}=\left[\ 
+                \begin{array} 
+                  - 
+                  v\\ 
+                  w\\ 
+                \end{array} 
+              \right]^{\top}\left[\ 
+                \begin{array} 
+                  - 
+                  1\\ 
+                  x\\ 
+                \end{array} 
+              \right]=w^{\top}x$$
+##### Example
+- $y$ is selling price of house in $1000 (in some location, over some period)
+- regressor is $$x = \text{(house area, \# of bedrooms)}$$
+	(house area in 1000s of sq.ft.)
+- regression model weight vector and offset are $$w=(148.73,-18.85),\;v=54.40$$
+- prediction performance
+![center](../zassets/Pasted%20image%2020240118100009.png)
+
+![center](../zassets/Pasted%20image%2020240118100033.png)
+
+#### Finding a linear regression model
+- how to find good choice of $w$ and $v$?
+- fit the model to the data set $(x_{1},y_{1}),...,(x_{n},y_{n})$
+- residual for data sample $i$ is $$r_{i}=w^{\top}x_{i}+v-y_{i}=w^{\top}x-y_{i}$$
+- <font color="HotPink" style="font-style: italic;">least squares regression:</font> choose $w$ that minimizes sum of squared residuals $$\text{minimize}_{w}\;\;\sum\limits^{n}_{i=1}(w^{\top}x_{i}-y_{i})^{2}$$
+	equivalent to minimizing the mean squared error (MSE) <font color="crimson" style="font-weight: bold;">(why?)</font>
+- we will learn how to solve it in the sequel
+
+### Linear Classification
+#### Binary Classification
+- data fitting with two possible outcomes
+	- true or false
+	- spam or not spam
+	- positive or negative
+	- 0 or 1
+- we encode outcomes as +1 (true) and -1 (false)
+- classifier has form $\hat{y}=f(x),f:\mathbb{R}^{d}\rightarrow\{+1,-1\}$
+- a linear classifier $f:\mathbb{R}^{d}\rightarrow\{\pm1\}$ has form $$\hat{y}=\text{sign}(w^{\top}x+v)=\text{sign}(w^{\top}x)$$
+	the sign of an affine function of $x$
+
+#### Confusion Matrix
+- only four possibilities
+	- true positive: $y = +1, \hat{y}=+1$
+	- true negative: $y=-1,\hat{y}=-1$
+	(in these two cases the prediction is correct)
+	- false positive: $y=-1,\hat{y}=+1$
+	- false negative: $y=+1,\hat{y}=-1$
+	(in these two cases, the prediction is incorrect)
+- given data set and classifier, count each of the four outcomes
+![center](../zassets/Pasted%20image%2020240118101637.png)
+- many error rates and accuracy measures are used
+	- error rate: $n_{fn}+n_{fp}/n$
+	- false positive rate (false alarm): $n_{fp}/n_{n}$
+	- true positive rate (recall): $n_{tp}/n_{p}$
+	- precision: $n_{tp}/(n_{tp}+n_{fp})$
+
+##### Example
+- spam filter performance on a set of emails (say)
+![center](../zassets/Pasted%20image%2020240118101817.png)
+- error rate: $(19+32)/1266=4.03\%$
+- false positive rate: $19/1139=1.67\%$
+- recall: $95/127=74.8\%$
+- precision: $95/114=83.33\%$
+
+#### Multi-way classification
+- we have $k > 2$ possible labels, with label set $\{1,...,k\}$
+- predictor is $\hat{f}:\mathbb{R}^{d}\rightarrow\{1,...,k\}$
+- for given predictor and data set, confusion matrix is $k \times k$
+- some off-diagonal entries may be much worse than others
+
+#### Multi-way linear classifier
+- create a "linear" function $w^{\top}_{c}x-v_{c}$ for each of the $c = 1,...,k$ classes
+- a linear classifier $f:\mathbb{R}^{d}\rightarrow\{1,...,k\}$ has form $$\hat{y}=\text{arg}\text{max}_{c=1,...,k}(w^{\top}_{c}x+v_{c})=\text{arg}\text{max}_{c=1,...,k}(\tilde{w^{\top}_{c}\tilde{x}}))$$
+- for example, with $$\tilde{w}^{\top}_{1}\tilde{x}=-0.7,\;\tilde{w}^{\top}_{2}\tilde{x}=+0.2, \;\tilde{w}^{\top}_{3}\tilde{x}=+0.8$$
+	then $\hat{y}=3$, i.e., we predict it belongs in the 3rd class
+
+#### Finding a linear classification model
+- binary classifier $f(x) = \text{sign}(w^{\top}x+v)=\text{sign}(\tilde{w}^{\top}\tilde{x})$
+- fit the model to the data set $(x_{1},y_{1}),...,(x_{n},y_{n})$
+- we wish $\tilde{w}^{\top}\tilde{x}_{i}$ to be close to $+1$ if $y_{i}=+1$ and near $-1$ if $y_{i}=-1$ (though not necessary)
+- least squares classification: choose $\tilde{w}$ that minimizes sum of squared residuals $$\text{minimize}_{\tilde{w}}\;\sum\limits^{n}_{i=1}(\tilde{w}^{\top}\tilde{x}_{i}-y_{i})^{2}$$
+	looks almost identical to least squares regression
+- Multi way classification $f(x)=\text{argmax}_{c}(\tilde{w}_{c}^{\top}\tilde{x})$
+- each $\tilde{w}_{c}$ obtained form binary classifier ($c$ vs not $c$)
+
+### Linear Independence
+- a set of $n$-vectors $a_{i},...,a_{k}$ is <font color="HotPink" style="font-style: italic;">linearly dependent</font> if $$\gamma_{1}a_{1}+...+\gamma_{k}a_{k}=0$$
+	holds for some $\gamma_{1},...,\gamma_{k}$ that are not all zero
+- equivalent to: at least one $a_{i}$ is a linear combination of the others
+- we say '$a_{1},...,a_{k}$ are linearly dependent'
+- ${a_{1}}$ is linearly dependent only if $a_{1}=0$
+- $\{a_{1},a_{2}\}$ is linearly dependent only if one $a_{i}$ is a multiple of the other
+- for more than two vectors, there is no simple to state condition
+##### Example
+- the vectors $$a_{1}=\left[\ 
+                \begin{array} 
+                  - 
+                  0.2\\ 
+                  -7\\ 
+                  8.6 
+                \end{array} 
+              \right],\;a_{2}=\left[\ 
+                \begin{array} 
+                  - 
+                  0.1\\ 
+                  2\\ 
+                  -1 
+                \end{array} 
+              \right],\;a_{3}=\left[\ 
+                \begin{array} 
+                  - 
+                  0\\ 
+                  -1\\ 
+                  2.2 
+                \end{array} 
+              \right]$$
+    are linearly dependent, since $a_{1}+2a_{2}-3a_{3}=0$
+- can express any of them as linear combination of the other two, e.g., $$a_{2}=-\frac{1}{2}a_{1}+ \frac{3}{2}a_{3}$$
+### Linear Independence
+- set of $n$-vectors $a_{1},...,a_{k}$ is <font color="HotPink" style="font-style: italic;">linearly independent</font> if $$\gamma_{1}a_{1}+...+\gamma_{k}a_{k}=0$$
+	holds only when $\gamma_{1}=...\gamma_{k}=0$
+- equivalent to: no $a_{i}$ is a linear combination of the others
+- we say '$a_{1},...,a_{k}$ are linearly independent'
+
+#### Linear combinations of linearly independent vectors
+- suppose $b$ is a linear combination of linearly independent vectors $a_{1},...,a_{k}$: $$b=\gamma_{1}a_{1}+...+\gamma_{k}a_{k}$$
+- the coefficients $\gamma$ are <font color="HotPink" style="font-style: italic;">unique</font> if $$b=\gamma_{1}a_{1}+...+\gamma_{k}a_{k}$$
+	then $\gamma_{i}=\gamma_{i}$ for $i=1,...,k$
+- this means that (in principle) we can deduce the coefficients from $b$
+
+### Basis
+- if $\{a_{1},...,a_{k}\}\subset\mathbb{R}^{n}$ is linearly independent, then $k\le n$
+- a set of $n$ linearly independent $n$-vectors $a_{1},...,a_{n}$ is called a basis
+- <font color="crimson" style="font-weight: bold;">any</font> $n$-vector $b$ can be expressed as a linear combination of them $$b=\gamma_{1}a_{1}+...+\gamma_{n}a_{n}$$
+	for some $\gamma$
+- and these coefficients are <font color="crimson" style="font-weight: bold;">unique</font>
+- formula above is called an <font color="HotPink" style="font-style: italic;">expansion</font> of $b$ in the $a_{1},...,a_n$ basis
+
+### Subspace
+- given $a_{1},...,a_{k}$, the set of all linear combinations of them is a <font color="HotPink" style="font-style: italic;">subspace</font> $$\text{span}\{a_{1},...,a_{k}\}=\{\sum\limits^{k}_{i=1}\gamma_{i}a_{i}:\gamma_{i}\in\mathbb{R}\}$$
+- if $a_{1},...,a_{k}$ are independent, then the <font color="HotPink" style="font-style: italic;">dimension</font> of the subspace is $k$ $$k\le n$$
+- for a subspace $\mathcal{S}\subset \mathbb{R}^{n}$ with dimension $k$, define its orthogonal complement $$\mathcal{S}^{\perp}=\set{y\;|\;b^{\top}y=0,\vee b\in \mathcal{S}}$$
+	dimension of $\mathcal{S}^{\perp}$ is $n-k$
+- $\mathcal{S} ⨁ \mathcal{S}^{\perp}=\mathbb{R}^{n}$
+- $\mathcal{S} \cap \mathcal{S}^{\perp}=\set{0}$
+
+### Orthonormal vectors
+- set of $n$-vectors $a$ are (mutually) orthogonal if $a_{i}\perp a_{j}$ for $i \ne j$
+- they are normalized if $||a_{i}||=1$ for $i=1,...,k$
+- they are orthonormal if both hold
+- can be expressed using their inner products as $$a_{i}^{\top}a_{j}=\left[\ 
+                \begin{array} 
+                  - 
+                  1\;\;i=j\\ 
+                  0\;\;i\ne j\\ 
+                   
+                \end{array} 
+              \right]$$
+- orthonormal sets of vectors are linearly independent
+- by independence-dimension inequality, must have $k\le n$
+- when $k=n$, $a$ are an <font color="HotPink" style="font-style: italic;">orthonormal basis</font> of $\mathbb{R}^{n}$
+
+### Orthonormal Expansion
+- expansion of $b$ in the $a$ basis $$b=\gamma_{1}a_{1}+...+\gamma_{n}a_{n}$$
+	for some $\gamma$ they and they are unique
+- if $a$ is an orthonormal basis, the coefficients are easy to find $$b=(a^{\top}_{1}b)a_{1}+...+(a_{n}^{\top}b)a_{n}$$
+- called orthonormal expansion of $b$ (in the orthonormal basis)
+- to verify formula, take inner product of both sides with $a_{i}$
+
+### Orthogonal Decomposition
+- given a subspace $\mathcal{S}$, any $b\in \mathbb{R}^{n}$ can be written in a unique way as $$b=b_{1}+b_{2},\;\;b_{1}\in\mathcal{S},\;\;b_{2}\in\mathcal{S}^{\perp}$$
+- let $\mathcal{S} = \text{span}\set{a_{1},...,a_{k}}$ with $a$ orthonormal
+- $b_{2}=b-b_{1}:\;\;b_{2}^{\top}a_{i}=0$ for $i = 1,...,k$
+- if $a$ is an orthonormal basis and $\mathcal{S}=\text{span}\set{a_{1},...,a_{k}}$, then $\mathcal{S}^{\perp}=\text{span}{a_{k+1},...,a_{n}}$
+
+### Gram-Schmidt algorithm
+>*an algorithm to check if $a_{1},...,a_{k}$ are linearly independent*
+	1. given $a_{1},...,a_{k} \in \mathbb{R}^{n}$
+	2. **for $i=1,...,k$ do**
+		1. orthogonization: $\tilde{q}_{i}=a_{i}-(q_{1}^{\top}a_{i})q_{1}-...-(q_{i-1}^{\top}a_{i})q_{i-1}$ 
+		2. test for linear independence: if $||\tilde{q}_{i}||=0$, quit
+		3. normalization: $q_{i}=\tilde{q}_{i}/||\tilde{q}_{i}||$
+	3. **end for**
+- if G-S does not stop early (line 4), $a_{1},...,a_{k}$ are linearly independent
+- if G-S terminates at iteration $j$, then $a_{j}$ is a linear combination of $a_{1},...,a_{j-1}$
+- it has many other uses
+
+#### Analysis
+> *proof by induction that $q_{1},...,q_{i}$ are orthonormal*
+- assume its true for $i-1$
+- orthogonalization step ensures that $$\tilde{q}_{i}\perp q_{1},...,\tilde{q}_{i}\perp q_{i-1}$$
+- to see this, take inner product of both sides with $q_{j}, j<i$ $$\begin{align}q_{j}^{\top}\tilde{q}_{i}&=q_{j}^{\top}a_{i}-(q_{1}^{\top}a_{i})(q_{j}^{\top}q_{1})-...-(q_{i-1}^{\top}a_{i})(q_{j}^{\top}q_{i-1})\\&=q_{j}^{\top}a_{i}-q_{j}^{\top}a_{i}=0\end{align}$$
+- so $q_{i}\perp q_{1},...,q_{i}\perp q_{i-1}$
+- normalization $q_{i}=\tilde{q}_{i}/||\tilde{q}_{i}||$ ensures $||q_{i}||=1$
+
+> *assuming G-S has not terminated before iteration* $i$
+- $a_{i}$ is a linear combination of $q_{1},...,q_{i}$ $$\begin{align}a_{i}&=||\tilde{q}_{i}||q_{i}+(q_{1}^{\top}a_{i})q_{1}+...+(q_{i-1}^{\top}a_{i})q_{i-1}\end{align}$$
+- $q_{i}$ is a linear combination of $a_{1},...,a_{k}$: by induction on $i$ $$q_{i}=\frac{1}{||\tilde{q}_{i}||}(a_{i}-(q_{1}^{\top}a_{i})q_{1}-...-(q_{i-1}^{\top}a_{i})q_{i-1})$$
+	where each $q_{1},...,q_{i-1}$ is a linear combination of $a_{1},...,a_{i-1}$ (by induction)
+
+> *suppose G-S terminates at iteration $j$*
+- $a_{j}$ is a linear combination of $q_{1},...,q_{j-1}$ $$a_{j}=(q_{1}^{\top}a_{i})q_{1}+...+(q_{j-1}^{\top}a_{i})q_{j-1}$$
+- and each $q_{1},...,q_{j-1}$ is a linear combination of $a_{1},...,a_{j-1}$
+- so $a_{j}$ is a linear combination of $a_{1},...,a_{j-1}$
+
+#### Complexity of G-S algorithm
+- orthogonalization step at iteration $i$ requires $i-1$ inner products $$q_{1}^{\top}a_{i},...,q_{i-1}^{\top}a_{i} $$
+	which costs $(2n-1)(i-1)$ flops
+- another $2n(i-1)$ flops to calculate $\tilde{q}_{i}$
+- $3n$ flops to calculate $||\tilde{q}_{i}||$ and $q_{i}$
+- total is $$\sum\limits^{k}_{i=1}((4n-1)(i-1)+3n)=(4n-1)\frac{k(k-1)}{2}+3kn\approx2nk^{2}$$
+	using $\sum\limits^{k}_{i=1}(i-1)=k(k=1)/2$
+- $\mathcal{O}(nk^{2})$ complexity where $k\le n$
+
+### Modified G-S*
+> *to determine the dimension of* $\text{span}\set{a_{1},...,a_{k}}$
+	1.  given $a_{1},...,a_{k}\in \mathbb{R}^{n}$
+	2. $j\leftarrow 0$
+	3. **for** $i=1,...,k$ **do**
+		1. orthogonization: $\tilde{q}_{j+1}=a_{i}-(q_{1}^{\top}a_{i})q_{1}-...-(q_{j}^{\top}a_{i})q_{j}$ 
+		2. test for linear independence: if $||\tilde{q}_{i}||=0$, continue
+		3. normalization: $q_{j+1}=\tilde{q}_{j+1}/||\tilde{q}_{j+1}||$
+		4. $j\leftarrow j+1$
+	4. **end for**
+- G-S runs the full $k$ iterations with complexity $\mathcal{O}(nk^2)$
+- if $j=r$ at the end, then the dimension of $\text{span}\set{a_{1},...,a_{k}}$ is $r$
+
