@@ -748,3 +748,105 @@ $$||a+b||\le||a||+||b||$$
 - G-S runs the full $k$ iterations with complexity $\mathcal{O}(nk^2)$
 - if $j=r$ at the end, then the dimension of $\text{span}\set{a_{1},...,a_{k}}$ is $r$
 
+## Matrices
+- a matrix is a two-dimensional array of numbers, e.g., $$\begin{bmatrix} 
+  0 & 1 & -2.3 & 0.1 \\ 
+  1.3 & 4 & -0.1 & 0 \\ 
+  4.1 & -1 & 0 & 1.7 \\ 
+\end{bmatrix}$$
+- size is given by (rows)x(columns)
+- denoted by a boldface capital letter, e.g., $\mathbf{A}\in \mathbb{R}^{m\times n}$ or $\mathbf{A}\in\mathbb{C}^{m\times n}$ 
+- $A_{ij}$ is $i,j$ element of matrix $\mathbf{A}$
+- $i$ is row index, $j$ is column, indices start at 1
+- two matrices are equal (=) if they're the same size and corresponding entries are equal
+### Matrix Shapes
+- an $m\times n$ matrix $\mathbf{A}$
+	- tall if $m > n$
+	- wide if $m < n$
+	- square if $m = n$
+- a $1 \times 1$ matrix is a number (scalar)
+- an $n \times 1$ matrix is an $n$-vector
+- a $1 \times n$ matrix is a row vector of length $n$
+
+### Transpose
+- the transpose of $\mathbf{A} \in \mathbb{R}^{m\times n}$ is $\mathbf{A}^{\top}\in \mathbb{R}^{m\times n}$ $$\matrix{\mathbf{A}^{\top}}_{ij}=A_{ji}, \;\;i=1,...,n\;j=1,...,m$$
+- $(\mathbf(A)^{\top})^{\top}= \mathbf{A}$
+- a matrix is <font color="HotPink" style="font-style: italic;">symmetric</font> if $\mathbf{A}= \mathbf{A}^{\top}$
+
+### Block Matrices
+- a matrix can be partitioned into blocks $$A=\begin{bmatrix} 
+  B & C \\ 
+  D & E  
+
+\end{bmatrix}$$
+	where $B, C, D, E$ are matrices
+- matrices in each block row must have the same number of rows
+- matrices in each block column must have same number of rows
+
+### Column and row representations of a matrix
+- $\mathbf{A}$ is an $m \times n$ matrix
+- can express as a block matrix with its columns $a_{1},...,a_{n}$
+	- or as a block matrix with its rows $\tilde{a}_{1},...,\tilde{a}_{n}$
+- 4 fundamental subspaces defined by matrix $\mathbf{A}$
+	- $\text{Ran}( \mathbf{A}) = \text{span}\set{a_{1},...,a_{n}}$
+	- $\text{Ran}( \mathbf{A}^{\top}) = \text{span}\set{\tilde{a_{1}},...,\tilde{a_{n}}}$
+	- $\text{Null}(\mathbf{A})=\text{Ran}( \mathbf{A}^{\top})^{\perp}$
+	- $\text{Null}(\mathbf{A}^{\top})=\text{Ran}( \mathbf{A})^{\perp}$
+
+### Special Matrices
+- $m \times n$ zero matrix has all entries zero, written as $0_{m\times n}$ or simply $0$
+- identity matrix $\mathbf{I}$ is square with $\mathbf{I}_{ii}=1$ and $\mathbf{I}_{ij}=0$ for $i\ne j$, e.g., $$\begin{bmatrix} 
+  1 & 0 & 0 &\\ 
+  0 & 1 & 0  \\ 
+  0 & 0 & 1 \\ 
+\end{bmatrix}$$
+- sparse matrix: most entries are zero
+
+### Matrix Operations
+#### Addition, multiplication, scalar norm
+- (just like vectors) we can add or subtract matrices of the same size $${[\mathbf{A}+ \mathbf{B}]_{ij}}=A_{ij}+B_{ij}$$
+- scalar multiplication: $$[\alpha \mathbf{A}]_{ij}=\alpha A_{ij}$$
+	- many obvious properties
+- matrix (Frobenious) norm: $$||A||_{F}=\sqrt{\sum\limits^{m}_{i=1}\sum\limits^{n}_{j=1}A^{2}_{ij}}$$
+#### Matrix Vector Multipication
+- matrix-vector product of $m\times n$ matrix $\mathbf{A}$ and $n$-vector $x$, denoted by $\mathbf{y= Ax}$ with $$y_{i}= A_{i1}x_{1}+...+A_{in}x_{n}$$
+- example: $$\begin{bmatrix} 
+  0 & 2 & -1 \\ -2 & 1 & 1
+\end{bmatrix}\begin{bmatrix} 
+  2 \\ 1\\ -1
+\end{bmatrix}= \begin{bmatrix} 
+  3 \\ -4
+\end{bmatrix} 
+$$
+##### Row interpretation
+$$y_{i}=\mathbf{\tilde{a}_{i}^{\top}x}$$
+	where $\mathbf{\tilde{a}^{\top}_{1},...,\tilde{a}^{\top}_{m}}$ are rows of $\mathbf{A}$
+- $\mathbf{y=Ax}$ is a 'batch' inner product of all rows of $\mathbf{A}$ and $\mathbf{x}$
+
+##### Column Interpretation
+- $\mathbf{y=Ax}$ can be expressed as $$\mathbf{y}= \mathbf{x}_{1} \mathbf{a_{1}}+...+ \mathbf{x}_{n} \mathbf{a}_{n}$$
+	where $a_{1},...,a_{n}$ are columns of $\mathbf{A}$
+- so $\mathbf{y=Ax}$ is a linear combination of columns of $\mathbf{A}$ with coefficients $x_{1},...,x_{n}$
+- important example: $\mathbf{Ae}_{j}=a_{j}$
+- columns of $\mathbf{A}$ are linearly independent if $\mathbf{Ax}=0$ implies $x=0$
+- the 4 fundamental subspaces: 
+	- $\text{Ran}( \mathbf{A}) = \{\mathbf{Ax|x}\in \mathbb{R}^{n}\}$
+	- $\text{Ran}( \mathbf{A}^{\top}) = \{\mathbf{A^{\top}y|y}\in \mathbb{R}^{m}\}$
+	- $\text{Null}(\mathbf{A})=\{\mathbf{x|Ax}=0\}$
+	- $\text{Null}(\mathbf{A}^{\top})=\{\mathbf{y|A^{\top}y}=0\}$
+
+#### Complexity
+- $m \times n$ matrix $\mathbf{A}$ stored as $m\times n$ array of numbers for sparse $\mathbf{A}$, store only $\text{nnz}( \mathbf{A})$ nonzero values
+- matrix addition, scalar-matrix multiplication costs $mn$ flops
+- matrix-vector multiplication cost $m(2n-1)\approx 2mn$ flops for sparse $\mathbf{A}$, around $2 nnz(\mathbf{A})$ flops
+
+#### Feature matrix times weight vector
+- $\mathbf{X}=[x_{1}x_{2}...x_{n}]$ is $m \times n$ feature matrix
+- column $x_{i}$ is feature of $m$-vector of object or sample $i$
+- $X_{ij}$ is value of feature $j$ for sample $i$
+- $m$-vector $\mathbf{w}$ is weight vector
+- $s=\mathbf{X}^{\top}\mathbf{w}$ is vector of scores for each sample: $s_{i}=\mathbf{x_{i}}^{\top}\mathbf{w}$
+- $\mathbf{\tilde{X}}=\begin{bmatrix}1\;...\;1\\x_{1}\;...\;x_{n}\end{bmatrix} = \begin{bmatrix}1^{\top}\\X\end{bmatrix}$ is the feature matrix appended with $1^{\top}$
+- $\mathbf{\tilde{X}^{\top}\tilde{w}}=[1\;\mathbf{X}^{\top}] \begin{bmatrix}v\\ w\end{bmatrix}=1v+\mathbf{X^{\top}w}= \begin{bmatrix}x_{1}^{\top}+v\\...\\ x_{n}^{\top}w+v\end{bmatrix}$ gives a batch of affine ("linear") predictions
+
+
