@@ -359,3 +359,107 @@
 	2. <font color="HotPink" style="font-style: italic;">Minimality</font>: There is no $Y\subset X$ so that uniqueness is fulfilled
 - <font color="HotPink" style="font-style: italic;">Candidate keys</font>: Several possible keys, one of them is selected as the <font color="HotPink" style="font-style: italic;">primary key</font>, the others do not lose their key property and can be used for creating indices on them
 - Examples: UFID and SSN are candidate keys for students, ISBN and article numbers are candidate keys for books
+
+# Transformation of an Entity-Relationship Diagram into Relation Schemas
+## The Big Picture
+![center](../zassets/Pasted%20image%2020240125185839.png)
+
+## Data Structures
+- Objectives
+	- Transformation of an E-R Diagram into a collection of relation schemas
+	- Performance by a small number of relation schemas
+	- Correct mapping of theoretical E-R concepts to practical relational database concepts
+- Available data structure (structural components)
+	- of the E-R model
+		- entity sets
+		- relationship sets (of different cardinalities)
+		- attributes
+	- of the relational model
+		- relation schemas
+		- attributes
+
+## Transformation of Strong Entity Sets
+- For each strong entity set $E$ and independent relation schema $R$ is created which comprises all simple attributes of $E$. From a composite attribute only the simple component attributes are taken.
+- The attribute names of a relation schema usually correspond to the attribute names of the respective entity set. But name changes are allowed, of course.
+- Each attribute name is extended by it's domain, that is, data type
+- We use the known syntax $R(A_{1}:D_{1},...,A_{n}D_{n})$ where $A_{i}$ are attributes and the $D_{i}$ are their domains
+- The key of the entity set becomes the primary key of the relation schema and is underlined
+- Each tuple in a relation on $R$ corresponds to one entity of $E$
+- Example: Conceptual university schema
+![center](../zassets/Pasted%20image%2020240125190445.png)
+```
+students(reg-id : integer, name : string, sem : integer)
+lectures(id : integer, credits : integer, title : string)
+professors(pers-id : integer, name : string, rank : string, room : integer)
+assistants(pers-id : integer, name : string, room : integer)
+```
+
+## Transformation of Weak Entity Sets
+1. For each weak entity set $W$ with the respective strong entity set $E$, an independent relation schema $R$ is created which comprises all simple attributes and all simple components of composite attributes of $W$ as attributes of $R$
+2. In addition, all primary key attributes of $E$ are added to $R$ as <font color="HotPink" style="font-style: italic;">foreign key attributes</font>. The primary key of $R$ then arises from the combination of the primary key of $E$ and the partial key of $W$, if the latter one exists.
+Example (separate from the conceptual university schema): ![center](../zassets/Pasted%20image%2020240125191206.png)
+```
+room(rnumber:integer, bnumber:integer)
+```
+
+## Transformation of 1:1 Relationship Sets 
+- For each binary 1:1 relationship set $R$, let $S$ and $T$ be the relation schemas that correspond to the entity sets participating in $R$. One of the relation schemas, let us say $S$, is selected, and the primary key of $T$ is added to $S$ as foreign key. If an entity set, for example $S$, totally participates in $R$, it is advantageous to add the primary key of $T$ to $S$. In addition, all simple attributes and all simple components of composite attributes of R are taken as attributes of $S$. 
+- Example (separate from the university schema)
+![center](../zassets/Pasted%20image%2020240125191819.png)
+![center](../zassets/Pasted%20image%2020240125191952.png)
+- Example (separate from the university schema)
+![center](../zassets/Pasted%20image%2020240125192029.png)
+- Each department is linked to exactly one employee
+- No null values for attribute "emp-id"
+
+## Transformation of 1:m and m:1 relationship sets
+- For each binary 1:m relationship set $R$ let $S$ be the relation schema which corresponds to the entity set participating in $R$ on the $m$-side. Add to $S$ as foreign key the primary key of relation schema $T$, which corresponds to the other entity set participating in $R$. The reason for this is that each entity on the $m$-side is associated with at most one entity on the 1-side of $R$. Furthermore, all simple attributes and all simple components of composite attributes of $R$ are taken as attributes of $S$.
+- Example (university schema)
+```
+lectures(id:integer, credits:integer, title:string, held_by:integer}
+professors(pers-id:integer, name:string, room:string, rank:string)
+assistants(pers-id:integer, name:string, room:string, boss:integer)
+```
+- The names of attributes of a foreign key have to be changed sometimes in order to ensure the uniqueness of names in a schema
+
+## Transformation of m:n relationship sets
+- For each binary m:n relationship set $R$, a *new* relation schema $S$ is created. Add to $S$ as foreign keys the primary keys of the relation schemas that correspond to the two entity sets participating in $R$. Their combination forms the primary key of $S$. Furthermore, all simple attributes and all simple composite attributes of $R$ are taken as attributes of $S$.
+- Example (university schema):
+```
+attends(reg-id:integer, id:integer)
+is_precondition_of(predecessor:integer, successor:integer)
+```
+
+## Transformation  of $n$-ary relationship sets
+- For each $n$-ary relationship set $R$ with $n>2$ a *new* relation schema $S$ is created. Add to $S$ as foreign keys the primary keys of the relation schemas corresponding to entity sets participating in $R$. Furthermore, all simple attributes and all simple components of composite attributes of $R$ are taken as attributes of $S$. The primary key of $S$ is the combination of all foreign keys.
+- Example (university schema):
+```
+tests(reg-id:integer, id:integer, pers-id:integer, grade:integer)
+```
+
+## Transformation of multivalued attributes
+- A new relation schema $R$ is created for each multivalued attribute $A$. $R$ comprises an attribute corresponding to $A$ and as a foreign key the primary key $K$ of the relation schema which corresponds to the entity set or relationship set containing $A$ as an attribute. The primary key of $R$ is the combination of $A$ and $K$. If the multivalued attribute is composite, its simple components are added to $R$.
+- Example (separate from university schema)
+![center](../zassets/Pasted%20image%2020240125193743.png)
+
+## Transformation of generalizations
+- Generalizations are *not* represented by an own relation. The relationship is already expressed by the fact that the key of the common superclass is also used as the key of the specialized subclasses.
+![center](../zassets/Pasted%20image%2020240125193838.png)
+- Information about a professor is distributed to two tuples of two relations, namely to a tuple of the relation employees and to a tuple of the relation professors
+- To obtain the complete information requires a connection of both relations and tuples, respectively (via a join). There is no inheritance in the relational data model.
+
+## Complete Conceptual University Schema
+```
+students(reg-id : integer, name : string, sem : integer)
+lectures(id : integer, credits : integer, title : string, held_by : integer)
+professors(pers-id : integer, name : string, room : integer, rank : string)
+assistants(pers-id : integer, name : string, room : integer, boss : integer)
+attends(reg-id : integer, id : integer)
+is_precondition_of(predecessor : integer, successor : integer)
+tests(reg-id : integer, id : integer, pers-id : integer, grade : integer)
+```
+
+# Relational Algebra
+## The Big Picture
+![center](../zassets/Pasted%20image%2020240125194040.png)
+
