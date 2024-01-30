@@ -463,3 +463,113 @@ tests(reg-id : integer, id : integer, pers-id : integer, grade : integer)
 ## The Big Picture
 ![center](../zassets/Pasted%20image%2020240125194040.png)
 
+## Introduction
+- So far: structural description of the data of interest provided by means of a collection of relation schemas
+- Questions now are:
+	1. What can you do with relations?
+	2. How are they queried?
+	3. What are the main operations on relations to query them?
+	4. How are these ops defined?
+	5. How can they be used to extract information from a collection of relation schemas?
+- Answer: Two <font color="HotPink" style="font-style: italic;">formal query languages</font> are provided for this purpose that cannot be used in practice
+	- <font color="HotPink" style="font-style: italic;">Relational calculi</font> (not discussed in this course)
+		- Tuple relational calculus
+		- Domain relational calculus
+	- <font color="HotPink" style="font-style: italic;">Relational algebra</font>
+- Relational Calculi
+	- <font color="crimson" style="font-weight: bold;">Declarative</font> query languages which allow the user to specify <font color="crimson" style="font-weight: bold;">what</font> the data of interest are, <font color="crimson" style="font-weight: bold;">which</font> data one would like to retrieve, and which criteria these data have to fulfill
+	- The user does not have to specify *how* a query has to be evaluated
+- Relational Algebra
+	- <font color="crimson" style="font-weight: bold;">Procedural</font> query language that requires from a user to specify <font color="crimson" style="font-weight: bold;">how</font> a query has to be evaluated
+	- Step-by-step specification of the operations to be executed
+	- Relational algebra is important for the processing of SQL queries
+- Only relations possible as input data and output data of RA operations
+- Both languages are *closed*, i.e. the results of queries, which operates on relations, are again relations
+
+## Overview of Basic Relational Algebra Operations
+- The Relational Algebra is a *universal algebra* since it only has one data type, namely relation schemas
+- The Relational Algebra comprises 5 (+1) <font color="HotPink" style="font-style: italic;">basic operations</font>
+	- Union: ($\cup$)
+	- Difference: ($-$)
+	- Cartesian product: ($\times$)
+	- Project: ($\pi$)
+	- Select: ($\sigma$)
+	- (Rename): ($\rho$)
+- Other algebra operations are <font color="HotPink" style="font-style: italic;">derived</font>, they can be expressed by a combination of the basic ops
+- Given: Two relations $R(A_{1}:C_{1},A_{2}:C_{2},...,A_{r},C_{r})$ and $S(B_{1}:D_{1},B_{2}:D_{2},...,B_{s}:D_{s} )$ with arity (degree) $r$ and $s$
+- $R$ and $S$ are <font color="HotPink" style="font-style: italic;">schema compliant</font> (identical except for renaming), if
+	1. the equality $r=s$ holds
+	2. there exists a permutation $\psi$  of the indices $\set{1,...,r}$ such that $\forall 1 \le i \le r : C_{i}=D_{\psi(i)}$ 
+
+### Union Operation
+- At the schema level
+	- Precondition is that $R$ and $S$ are schema compliant
+	- Result schema is equal to $R$ (or $S$), there is no change
+- At the data level
+	- $R\cup S=\set{t|t\in R \vee t \in S}$
+	- No duplicates in result due to set property
+	- Let $|R|$ be the cardinality, that is, the number of tuples of $R$, correspondingly $|S|$ is defined
+	- Number of tuples of $R\cup S$ is $|R\cup S|=|R|+|S|-|R\cap S|$
+![center](../zassets/Pasted%20image%2020240126095503.png)
+
+### Difference Operation
+- At the schema level
+	- Precondition is that $R$ and $S$ are schema compliant
+	- Result schema is equal to $R$ (or $S$), there is no change
+- At the data level
+	- $R-S=\set{t|t\in R \wedge t \notin S}$
+	- No duplicates in result due to set property
+	- Number of tuples of $R-S$ is $|R-S|=|R|-|R\cap S|$
+![center](../zassets/Pasted%20image%2020240126095651.png)
+
+### Cartesian Product
+- At the schema level: Result relation schema $T$ is the concatenation of the schemas (attribute lists) of $R$ and $S$. That is, we get $T(A_{1}:C_{1},...,A_{r}:C_{r},B_{1}:D_{1},...,B_{s}:D_{s})$ with arity $r + s$
+- At the data level:
+	- <font color="HotPink" style="font-style: italic;">Tuple concatenation</font> of two tuples $t=v_{1},...,v_{r}\in R$ and $u=(w_{1},...,w_{s})\in S$ is defined as the tuple $t\circ u = (v_{1},...,v_{r},w_{1},...,w_{s})\in R\times S$ of arity $r + s$
+	- $R \times S = \set{t \circ u | t \in R, u \in S}$
+	- Number of tuples of $R \times S$ is $|R\times S|=|R|\cdot|S|$
+![center](../zassets/Pasted%20image%2020240126100256.png)
+
+### Project Operation
+- Example: "Determine the room numbers of all professors"
+- This is a <font color="HotPink" style="font-style: italic;">query</font> in *colloquial* language
+- Two graphical illustrations of the desired result
+![center](../zassets/Pasted%20image%2020240126100355.png)
+- At the schema level: Given $R(A_{1}:C_{1},...,A_{r}:C_{r})$, project $R$ to $R'(A_{i1},...,A_{in})$ where $A_{i1},...,A_{in}\in\set{A_{1},...,A_{r}}$
+- At the data level:
+	- Let $t=(v_{1},...,v_{r})\in R$ with $v_{i}\in C_{i}$ for $1\le i \le r$ be a tuple. Then we define $t|_{A_{i1},...,A_{jn}}=(v_{i_{1}},..,v_{i_{n}})$ with $v_{i_{j}}\in C_{i_{j}}$ as the projection (restriction) of $t$ to attribute values of $A_{i_{1}},...,A_{i_{n}}$
+	- The <font color="HotPink" style="font-style: italic;">projection</font> $\pi$ on $R$ with respect to the attributes $A_{i_{1}},...,A_{i_{n}}$ is defined as $\pi_{A_{i_{1}},...,A_{i_{n}}}(R)=\set{t|_{A_{i_{1}}\;,...,\;A_{i_{n}}}|t=(v_{1}\;,...,\;v_{r})\in R}$
+- <font color="HotPink" style="font-style: italic;">Elimination of duplicates</font> due to *set property* of relations
+- Two tuples $s=(v_{1},...,v_{n})$ and $t=(w_{1},...,w_{m})$ are *equal* if and only if the following conditions hold:
+	1. Both tuples have the same number of values, $n=m$
+	2. Corresponding values of both tuples have the same domain or type, that is $\forall 1 \le i \le n :\text{dom}(v_{i})=\text{dom}(w_{i})$
+	3. Both tuples are component-wise equal, that is, $\forall 1 \le i \le n:v_{i}=w_{i}$
+- Number of tuples of $\pi_{A_{i_{1}}...A_{i_{n}} }(R)$ is $1\le|\pi_{A_{i_{1}}...A_{i_{n}} }(R)|\le|R|$
+	- Number is equal to 1 if the projections of all tuple of $R$ lead to the same projected tuple (requires that the key attributes do not belong to the projection attributes)
+	- Number is equal to $|R|$ if the projections of all tuples of $R$ lead to difference tuples (this happens if the key attributes belong to the projection attributes)
+- Number of tuples of $\pi_{A_{i_{1}}...A_{i_{n}} }(R)$ with $R=\emptyset$ is 0
+- Projection operation implements a reduction of columns ("vertical reduction")
+### Select Operation
+- At the schema level: New relation schema = old relation schema
+- At the data level:
+	- Selection of all tuples of a relation $R$ that fulfill a given <font color="HotPink" style="font-style: italic;">predicate</font> or <font color="HotPink" style="font-style: italic;">condition</font> $F$
+	- $F$ is a *quantifier-free Boolean expression* (that is, no $\forall$ symbol and no $\exists$ symbol) for which a tuple $t \in R$ checks if $F$ is fulfilled for the argument $t$, that is, if $F(t)$ yields the Boolean value *true*
+	- Formula $F$ is composed of
+		- operands: names of attributes
+		- comparison ops: $=,\ne,\lt,\le,\gt,\ge$
+		- logical operators: $\wedge, \vee, \neg$ 
+	- A <font color="HotPink" style="font-style: italic;">selection</font> $\sigma$ with respect to a predicate $F$ is defined as $\sigma_{F}(R)=\set{t\in R\;|\;F(t)}$
+- Number of tuples of $\sigma_{F}(R)$ is $0 \le |\;\sigma_{F}(R)|\le|R|$
+	- number is equal to 0 if no tuple of $R$ fulfills $F$, we obtain empty table
+	- number is equal to $|R|$ if all tuples of $R fulfill the predicate $F$, that is, $\sigma_F (R)=R$
+- Selection operation implements a reduction of rows (<font color="HotPink" style="font-style: italic;">horizontal reduction</font>)
+
+### Rename Operation
+- Enables the renaming of relations and/or attributes
+- Sometimes necessary to use the same relation or the same attribute several times in a query
+- The rename operation only changes names but neither the attribute domains nor the tuples of a relation
+- Variations:
+	- $\rho_{S}(R)$: relation $R$ is renamed into relation $S$
+	- $\rho_{S(B_{1},...,B_{n})}(R)$ relation $R(A_{1},...,A_{n})$ is renamed into relation $S(B_{1},...,B_{n})$
+	- $\rho_{B\leftarrow A}(R)$: attribute $A$ of relation $R$ is renamed into $B$
+

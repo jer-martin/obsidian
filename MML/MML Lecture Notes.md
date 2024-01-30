@@ -835,7 +835,7 @@ $$y_{i}=\mathbf{\tilde{a}_{i}^{\top}x}$$
 	- $\text{Null}(\mathbf{A})=\{\mathbf{x|Ax}=0\}$
 	- $\text{Null}(\mathbf{A}^{\top})=\{\mathbf{y|A^{\top}y}=0\}$
 
-#### Complexity
+##### Complexity
 - $m \times n$ matrix $\mathbf{A}$ stored as $m\times n$ array of numbers for sparse $\mathbf{A}$, store only $\text{nnz}( \mathbf{A})$ nonzero values
 - matrix addition, scalar-matrix multiplication costs $mn$ flops
 - matrix-vector multiplication cost $m(2n-1)\approx 2mn$ flops for sparse $\mathbf{A}$, around $2 nnz(\mathbf{A})$ flops
@@ -848,5 +848,173 @@ $$y_{i}=\mathbf{\tilde{a}_{i}^{\top}x}$$
 - $s=\mathbf{X}^{\top}\mathbf{w}$ is vector of scores for each sample: $s_{i}=\mathbf{x_{i}}^{\top}\mathbf{w}$
 - $\mathbf{\tilde{X}}=\begin{bmatrix}1\;...\;1\\x_{1}\;...\;x_{n}\end{bmatrix} = \begin{bmatrix}1^{\top}\\X\end{bmatrix}$ is the feature matrix appended with $1^{\top}$
 - $\mathbf{\tilde{X}^{\top}\tilde{w}}=[1\;\mathbf{X}^{\top}] \begin{bmatrix}v\\ w\end{bmatrix}=1v+\mathbf{X^{\top}w}= \begin{bmatrix}x_{1}^{\top}+v\\...\\ x_{n}^{\top}w+v\end{bmatrix}$ gives a batch of affine ("linear") predictions
+
+#### Matrix multiplication
+- can multiply $\mathbf{A} \in \mathbb{R}^{m\times p}$ and $\mathbf{B} \in \mathbb{R}^{p\times n}$ to get $\mathbf{C}=\mathbf{AB}\in\mathbb{R}^{m\times n}$ $$C_{ij}=\sum\limits^{p}_{k=1}A_{ik}B_{kj}=A_{i1}B_{1j}+\cdot\cdot\cdot\;+A_{ip}B_{pj}$$
+	for $i=1,...,m$ and $j=1,...,n$
+- $C_{ij}$ is the inner product of $i$th row of $\mathbf{A}$ and $j$th column of $\mathbf{B}$
+- **properties**:
+	- $\mathbf{(AB)C=A(BC)}$, so both can be written as $\mathbf{ABC}$
+	- $\mathbf{A(B+B)+AB+AC}$
+	- $\mathbf{(AB)^{\top}=B^{\top}A^{\top}}$
+	- $\mathbf{AI=A}$ and $\mathbf{IA=A}$
+	- $\mathbf{AB\ne BA}$ in general
+- special cases:
+	- scalar-vector product (with scalar on the right!): $\mathbf{x \alpha}$
+	- inner-product: $\mathbf{a^{\top}b}$
+	- matrix-vector product: $\mathbf{Ax}$
+	- outer product of $\mathbf{a}\in \mathbb{R}^m$ and $\mathbf{b}\in \mathbb{R}^n$ $$\mathbf{ab}^{\top}=\begin{bmatrix} 
+  a_{1}b_{1} & a_{1}b_{2} & ... & a_{1}b_{n} \\ 
+  a_{2}b_{1} & a_{2}b_{2} & ... & a_{2}b_{n} \\ 
+  ... &  & ._{._{.}} &  \\ a_{m}b_{1} & a_{m}b_{2} & ... & a_{m}b_{n}
+\end{bmatrix}$$
+- block matrices can be multiplied using the same formula, e.g. $$\begin{bmatrix} 
+  a & b  \\
+  c & d 
+\end{bmatrix} \begin{bmatrix} 
+  e & f  \\
+  g & h 
+\end{bmatrix}=\begin{bmatrix} 
+  ae+bg & af+bh  \\
+  ce+dg & cf+dh 
+\end{bmatrix}$$
+	provided the products all make sense
+
+##### Inner product interpretation
+- with $\tilde{a}_{i}^{\top}$ the rows of $\mathbf{A,b_{j}}$ the columns of $\mathbf{B}$, we have $$\mathbf{AB}=\begin{bmatrix} 
+  \tilde{a}_{1}^{\top}b_{1} & \tilde{a}_{1}^{\top}b_{2} & ... & \tilde{a}_{1}^{\top}b_{n} \\  
+  \tilde{a}_{2}^{\top}b_{1} & \tilde{a}_{2}^{\top}b_{2} & ... & \tilde{a}_{2}^{\top}b_{n} \\  
+  ... &  & ._{._{.}} &  \\ \tilde{a}_{m}^{\top}b_{1} & \tilde{a}_{m}^{\top}b_{2} & ... & \tilde{a}_{m}^{\top}b_{n} 
+\end{bmatrix}$$
+- example: the <font color="HotPink" style="font-style: italic;">Gram matrix</font> of $\mathbf{B}$ is $$\mathbf{G=B^{\top}B}=\begin{bmatrix} 
+  b_{1}^{\top}b_{1} & b_{1}^{\top}b_{2} & ... & b_{1}^{\top}b_{n} \\  
+  b_{2}^{\top}b_{1} & b_{2}^{\top}b_{2} & ... & b_{2}^{\top}b_{n} \\  
+  ... &  & ._{._{.}} &  \\ b_{n}^{\top}b_{1} & b_{n}^{\top}b_{2} & ... & b_{n}^{\top}b_{n} 
+\end{bmatrix}$$
+- Gram matrix gives all inner products of columns of $\mathbf{B}$
+- $\mathbf{G=B^{\top}B=I}$ means columns of $\mathbf{B}$ are orthonormal
+
+##### Outer product interpretation
+- with $\mathbf{a}_{k}$ the columns of $\mathbf{A,\;\tilde{b}^{\top}_{k}}$ the rows of $\mathbf{B}$, we have $$\mathbf{AB=\sum\limits^{p}_{k=1}a_{k}\tilde{b}^{\top}_{k}=a_{1}\tilde{b}^{\top}_{1} +\cdot\cdot\cdot\;+ a_{p}\tilde{b}^{\top}_{p}}$$
+- matrix product is the sum of the $p$ outer products between <font color="crimson" style="font-weight: bold;">corresponding</font> rows and columns
+- example: the <font color="HotPink" style="font-style: italic;">Gram matrix</font> of $\mathbf{A}^{\top}$ is $$\mathbf{G=AA^{\top}}\sum\limits^{p}_{k=1}a_{k}a^{\top}_{k}=a_{1}a^{\top}_{1}+\cdot\cdot\cdot\;+a_{p}a^{\top}_{p}$$
+##### Column Interpretation
+- denote columns of $\mathbf{B}$ by $\mathbf{b}_{i}:\;\mathbf{B=[b_{1}\;b_{2}\cdot\cdot\cdot b_{n}]}$
+- then we have $$\begin{align}\mathbf{AB}&= \mathbf{A}[b_{1}\cdot\cdot\cdot b_{n}]\\&= \mathbf{[Ab_{1}\cdot\cdot\cdot Ab_{n}]} \end{align}$$
+- so $\mathbf{AB}$ is 'batch' multiple of $\mathbf{A}$ times columns of $\mathbf{B}$
+- given $k$ systems of linear equations, with same $m \times n$ coefficient matrix $$\mathbf{Ax_{i}=b_{i},\;\;\;}i=1,...,k$$
+- write in compact matrix form $\mathbf{AX=B}$
+- $\mathbf{X=[x_{1}\cdot\cdot\cdot x_{k}],\;\;B=[b_{1}\cdot\cdot\cdot b_{k}]}$
+
+#### Matrix Powers
+ - for $\mathbf{A}$ square, $\mathbf{A}^2$ means $\mathbf{AA}$ and the same for higher powers
+ - with convention $\mathbf{A^{0}=I}$ we have $\mathbf{A^{k}A^{l}=A^{k+l}}$
+ - negative powers soon, fractional later in the class
+
+##### Complexity
+- to compute $C_{ij}=\mathbf{[AB]}_{ij}$ is inner product of $p$-vectors
+- so total required flops is $(mn)(2p)=2mnp$ flops
+- multiplying two $1000\times1000$ matrices requires 2 billion flops
+	- can be done in well under a second on modern computers
+
+### Inverse Matrices
+#### Left Inverses
+- a number $x$ that satisfies $x\alpha = 1$ is called the inverse of $\alpha$
+- inverse exists if and only if $\alpha \ne 0$ and is unique
+- a matrix $\mathbf{X}$ that satisfies $\mathbf{XA=I}$ is called left inverse of $\mathbf{A}$
+- if a left inverse exists, we say that $\mathbf{A}$ is left-invertible
+- example: the matrix $$\mathbf{A}=\begin{bmatrix} 
+  -3 & -4  \\
+  4 & 6  \\ 1 & 1
+\end{bmatrix}$$
+	has two different left inverses: $$\mathbf{B}=\frac{1}{9}\begin{bmatrix} 
+  -11 & -10 & 16 \\ 7 & 8 & -11
+\end{bmatrix},\;\;\;\;\mathbf{C}=\frac{1}{2}\begin{bmatrix} 
+  0 & -1 & 6 \\ 0 & 1 & -4
+\end{bmatrix}$$
+
+##### Left inverses and column independence
+- if $\mathbf{A}$ has a left inverse $\mathbf{C}$ then the columns of $\mathbf{A}$ are linearly independent
+- to see this: if $\mathbf{Ax}=0$ and $\mathbf{CA=I}$ then $$0= \mathbf{C}0= \mathbf{C(Ax)}= \mathbf{(CA)x}= \mathbf{Ix=x}$$
+- <font color="crimson" style="font-weight: bold;">a matrix is left-invertible if and only if its columns are linearly independent</font>
+- matrix generalization of: a number is invertible if it is nonzero
+- so left-invertible matrices are *tall* or *square*
+
+#### Right Inverses
+- a matrix $\mathbf{X}$ that satisfies $\mathbf{AX=I}$ is a right inverse of $\mathbf{A}$
+- if a right inverse exists we say that $\mathbf{A}$ is right-invertible
+- $\mathbf{A}$ is right-invertible if $\mathbf{A}^{\top}$ is left-invertible $$\mathbf{AX=I\Leftrightarrow(AX)^{\top}=I\Leftrightarrow X^{\top}A^{top}=I}$$
+- <font color="crimson" style="font-weight: bold;">a matrix is right invertible if its rows are linearly independent</font>
+- right-invertible matrices are *wide* or *square*
+
+#### Inverse
+- if $\mathbf{A}$ has a left and right inverse, they are unique and equal (and we say that $\mathbf{A}$ is <font color="HotPink" style="font-style: italic;">invertible</font>)
+- so $\mathbf{A}$ must be square
+- to see this: if $\mathbf{AX=YA=I}$ $$\mathbf{X=IX=(YA)X=Y(AX)=YI=Y}$$
+- denoted as $\mathbf{A}^{-1}$ $$\mathbf{AA^{-1}=A^{-1}A=I}$$
+- inverse of inverse: $\mathbf{(A^{-1})^{-1}=A}$
+
+#### Invertible Matrices
+- the following are equivalent for a square matrix $\mathbf{A}$:
+	- $\mathbf{A}$ is invertible
+	- $\mathbf{A}$ is nonsingular
+	- columns of $\mathbf{A}$ are linearly independent
+	- rows of $\mathbf{A}$ are linearly independent
+	- $\mathbf{A}$ has a left inverse
+	- $\mathbf{A}$ has a right inverse
+<font color="crimson" style="font-weight: bold;"> if any of these hold, all others do </font>
+
+##### Examples
+- $\mathbf{I^{-1}=I}$
+- $\text{diag}(a_{1},...,a_{n})^{-1}=\text{diag}(1/a_{1},...,1/a_{n})$
+- if $\mathbf{Q}$ is orthogonal, i.e. square with $\mathbf{Q^{\top}Q=I}$, then $\mathbf{Q^{-1}=Q^{\top}}$. Also implies $\mathbf{QQ^{\top}=I}$
+- $2\times 2$ matrix $\mathbf{A}$ is invertible if and only if $A_{11}A_{22}\ne A_{12}A_{21}$ $$\mathbf{A}^{-1}=\frac{1}{A_{11}A_{22}-A_{12}A_{21}}\begin{bmatrix} 
+  A_{22} & -A_{12} \\ -A_{21} & A_{11}
+\end{bmatrix}$$ <font color="crimson" style="font-weight: bold;">you need to know this formula</font>
+
+#### Properties
+- $\mathbf{(AB)^{-1}=B^{-1}A^{-1}}$ (provided inverses exist)
+- $\mathbf{(A^{\top})^{-1}=(A^{-1})^{\top}}$ (sometimes denoted $\mathbf{A}^{-\top}$)
+- negative matrix powers: $\mathbf{(A^{-1})^{k}}$ is denoted $\mathbf{A}^{-k}$
+- with $\mathbf{A^{0}=I}$, identity $\mathbf{A^{k}A^{l}=A^{k+l}}$ holds for any integers $k,l$
+
+### Triangular Matrices
+- lower triangular matrix $\mathbf{L}$ with nonzero diagonal entries is invertible
+- to see this, write $\mathbf{Lx}=0$ as $$\begin{align}&L_{11}x_{1}&=0\\ &L_{21}x_{1}+L_{22}x_{2}&=0\\&&.\\&&.\\&&.\\ &L_{n1}x_{1}+L_{n2}x_{2}+\cdot\cdot\cdot\;+L_{nn}x_{n}&=0\end{align}$$
+	- from first equation, $x_{1}=0$ (since $L_{11}\ne 0$)
+	- second equation reduces to $L_{22}x_{2}=0$, so $x_{2}=0$ (since $L_{22}\ne 0$)
+	- and so on
+	this shows columns of $\mathbf{L}$ are linearly independent, so $\mathbf{L}$ is invertible
+- upper triangular $\mathbf{R}$ with nonzero diagonal entries is also invertible
+
+### Determinant
+- determinant of a $2\times 2$ matrix is $$\text{det}\begin{bmatrix} 
+  a & b \\ c & d
+\end{bmatrix} = ad-bc$$
+- we can define $3\times3$ determinants from $2\times2$ determinants $$\text{det}\begin{bmatrix} 
+  A_{11} & A_{12} & A_{13}  \\ A_{21} & A_{22} & A_{23} \\ A_{31} & A_{32} & A_{33}
+\end{bmatrix}=A_{11}\text{det}\begin{bmatrix}A_{22} & A_{23} \\ A_{32} & A_{33}\end{bmatrix}-A_{12}\text{det}\begin{bmatrix}A_{21} & A_{23} \\ A_{31} & A_{33}\end{bmatrix}+A_{13}\text{det}\begin{bmatrix}A_{21} & A_{22} \\ A_{31} & A_{32}\end{bmatrix}$$
+- and in general $$\text{det}\mathbf{A}=\sum\limits^{n}_{j=1}(-1)^{i+j}A_{ij}\text{det}\tilde{\mathbf{A}}_{ij}$$
+	where $\tilde{\mathbf{A}}_{ij}$ is obtained from deleting the $i$th row and $j$th col of $\mathbf{A}$
+
+#### Cramer's Rule
+- define <font color="HotPink" style="font-style: italic;">Cofactor</font> matrix $\mathbf{C}$ $$C_{ij}=(-1)^{i+j}\text{det}\tilde{\mathbf{A}}_{ij}$$
+	then $$\mathbf{A}^{-1}=\frac{1}{\text{det}\mathbf{A}}\mathbf{C}^{\top}$$
+- example: $$\begin{bmatrix}a & b \\ c & d\end{bmatrix}^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d & -b \\ -c & a\end{bmatrix}$$
+- almost useless in practice due to rounding error
+
+#### Properties
+- $\text{det}\mathbf{A}$ is a linear function of each row/column
+- $\text{det}\mathbf{A}=0$ iff rows/columns are linearly dependent (singular)
+- $\mathbf{A}$ is nonsingular/invertible if $\text{det}\mathbf{A}\ne 0$
+- $\text{det}\mathbf{A}=\text{det}\mathbf{A^{\top}}$
+- $\text{det}\mathbf{AB}=\text{det}\mathbf{A}\;\text{det}\mathbf{B}$ (important) $$\Rightarrow\text{det}\mathbf{A}^{-1}=1/\text{det}\mathbf{A}$$
+- $\text{det}\begin{bmatrix}\mathbf{A} & \mathbf{B}  \\ \mathbf{C} & \mathbf{D}  \end{bmatrix} = \text{det}\mathbf{A}\text{det}\mathbf{(D-CA^{-1}B)}$
+
+#### Examples
+- if $\mathbf{A}$ is orthogonal, then $\text{det}\mathbf{A}\pm1$
+![center](../zassets/Pasted%20image%2020240130181850.png)
+
+
 
 
